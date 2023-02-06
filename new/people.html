@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>people</title>
+
+<script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<meta name="application-name" content="CEID 2019 nCoV"/>
+<!-- Chrome for Android -->
+<meta name="theme-color" content="#ba0c2f" />
+<!-- Web App -->
+<link rel="manifest" href="manifest.json" />
+<!-- iOS icons -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="icons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="icons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="icons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="icons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="icons/apple-touch-icon-152x152.png" />
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="icons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="icons/favicon-192.png" sizes="192x192" />
+<link rel="icon" type="image/png" href="icons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="icons/favicon-128.png" sizes="128x128" />
+<!-- IE 11+ -->
+<meta name="msapplication-config" content="ieconfig.xml" />
+<!-- scripts -->
+<script type="text/javascript" src="js/iframeResizer.min.js"></script>
+<script type="text/javascript" src="js/ga-analytics.js"></script>
+<script type="text/javascript" src="js/reload-iframe.js"></script>
+<script type="application/ld+json">
+	{
+		"@context": "http://www.schema.org",
+		"@type": "CollegeOrUniversity",
+		"name": "Center for the Ecology of Infectious Diseases",
+		"alternatename": "CEID",
+		"url": "https://www.covid19.uga.edu/",
+		"logo": "https://www.uga.edu/_resources/images/GEORGIA-V-FC.png",
+		"description": "The UGA Center for the Ecology of Infectious Diseases (CEID) COVID-19 Portal is a resource for researchers, policymakers, and the public that provides tracking, modeling, and analysis of the ongoing COVID‑19 pandemic.",
+		"location": {
+			"@type": "PostalAddress",
+			"addressLocality": "Athens",
+			"addressRegion": "GA",
+			"postalCode": "30602",
+			"addressCountry": "US"
+		},
+		"contactPoint": {
+			"@type": "ContactPoint",
+			"telephone": "+1-706-542-1930",
+			"contactType": "Customer Service"
+		},
+		"sameAs" : [ 
+			"https://twitter.com/ceid_uga"
+		]
+	}
+</script>
+
+<meta name="description" content="The COVID-19 Portal is a resource for researchers, policymakers, and the public that provides tracking, modeling, and analysis of the ongoing COVID‑19 pandemic."/>
+<meta name="twitter:title" content="CEID Covid-19 tracker"/>
+<meta name="twitter:description" content="The COVID-19 Portal is a resource for researchers, policymakers, and the public that provides tracking, modeling, and analysis of the ongoing COVID‑19 pandemic."/>
+<meta name="twitter:url" content="https://www.covid19.uga.edu/"/>
+<meta name="twitter:image:src" content="https://www.covid19.uga.edu/images/home_olympic.jpg"/>
+<meta name="twitter:image:alt" content="Coronavirus CEID image"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:creator" content="@ceid_uga"/>
+<meta name="twitter:site" content="@ceid_uga"/>
+<meta property="og:title" content="CEID Covid-19 tracker"/>
+<meta property="og:description" content="The COVID-19 Portal is a resource for researchers, policymakers, and the public that provides tracking, modeling, and analysis of the ongoing COVID‑19 pandemic."/>
+<meta property="og:url" content="https://www.covid19.uga.edu/"/>
+<meta property="og:image" content="https://www.covid19.uga.edu/images/home_olympic.jpg"/>
+<meta property="og:image:alt" content="Coronavirus CEID image"/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="en_US"/>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+          <a class="navbar-brand" href="home.html">CIMIDI Portal <span class="d-none d-md-inline"><span class="divider"> | </span><span class="subtext-brand">Center for the Ecology of Infectious Diseases</span></span><span class="subtext-brand d-md-none"> | (CEID)</span><span class="subtext-brand d-none d-md-inline">, University of Georgia</span></a>
+    <div class="navbar-header active">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Research
+
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="stochastic.html">Stochastic Model for Wuhan (China)</a>
+    </li>
+    <li>
+      <a href="stochastic-GA.html">Stochastic Model for Georgia (USA)</a>
+    </li>
+    <li>
+      <a href="university-model.html">Model for University Reopening</a>
+    </li>
+    <li>
+      <a href="spatial-us.html">Spatial Model for US Counties</a>
+    </li>
+    <li>
+      <a href="spatial-china.html">Spatial Model for China</a>
+    </li>
+    
+  </ul>
+</li>
+<li>
+  <a href="data.html">Data</a>
+</li>
+<li>
+  <a href="people.html">People</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div>
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">people</h1>
+
+</div>
+
+
+</div>
+<div id="contributors" class="jumbotron jumbotron-fluid homepagebanner">
+<div class="container">
+<h1>
+People
+</h1>
+</div>
+</div>
+<div class="container-fluid main-container">
+
+<!-- container-fluid main-container -->
+<div class="row row-people">
+<div class="col-sm-4">
+<p><img src="images/people/Lewis-Bartlett.jpg" alt="Lewis Bartlett" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Lewis Bartlett</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="departmentSchool1">
+<p>Center for the Ecology of Infectious Diseases</p>
+</p>
+<p class="position">
+<p>Postdoctoral Associate</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://www.ecology.uga.edu/directory/lewis-bartlett/">
+more &gt;</a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/Ana-Bento.jpg" alt="Ana Bento" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Ana Bento</p>
+</h2>
+<p class="Institution">
+<p>Assistant Professor</p>
+</p>
+<p class="position">
+<p>Indiana University, Bloomington</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://www.anabento.io/">
+more &gt;</a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/Rebecca-Borchering.jpg" alt="Rebecca Borchering" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Rebecca Borchering</p>
+</h2>
+<p class="Institution">
+<p>Postdoctoral Associate</p>
+</p>
+<p class="position">
+<p>University of Georgia</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://www.ecology.uga.edu/directory/rebecca-borchering/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+</div>
+<!-- end of row-->
+<div class="row row-people">
+<div class="col-sm-4">
+<p><img src="images/people/Tommy-Bui.jpg" alt="Tommy Bui" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Tommy Bui</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>Franklin College</p>
+</p>
+<p class="position">
+<p>Volunteer Research Assistant</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<!--   <a class="personal-website btn-sm btn-primary" href="https://www.caes.uga.edu/about/personnel/person.html?pk_id=20393&name=Tommy%20Bui" target="_blank"> more > </a> -->
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/John-Drake.jpg" alt="John Drake" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>John Drake</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="departmentSchool1">
+<p>Center for the Ecology of Infectious Diseases</p>
+</p>
+<p class="position1">
+<p>Director</p>
+</p>
+<p class="departmentSchool2">
+<p>Odum School of Ecology</p>
+</p>
+<p class="position2">
+<p>Distinguished Research Professor and Associate Dean for Academic
+Affairs</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://daphnia.ecology.uga.edu/drakelab/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/Michelle-Evans.jpg" alt="Michelle Evans" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Michelle Evans</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>Odum School of Ecology</p>
+</p>
+<p class="position">
+<p>PhD Student</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://www.ecology.uga.edu/directory/michelle-evans/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+</div>
+<!-- end of row-->
+<div class="row row-people">
+<div class="col-sm-4">
+<p><img src="images/people/Sam-Fahmy.jpg" alt="Sam Fahmy" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Sam Fahmy</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>Office of the Senior Vice President for Academic Affairs and
+Provost</p>
+</p>
+<p class="position">
+<p>Director of Public Relations for Academic Affairs</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://provost.uga.edu/about/staff/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/Yang-Ge.jpg" alt="Yang Ge" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Yang Ge</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>College of Public Health</p>
+</p>
+<p class="department">
+<p>Epidemiology &amp; Biostatistics</p>
+</p>
+<p class="position">
+<p>Doctor of Philosophy (PhD) in Epidemiology &amp; Biostatistics</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://publichealth.uga.edu/student/yang-ge/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/Handel-Andreas.jpg" alt="Andreas Handel" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Andreas Handel</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>College of Public Health</p>
+</p>
+<p class="department">
+<p>Epidemiology &amp; Biostatistics, Health Informatics Institute</p>
+</p>
+<p class="position">
+<p>Associate Department Head and Graduate Coordinator<br> Associate
+Professor</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://www.andreashandel.com/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+</div>
+<!-- end of row-->
+<div class="row row-people">
+<div class="col-sm-4">
+<p><img src="images/people/Reni-Kaul.jpg" alt="Reni Kaul" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Reni Kaul</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>Odum School of Ecology</p>
+</p>
+<p class="position">
+<p>PhD Student</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://www.ecology.uga.edu/directory/Reni-Kaul/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/Kennedy-Culzean.jpg" alt="Culzean Kennedy" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Culzean Kennedy</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>MS in Comparative Biomedical Sciences</p>
+</p>
+<p class="position">
+<p>Scientific Writing Intern</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://www.ceid.uga.edu/blog/2020/01/22/culzean-kennedy/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/John-King.jpg" alt="John King" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>John King</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>Center for the Ecology of Infectious Diseases</p>
+</p>
+<p class="position">
+<p>Project &amp; Communications Manager, Coronavirus Working Group</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://www.ceid.uga.edu/blog/2020/05/05/john-king/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+</div>
+<!-- end of row-->
+<div class="row row-people">
+<div class="col-sm-4">
+<p><img src="images/people/Drew-Kramer.jpg" alt="Drew Kramer" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Drew Kramer</p>
+</h2>
+<p class="Institution">
+<p>University of South Florida</p>
+</p>
+<p class="department">
+<p>Department of Integrative Biology</p>
+</p>
+<p class="position">
+<p>Assistant Professor</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://kramera3.github.io/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/Erin-Lipp.jpg" alt="Erin Lipp" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Erin Lipp</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="department">
+<p>College of Public Health</p>
+</p>
+<p class="position">
+<p>Professor and Associate Dean for Academic Affairs</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="http://www.lipplab.org/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/Megan-Lott.jpg" alt="Megan Lott" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Megan Lott</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>College of Public Health</p>
+</p>
+<p class="position">
+<p>IDEAS PhD Student</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="http://www.lipplab.org/people1.html" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+</div>
+<!-- end of row-->
+<div class="row row-people">
+<div class="col-sm-4">
+<p><img src="images/people/Eric-Marty.jpg" alt="Eric Marty" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Éric Marty</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>Center for the Ecology of Infectious Diseases</p>
+</p>
+<p class="position">
+<p>Research Professional</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="http://www.ericmarty.com/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/Brian-McKay.jpg" alt="Brian McKay" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Brian McKay</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>College of Public Health</p>
+</p>
+<p class="department">
+<p>Epidemiology &amp; Biostatistics</p>
+</p>
+<p class="position">
+<p>Lecturer</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://publichealth.uga.edu/faculty-member/brian-k-mckay/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/Rachel-Mercaldo.jpg" alt="Rachel Mercaldo" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Rachel Mercaldo</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>College of Public Health</p>
+</p>
+<p class="department">
+<p>Epidemiology &amp; Biostatistics</p>
+</p>
+<p class="position">
+<p>PhD Student</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://handelgroup.uga.edu/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+</div>
+<!-- end of row-->
+<div class="row row-people">
+<div class="col-sm-4">
+<p><img src="images/people/Paige-Miller.jpg" alt="Paige Miller" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Paige Miller</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>Odum School of Ecology</p>
+</p>
+<p class="position">
+<p>PhD Student</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://www.ecology.uga.edu/directory/paige-miller/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/William-Norfolk.jpg" alt="William Norfolk" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>William Norfolk</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>College of Public Health</p>
+</p>
+<p class="departmentSchool1">
+<p>Environmental Health Science</p>
+</p>
+<p class="position">
+<p>PhD Student</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://handelgroup.uga.edu" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/Eamon-ODea.jpg" alt="Eamon O&apos;Dea" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Eamon O’Dea</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="departmentSchool1">
+<p>Center for the Ecology of Infectious Diseases</p>
+</p>
+<p class="position">
+<p>Postdoctoral Associate</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://www.ecology.uga.edu/directory/Eamon-ODea/" target="_blank">
+more &gt;</a></p>
+</div>
+</div>
+</div>
+<!-- end of row-->
+<div class="row row-people">
+<div class="col-sm-4">
+<p><img src="images/people/Tierney-OSullivan_.jpg" alt="Tierney O&apos;Sullivan" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Tierney O’Sullivan</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>Center for the Ecology of Infectious Diseases</p>
+</p>
+<p class="position">
+<p>Staff Statistician</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://www.researchgate.net/profile/Tierney_Osullivan" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/Chloe-Parker.jpg" alt="Chloe Parker" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Chloe Parker</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>Center for the Ecology of Infectious Diseases</p>
+</p>
+<p class="position">
+<p>Graphic Design Intern</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://chloeparker.myportfolio.com/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/Tom-Pulliam.jpg" alt="Tom Pulliam" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Tom Pulliam</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>Odum School of Ecology</p>
+</p>
+<p class="position">
+<p>Scientific Programmer, Drake Lab</p>
+</p>
+<!-- Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://daphnia.ecology.uga.edu/drakelab/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+</div>
+<!-- end of row-->
+<div class="row row-people">
+<div class="col-sm-4">
+<p><img src="images/people/Robbie-Richards.jpg" alt="Robbie Richards" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Robbie Richards</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>Odum School of Ecology</p>
+</p>
+<p class="position">
+<p>PhD Student</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="http://ezenwalab.uga.edu/people/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/Trippe-Ross.jpg" alt="Trippe Ross" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Trippe Ross</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>Center for the Ecology of Infectious Diseases</p>
+</p>
+<p class="position">
+<p>Administrative Specialist &amp; Graduate Student (MPA)</p>
+</p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/Kate-Sabey.jpg" alt="Kate Sabey" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Kate Sabey</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>College of Veterinary Medicine</p>
+</p>
+<p class="position">
+<p>IDEAS PhD Student</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="http://ezenwalab.uga.edu/people/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+</div>
+<!-- end of row-->
+<div class="row row-people">
+<div class="col-sm-4">
+<p><img src="images/people/Liliana-Salvador.jpg" alt="Liliana Salvador" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Liliana Salvador</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>College of Veterinary Medicine</p>
+</p>
+<p class="department">
+<p>Department of Infectious Diseases &amp; Institute of
+Bioinformatics</p>
+</p>
+<p class="position">
+<p>Assistant Professor</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://vet.uga.edu/person/liliana-salvador/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/Cecilia-S%C3%A1nchez.jpg" alt="Cecilia-Sánchez" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Cecilia Sánchez</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>Center for the Ecology of Infectious Diseases</p>
+</p>
+<p class="position">
+<p>Postdoctoral Associate</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://ceciliaasanchez.weebly.com/" target="_blank">
+more &gt;</a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/JP-Schmidt.jpg" alt="JP Schmidt" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>JP Schmidt</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>Odum School of Ecology</p>
+</p>
+<p class="position">
+<p>Lecturer</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://www.ecology.uga.edu/directory/john-paul-schmidt/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+</div>
+<!-- end of row-->
+<div class="row row-people">
+<div class="col-sm-4">
+<p><img src="images/people/Margaret-Schrayer.jpg" alt="Margaret Schrayer" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Margaret Schrayer</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>College of Education</p>
+</p>
+<p class="position">
+<p>Graduate Research Assistant</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://ceciliaasanchez.weebly.com/" target="_blank">
+more &gt;</a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/Andrea-Silletti.jpg" alt="Andrea Silletti" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Andrea-Silletti</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>Odum School of Ecology</p>
+</p>
+<p class="position">
+<p>Lab Manager (Drake Lab)</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://www.ecology.uga.edu/directory/andrea-silletti/" target="_blank">
+more &gt;</a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/Patrick-Stephens.jpg" alt="Patrick Stephens" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Patrick Stephens</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>Odum School of Ecology</p>
+</p>
+<p class="position">
+<p>Associate Research Scientist</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://prstephens.ecology.uga.edu/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+</div>
+<!-- end of row-->
+<div class="row row-people">
+<div class="col-sm-4">
+<p><img src="images/people/Chao-Song.jpg" alt="Chao Song" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Chao Song</p>
+</h2>
+<p class="Institution">
+<p>Michigan State University</p>
+</p>
+<p class="position">
+<p>Postdoctoral Associate</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://songchao1986.github.io/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/Daniel-Suh.jpg" alt="Daniel Suh" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Daniel Suh</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>Odum School of Ecology</p>
+</p>
+<p class="position">
+<p>IDEAS PhD Student</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="http://parklab.ecology.uga.edu/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/Benjamin-Taylor.jpg" alt="Benjamin Taylor" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Benjamin Taylor</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>Odum School of Ecology</p>
+</p>
+<p class="position">
+<p>Public Relations Specialist</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://sasakilab.ecology.uga.edu/people/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+</div>
+<!-- end of row-->
+<div class="row row-people">
+<div class="col-sm-4">
+<p><img src="images/people/Olivia-Thomas.jpg" alt="Olivia Thomas" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Olivia Thomas</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>Franklin College of Arts &amp; Sciences</p>
+</p>
+<p class="position">
+<p>Undergraduate Researcher</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://sasakilab.ecology.uga.edu/people/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/Andrew-Tredennick.jpg" alt="Andrew Tredennick" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Andrew Tredennick</p>
+</h2>
+<p class="Institution">
+<p>WEST Environmental and Statistical Consultants</p>
+</p>
+<p class="position">
+<p>Biometrician</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://atredennick.github.io/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/David-Vasquez.jpg" alt="David Vasquez" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>David Vasquez</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>Odum School of Ecology</p>
+</p>
+<p class="position">
+<p>IDEAS PhD Student</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://davidvasquezjr.wixsite.com/diseaseecology" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+</div>
+<!-- end of row-->
+<div class="row row-people">
+<div class="col-sm-4">
+<p><img src="images/people/Joy-Vaz.jpg" alt="Joy Vaz" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Joy Vaz</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>Odum School of Ecology</p>
+</p>
+<p class="position">
+<p>IDEAS PhD Student</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://daphnia.ecology.uga.edu/drakelab/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/Jessica-Wenclawiak.jpg" alt="Jessica Wenclawiak" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Jessica Wenclawiak</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>Center for the Ecology of Infectious Diseases</p>
+</p>
+<p class="position">
+<p>Scientific Writing Intern</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://daphnia.ecology.uga.edu/drakelab/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/Tim-Wildauer.jpg" alt="Tim Wildauer" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Tim Wildauer</p>
+</h2>
+<p class="Institution">
+<p>St. Joseph Mercy Health System</p>
+</p>
+<!-- <p class="college"></p> -->
+<p class="position">
+<p>Programmer Analyst</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://www.linkedin.com/in/timothy-wildauer" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+</div>
+<!-- end of row-->
+<div class="row row-people">
+<div class="col-sm-4">
+<p><img src="images/people/Anna-Willoughby.jpg" alt="Anna Willoughby" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Anna Willoughby</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>Odum School of Ecology</p>
+</p>
+<p class="position">
+<p>IDEAS PhD Student</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="https://daphnia.ecology.uga.edu/drakelab/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/Cali-Wilson.jpg" alt="Cali Wilson" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Cali Wilson</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+<p>Odum School of Ecology</p>
+</p>
+<p class="position">
+<p>IDEAS PhD Student</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<p><a class="personal-website btn-sm btn-primary" href="http://halllab.ecology.uga.edu/" target="_blank">
+more &gt; </a></p>
+</div>
+</div>
+</div>
+<!-- end of row-->
+<!--End of People -->
+
+</iframe> <!-- iframe -->
+
+<footer class="container-fluid ceidfooter" id = "pageFooter">
+			<div class="row">
+				<div class='col-sm-6 col-md-4'>
+					<p><a href='https://www.ceid.uga.edu/' target='_blank'>
+					<img src="images/Screen-CEID-H-FC.png" alt="Center for the Ecology of Infectious Diseases, University of Georgia"/></a></p>
+          <p><small>Contact: <a href="mailto:jdrake@uga.edu">John M. Drake (jdrake@uga.edu)</a></small>
+						<!--
+						<br><small>203&nbsp;D.&nbsp;W.&nbsp;Brooks&nbsp;Drive, Athens,&nbsp;GA&nbsp;30602<br>
+						706&#8209;542&#8209;1930</small>
+						-->
+					<br>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/brands.css" integrity="sha384-nT8r1Kzllf71iZl81CdFzObMsaLOhqBU1JD2+XoAALbdtWaXDOlWOZTR4v1ktjPE" crossorigin="anonymous">
+
+						<a class="ceidfooter__social-link" aria-label="ceid on Twitter" href="https://twitter.com/ceid_uga">
+							<i class="fab fa-fw fa-twitter" title="Twitter" aria-hidden></i>
+							<span class="ceidfooter__social-label"><small>Twitter</small></span>
+							</a>
+            </p>
+            <p><a href="https://www.ceid.uga.edu/support/" target='_blank'>Support CEID</a></p>
+					
+				</div>
+				<div class='col-sm-6 col-md-4'>
+				  <p><a href='https://publichealth.uga.edu/' target='_blank'>
+					<img src="images/Screen-CPH-H-FC.png" alt="College of Public Health, University of Georgia"/></a></p>
+					<p><small><strong>External Resources:</strong></small><br><br>
+					<small>
+				<!-- LINKS TO EXTERNAL RESOURCES HERE -->
+
+				<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" target='_blank'>WHO</a>&emsp; 
+				<a href="https://www.cdc.gov/coronavirus/2019-ncov/" target='_blank'>CDC</a>&emsp; 
+				<a href="https://www.mobs-lab.org/2019ncov.html" target='_blank'>Northeastern&nbsp;University</a>&emsp; 
+				<a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" target='_blank'>Johns&nbsp;Hopkins&nbsp;University</a>&emsp; 
+				<a href="https://nextstrain.org/ncov" target='_blank'>Nextstrain</a>&emsp; 
+				<a href="https://covid-measures.github.io" target='_blank'>Long&#8209;Term&nbsp;Intervention&nbsp;Strategies</a>&emsp; 
+				<a href="https://covidtracking.com/" target='_blank'>COVID&nbsp;Tracking&nbsp;Project</a>&emsp;
+				<a href="https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html" target='_blank'>NY&nbsp;Times&nbsp;Map&nbsp;&amp;&nbsp;Case&nbsp;Count</a>
+				
+				</small></p>
+				<!--
+				  <p><small><strong>Contributors:</strong></small></p>
+          <p><small>Lewis Bartlett, Ana Bento, Rebecca Borchering, John Drake, Yang Ge, Andreas Handel, Drew Kramer, Culzean Kennedy, Brian McKay, Eric Marty, Rachel Mercaldo, Paige Miller, Tierney O'Sullivan, Chloe Parker, Robbie Richards, Trippe Ross, Kate Sabey, Liliana Salvador, Cecilia Sanchez, JP Schmidt, Patrick Stephens, Chao Song, Daniel Suh, Benjamin Taylor, David Vasquez, Joy Vaz, Jessica Wenclawiak, Anna Willoughby, Cali Wilson</small></p>
+          -->
+					</div>
+				<div class='col-sm-6 col-md-4'>
+				  <p><small><strong>Data Use:</strong></small></p>
+				  <p><small>Content and data on this site are licensed under a 
+				    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target='_blank'>Creative Commons Attribution 4.0 International License</a>.</small><br>
+				    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target='_blank'>
+  					  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+  					<a href="https://opendefinition.org/" target='_blank'>
+  					  <img src="https://opendefinition.org/assets.okfn.org/images/ok_buttons/oc_80x15_blue.png" alt="This material is Open Content"/></a>
+  					<a href="https://opendefinition.org/" target='_blank'>
+  					  <img src="https://opendefinition.org/assets.okfn.org/images/ok_buttons/od_80x15_blue.png" alt="This material is Open Data"/></a><br>
+  					  <small><a href="https://eits.uga.edu/access_and_security/infosec/pols_regs/policies/privacy/">Privacy Policy</a></small><br>
+  					  <a class="ceidfooter__social-link" aria-label="ceid on github" href="https://github.com/CEIDatUGA/2019nCoV-Dashboard">
+							  <i class="fab fa-fw fa-github" title="Github" aria-hidden></i>
+						    <span class="ceidfooter__social-label"><small>Website code</small></span>
+						  </a>
+						<p><small>
+						<script language="javascript">
+							document.write("Last updated "+document.lastModified);
+						</script>
+					</small></p>
+				</div>
+				<div class='col-sm-6 col-md-12'>
+				
+
+			</div>
+		</div>
+</footer>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+</body>
+</html>
