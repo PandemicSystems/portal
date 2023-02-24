@@ -32,6 +32,14 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.26/datatables.js"></script>
+<link href="site_libs/dt-core-1.12.1/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.12.1/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.12.1/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
 <meta name="application-name" content="CEID 2019 nCoV"/>
 <!-- Chrome for Android -->
 <meta name="theme-color" content="#ba0c2f" />
@@ -229,7 +237,7 @@ pre code {
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
-          <a class="navbar-brand" href="home.html">CIMIDI Portal <span class="d-none d-md-inline"><span class="divider"> | </span><span class="subtext-brand">Center for the Ecology of Infectious Diseases</span></span><span class="subtext-brand d-md-none"> | (CEID)</span><span class="subtext-brand d-none d-md-inline">, University of Georgia</span></a>
+          <a class="navbar-brand" href="home.html">PIPP Portal <span class="d-none d-md-inline"><span class="divider"> | </span><span class="subtext-brand">Center for the Ecology of Infectious Diseases</span></span><span class="subtext-brand d-md-none"> | (CEID)</span><span class="subtext-brand d-none d-md-inline">, University of Georgia</span></a>
     <div class="navbar-header active">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
         <span class="icon-bar"></span>
@@ -246,22 +254,11 @@ pre code {
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
-    <li>
-      <a href="stochastic.html">Stochastic Model for Wuhan (China)</a>
-    </li>
-    <li>
-      <a href="stochastic-GA.html">Stochastic Model for Georgia (USA)</a>
-    </li>
-    <li>
-      <a href="university-model.html">Model for University Reopening</a>
-    </li>
-    <li>
-      <a href="spatial-us.html">Spatial Model for US Counties</a>
-    </li>
-    <li>
-      <a href="spatial-china.html">Spatial Model for China</a>
-    </li>
-    
+    <li><a href="option1.html">option1</a></li>
+    <li><a href="option2.html">option2</a></li>
+    <li><a href="option3.html">option3</a></li>
+    <li><a href="option4.html">option4</a></li>
+    <li><a href="option5.html">option5</a></li>
   </ul>
 </li>
 <li>
@@ -294,102 +291,13 @@ pre code {
 </div>
 
 
-<p id="disclaimer">
-</p>
-<div id="data-sources" class="section level2">
-<h2>Data Sources</h2>
-<p>CEID now maintains a public repository of datasets used in our
-COVID-19 projects. The datasets in the repository were compiled by
-members of the CEID COVID-19 working group. The data have been formated
-to be used ‘as-is’ and are updated often. Data sets were either created
-from html scraping or manually entered. In the case of the automated web
-scraping, the raw data and scripts are included.</p>
-Data are publicly available here:
-<p>
-<a href="https://github.com/CEIDatUGA/COVID-19-DATA" target="_blank">
-<img src="images/GitHub-Mark-64px.png" id="github-icon" alt="GitHub repository"/>
-GitHub repository </a>
-</p>
-<div id="china-data" class="section level3">
-<h3>China data</h3>
-<ul>
-<li><em>China_casedata</em></li>
-<li><em>China_TA</em>: Travel advisories or restrictions within
-China.</li>
-<li><em>Hubei_Evacuation_Repatriation</em>: Reports of evacuations from
-Hubei province.</li>
-</ul>
-</div>
-<div id="us-data" class="section level3">
-<h3>US data</h3>
-<ul>
-<li><em>UScases_by_state_wikipedia.csv</em>: Number of new cases in a
-state by day.</li>
-<li><em>USfatalities_by_state_wikipedia.csv</em>: Number of new case
-fatalities in a state by day.</li>
-<li><em>us-state-intervention-data/stateInterventionTimeSeries.csv</em>:
-Reshaped version of longFormStateInterventions.csv that includes the
-intervention status of all US states on each date since the beginning of
-the outbreak. Updated daily.</li>
-<li><em>us-state-intervention-data/longFormStateInterventions.csv</em>:
-Running summary of interventions at the state level taken from reports
-and wikipedia</li>
-</ul>
-</div>
-<div id="state-of-georgia-data" class="section level3">
-<h3>State of Georgia data</h3>
-<ul>
-<li><em>ga-county-intervention-data/countyInterventionTimeSeries.csv</em>:
-Reshaped version of longFormStateInterventions.csv that includes the
-intervention status of all US states on each date since the beginning of
-the outbreak. Updated daily.</li>
-<li><em>ga-county-intervention-data/longFormCountyInterventions.csv</em>:
-Running summary of interventions at the state level taken from reports
-and wikipedia</li>
-</ul>
-</div>
-<div id="global-data" class="section level3">
-<h3>Global data</h3>
-<ul>
-<li><em>worldCases.csv</em>: Number of new cases in a country by
-day.</li>
-<li><em>Internation_TA</em>: Travel advisories announced by county.</li>
-<li><em>Global Health Security Index</em>: Index of epidemic
-preparedness and underlying data</li>
-<li><em>Epidemiological characteristics of COVID-19 and other
-zoonotics</em></li>
-<li><em>Canada COVID-19 Case Data</em>: Includes cases, fatalities,
-recovered, and tested for Canada</li>
-</ul>
-</div>
-</div>
-<div id="legacy-data" class="section level2">
-<h2>Legacy Data</h2>
-<p>Data resources used initually by the CEID Coronavirus Working Group
-include:</p>
-<p><a
-href="https://docs.google.com/spreadsheets/d/1SC28cM52m6s1gTJutpvFxadT9GGu-li90tsqkGuaM48/edit#gid=0">Timeline
-of key events and case notifications by country</a> | Google sheet,
-updated daily, maintainer: <a
-href="https://www.ceid.uga.edu">CEID</a><br> <a
-href="https://docs.google.com/spreadsheets/d/1gTj4zFMfXRk92CCQAOwa04ZBhqJ4oSmQFm_nb8-YXbw/edit">Case
-notifications in China by province</a> | Google sheet, updated daily,
-maintainer: <a href="https://www.ceid.uga.edu">CEID</a><br> <a
-href="https://raw.githubusercontent.com/CEIDatUGA/ncov-data-summary/master/data/prefecture_master.csv?token=AD7PNRPAXQMS5ZSG6ENOMJ26K74G6">Case
-notifications in China by prefecture</a> | csv, updated daily,
-maintainer: <a href="https://www.ceid.uga.edu">CEID</a><br> <a
-href="https://raw.githubusercontent.com/CEIDatUGA/ncov-data-summary/master/data/prefecture_master_binary.csv?token=AD7PNRKJI4L22MWTZBOKL3S6K74TS">First
-date of infection for Chinese prefectures</a> | csv, updated daily,
-maintainer: <a href="https://www.ceid.uga.edu">CEID</a><br> <a
-href="https://docs.google.com/spreadsheets/d/1aK9Es7x6KReabBRkWiBbiSGsxSC37kPKD-qiPcD50hg/edit#gid=0">Interventions
-in China by prefecture</a> | Google sheet, updated daily, maintainer: <a
-href="https://www.ceid.uga.edu">CEID</a><br> <a
-href="https://docs.google.com/spreadsheets/d/1cYqkGOy4ZjHSIeRqyfyi7UvYnG6-UlBAJWD8GMFZA7I/edit#gid=1525027375">Travel
-advisories</a> | Google sheet, updated daily, maintainer: <a
-href="https://www.ceid.uga.edu">CEID</a><br> <a
-href="https://docs.google.com/spreadsheets/d/10NYNf4UX7R_nNdM-jkbo7A5SGkB8sUVMIiqU7e_-miU/edit#gid=0">Case
-notifications in the US by state</a> | Google sheet, updated daily,
-maintainer: <a href="https://www.ceid.uga.edu">CEID</a><br></p>
+<div id="data-on-the-publications-is-available-here"
+class="section level2">
+<h2>Data on the publications is available here:</h2>
+<div id="htmlwidget-8f72cf526efbf1fb6426" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-8f72cf526efbf1fb6426">{"x":{"filter":"none","vertical":false,"data":[["Mazda RX4","Mazda RX4 Wag","Datsun 710","Hornet 4 Drive"],[21,21,22.8,21.4],[6,6,4,6],[160,160,108,258],[110,110,93,110]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>mpg<\/th>\n      <th>cyl<\/th>\n      <th>disp<\/th>\n      <th>hp<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<!--knitr::kable(mtcars[1:4, 1:4],'simple')-->
+<!--DT::datatable((readr::read_csv("publications.csv"))[1:4, 1:3])-->
 </div>
 
 </iframe> <!-- iframe -->
@@ -453,11 +361,7 @@ maintainer: <a href="https://www.ceid.uga.edu">CEID</a><br></p>
 							  <i class="fab fa-fw fa-github" title="Github" aria-hidden></i>
 						    <span class="ceidfooter__social-label"><small>Website code</small></span>
 						  </a>
-						<p><small>
-						<script language="javascript">
-							document.write("Last updated "+document.lastModified);
-						</script>
-					</small></p>
+						
 				</div>
 				<div class='col-sm-6 col-md-12'>
 				

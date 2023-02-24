@@ -20,12 +20,12 @@ editor_options:
 
 ::: {.row .row-people}
 ::: col-sm-4
-<img src="images/people/Lewis-Bartlett.jpg" alt="Lewis Bartlett" class="card-img-top img-circle"/>
+<img src="images/people/AminGhadami.jpg" alt="Amin Ghadami" class="card-img-top img-circle"/>
 
 ::: card-body
 <h2 class="card-title name">
 
-Lewis Bartlett
+Amin Ghadami
 
 </h2>
 
@@ -43,7 +43,7 @@ Center for the Ecology of Infectious Diseases
 
 <p class="position">
 
-Postdoctoral Associate
+
 
 </p>
 
@@ -55,24 +55,24 @@ more \></a>
 :::
 
 ::: col-sm-4
-<img src="images/people/Ana-Bento.jpg" alt="Ana Bento" class="card-img-top img-circle"/>
+<img src="images/people/BarbaraHan.jpg" alt="Barbara Han" class="card-img-top img-circle"/>
 
 ::: card-body
 <h2 class="card-title name">
 
-Ana Bento
+Barbara Han
 
 </h2>
 
 <p class="Institution">
 
-Assistant Professor
+
 
 </p>
 
 <p class="position">
 
-Indiana University, Bloomington
+
 
 </p>
 
@@ -84,24 +84,24 @@ more \></a>
 :::
 
 ::: col-sm-4
-<img src="images/people/Rebecca-Borchering.jpg" alt="Rebecca Borchering" class="card-img-top img-circle"/>
+<img src="images/people/BogdanEpureanu.jpg" alt="Bogdan Epureanu" class="card-img-top img-circle"/>
 
 ::: card-body
 <h2 class="card-title name">
 
-Rebecca Borchering
+Bogdan Epureanu
 
 </h2>
 
 <p class="Institution">
 
-Postdoctoral Associate
+University of Michigan
 
 </p>
 
 <p class="position">
 
-University of Georgia
+
 
 </p>
 
@@ -117,30 +117,30 @@ more \> </a>
 
 ::: {.row .row-people}
 ::: col-sm-4
-<img src="images/people/Tommy-Bui.jpg" alt="Tommy Bui" class="card-img-top img-circle"/>
+<img src="images/people/EllieGraeden.jpg" alt="Ellie Graeden" class="card-img-top img-circle"/>
 
 ::: card-body
 <h2 class="card-title name">
 
-Tommy Bui
+Ellie Graeden
 
 </h2>
 
 <p class="Institution">
 
-University of Georgia
+Talus Analytics
 
 </p>
 
 <p class="college">
 
-Franklin College
+
 
 </p>
 
 <p class="position">
 
-Volunteer Research Assistant
+
 
 </p>
 
@@ -151,12 +151,12 @@ Volunteer Research Assistant
 :::
 
 ::: col-sm-4
-<img src="images/people/John-Drake.jpg" alt="John Drake" class="card-img-top img-circle"/>
+<img src="images/people/EricMarty.jpg" alt="Eric Marty" class="card-img-top img-circle"/>
 
 ::: card-body
 <h2 class="card-title name">
 
-John Drake
+Eric Marty
 
 </h2>
 
@@ -168,25 +168,7 @@ University of Georgia
 
 <p class="departmentSchool1">
 
-Center for the Ecology of Infectious Diseases
 
-</p>
-
-<p class="position1">
-
-Director
-
-</p>
-
-<p class="departmentSchool2">
-
-Odum School of Ecology
-
-</p>
-
-<p class="position2">
-
-Distinguished Research Professor and Associate Dean for Academic Affairs
 
 </p>
 
@@ -198,12 +180,12 @@ more \> </a>
 :::
 
 ::: col-sm-4
-<img src="images/people/Michelle-Evans.jpg" alt="Michelle Evans" class="card-img-top img-circle"/>
+<img src="images/people/GarrickStott.jpg" alt="Garrick Stott" class="card-img-top img-circle"/>
 
 ::: card-body
 <h2 class="card-title name">
 
-Michelle Evans
+Garrick Stott
 
 </h2>
 
@@ -215,13 +197,13 @@ University of Georgia
 
 <p class="college">
 
-Odum School of Ecology
+
 
 </p>
 
 <p class="position">
 
-PhD Student
+
 
 </p>
 
@@ -237,30 +219,24 @@ more \> </a>
 
 ::: {.row .row-people}
 ::: col-sm-4
-<img src="images/people/Sam-Fahmy.jpg" alt="Sam Fahmy" class="card-img-top img-circle"/>
+<img src="images/people/HaileyRobertson.jpg" alt="Hailey Robertson" class="card-img-top img-circle"/>
 
 ::: card-body
 <h2 class="card-title name">
 
-Sam Fahmy
+Hailey Robertson
 
 </h2>
 
 <p class="Institution">
 
-University of Georgia
-
-</p>
-
-<p class="college">
-
-Office of the Senior Vice President for Academic Affairs and Provost
+Talus Analytics
 
 </p>
 
 <p class="position">
 
-Director of Public Relations for Academic Affairs
+
 
 </p>
 
@@ -272,12 +248,12 @@ more \> </a>
 :::
 
 ::: col-sm-4
-<img src="images/people/Yang-Ge.jpg" alt="Yang Ge" class="card-img-top img-circle"/>
+<img src="images/people/JohnDrake.jpg" alt="John Drake" class="card-img-top img-circle"/>
 
 ::: card-body
 <h2 class="card-title name">
 
-Yang Ge
+John Drake
 
 </h2>
 
@@ -289,19 +265,18 @@ University of Georgia
 
 <p class="college">
 
-College of Public Health
 
 </p>
 
 <p class="department">
 
-Epidemiology & Biostatistics
+
 
 </p>
 
 <p class="position">
 
-Doctor of Philosophy (PhD) in Epidemiology & Biostatistics
+
 
 </p>
 
@@ -313,123 +288,7 @@ more \> </a>
 :::
 
 ::: col-sm-4
-<img src="images/people/Handel-Andreas.jpg" alt="Andreas Handel" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Andreas Handel
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-College of Public Health
-
-</p>
-
-<p class="department">
-
-Epidemiology & Biostatistics, Health Informatics Institute
-
-</p>
-
-<p class="position">
-
-Associate Department Head and Graduate Coordinator<br> Associate
-Professor
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-
-<a class="personal-website btn-sm btn-primary" href="https://www.andreashandel.com/" target="_blank">
-more \> </a>
-:::
-:::
-:::
-
-<!-- end of row-->
-
-::: {.row .row-people}
-::: col-sm-4
-<img src="images/people/Reni-Kaul.jpg" alt="Reni Kaul" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Reni Kaul
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-Odum School of Ecology
-
-</p>
-
-<p class="position">
-
-PhD Student
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-
-<a class="personal-website btn-sm btn-primary" href="https://www.ecology.uga.edu/directory/Reni-Kaul/" target="_blank">
-more \> </a>
-:::
-:::
-
-::: col-sm-4
-<img src="images/people/Kennedy-Culzean.jpg" alt="Culzean Kennedy" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Culzean Kennedy
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-MS in Comparative Biomedical Sciences
-
-</p>
-
-<p class="position">
-
-Scientific Writing Intern
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-
-<a class="personal-website btn-sm btn-primary" href="https://www.ceid.uga.edu/blog/2020/01/22/culzean-kennedy/" target="_blank">
-more \> </a>
-:::
-:::
-
-::: col-sm-4
-<img src="images/people/John-King.jpg" alt="John King" class="card-img-top img-circle"/>
+<img src="images/people/JohnKing.jpg" alt="John King" class="card-img-top img-circle"/>
 
 ::: card-body
 <h2 class="card-title name">
@@ -446,13 +305,124 @@ University of Georgia
 
 <p class="college">
 
-Center for the Ecology of Infectious Diseases
+
+
+</p>
+
+<p class="department">
+
 
 </p>
 
 <p class="position">
 
-Project & Communications Manager, Coronavirus Working Group
+
+
+</p>
+
+<!--Personal personal-website btn-sm btn-primarys -->
+
+<a class="personal-website btn-sm btn-primary" href="https://www.andreashandel.com/" target="_blank">
+more \> </a>
+:::
+:::
+:::
+
+<!-- end of row-->
+
+::: {.row .row-people}
+::: col-sm-4
+<img src="images/people/JustinBahl.jpg" alt="Justin Bahl" class="card-img-top img-circle"/>
+
+::: card-body
+<h2 class="card-title name">
+
+Justin Bahl
+
+</h2>
+
+<p class="Institution">
+
+University of Georgia
+
+</p>
+
+<p class="college">
+
+
+
+</p>
+
+<p class="position">
+
+
+
+</p>
+
+<!--Personal personal-website btn-sm btn-primarys -->
+
+<a class="personal-website btn-sm btn-primary" href="https://www.ecology.uga.edu/directory/Reni-Kaul/" target="_blank">
+more \> </a>
+:::
+:::
+
+::: col-sm-4
+<img src="images/people/MadisonWilson.jpg" alt="Madison Wilson" class="card-img-top img-circle"/>
+
+::: card-body
+<h2 class="card-title name">
+
+Madison Wilson
+
+</h2>
+
+<p class="Institution">
+
+University of Georgia
+
+</p>
+
+<p class="college">
+
+
+
+</p>
+
+<p class="position">
+
+
+</p>
+
+<!--Personal personal-website btn-sm btn-primarys -->
+
+<a class="personal-website btn-sm btn-primary" href="https://www.ceid.uga.edu/blog/2020/01/22/culzean-kennedy/" target="_blank">
+more \> </a>
+:::
+:::
+
+::: col-sm-4
+<img src="images/people/MichaelCacciatore.jpg" alt="Michael Cacciatore" class="card-img-top img-circle"/>
+
+::: card-body
+<h2 class="card-title name">
+
+Michael Cacciatore
+
+</h2>
+
+<p class="Institution">
+
+University of Georgia
+
+</p>
+
+<p class="college">
+
+
+</p>
+
+<p class="position">
+
 
 </p>
 
@@ -468,30 +438,28 @@ more \> </a>
 
 ::: {.row .row-people}
 ::: col-sm-4
-<img src="images/people/Drew-Kramer.jpg" alt="Drew Kramer" class="card-img-top img-circle"/>
+<img src="images/people/PejmanRohani.jpg" alt="Pejman Rohani" class="card-img-top img-circle"/>
 
 ::: card-body
 <h2 class="card-title name">
 
-Drew Kramer
+Pejman Rohani
 
 </h2>
 
 <p class="Institution">
 
-University of South Florida
 
 </p>
 
 <p class="department">
 
-Department of Integrative Biology
 
 </p>
 
 <p class="position">
 
-Assistant Professor
+
 
 </p>
 
@@ -503,30 +471,27 @@ more \> </a>
 :::
 
 ::: col-sm-4
-<img src="images/people/Erin-Lipp.jpg" alt="Erin Lipp" class="card-img-top img-circle"/>
+<img src="images/people/RyanZimmerman.jpg" alt="Ryan Zimmerman" class="card-img-top img-circle"/>
 
 ::: card-body
 <h2 class="card-title name">
 
-Erin Lipp
+Ryan Zimmerman
 
 </h2>
 
 <p class="Institution">
 
-University of Georgia
+Talus Analytics
 
 </p>
 
 <p class="department">
 
-College of Public Health
-
 </p>
 
 <p class="position">
 
-Professor and Associate Dean for Academic Affairs
 
 </p>
 
@@ -538,12 +503,12 @@ more \> </a>
 :::
 
 ::: col-sm-4
-<img src="images/people/Megan-Lott.jpg" alt="Megan Lott" class="card-img-top img-circle"/>
+<img src="images/people/SukantaSarkar.jpg" alt="Sukanta Sarkar" class="card-img-top img-circle"/>
 
 ::: card-body
 <h2 class="card-title name">
 
-Megan Lott
+Sukanta Sarkar
 
 </h2>
 
@@ -555,13 +520,13 @@ University of Georgia
 
 <p class="college">
 
-College of Public Health
+
 
 </p>
 
 <p class="position">
 
-IDEAS PhD Student
+
 
 </p>
 
@@ -574,32 +539,30 @@ more \> </a>
 
 <!-- end of row-->
 
-::: {.row .row-people}
-::: col-sm-4
-<img src="images/people/Eric-Marty.jpg" alt="Eric Marty" class="card-img-top img-circle"/>
+<img src="images/people/TessStephens.jpg" alt="Tess Stephens" class="card-img-top img-circle"/>
 
 ::: card-body
 <h2 class="card-title name">
 
-Éric Marty
+Tess Stephens
 
 </h2>
 
 <p class="Institution">
 
-University of Georgia
+Talus Analytics
 
 </p>
 
 <p class="college">
 
-Center for the Ecology of Infectious Diseases
+
 
 </p>
 
 <p class="position">
 
-Research Professional
+
 
 </p>
 
@@ -607,1008 +570,7 @@ Research Professional
 
 <a class="personal-website btn-sm btn-primary" href="http://www.ericmarty.com/" target="_blank">
 more \> </a>
-:::
-:::
 
-::: col-sm-4
-<img src="images/people/Brian-McKay.jpg" alt="Brian McKay" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Brian McKay
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-College of Public Health
-
-</p>
-
-<p class="department">
-
-Epidemiology & Biostatistics
-
-</p>
-
-<p class="position">
-
-Lecturer
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-
-<a class="personal-website btn-sm btn-primary" href="https://publichealth.uga.edu/faculty-member/brian-k-mckay/" target="_blank">
-more \> </a>
-:::
-:::
-
-::: col-sm-4
-<img src="images/people/Rachel-Mercaldo.jpg" alt="Rachel Mercaldo" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Rachel Mercaldo
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-College of Public Health
-
-</p>
-
-<p class="department">
-
-Epidemiology & Biostatistics
-
-</p>
-
-<p class="position">
-
-PhD Student
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-
-<a class="personal-website btn-sm btn-primary" href="https://handelgroup.uga.edu/" target="_blank">
-more \> </a>
-:::
-:::
-:::
-
-<!-- end of row-->
-
-::: {.row .row-people}
-::: col-sm-4
-<img src="images/people/Paige-Miller.jpg" alt="Paige Miller" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Paige Miller
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-Odum School of Ecology
-
-</p>
-
-<p class="position">
-
-PhD Student
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-<a class="personal-website btn-sm btn-primary" href="https://www.ecology.uga.edu/directory/paige-miller/" target="_blank">
-more \> </a>
-:::
-:::
-
-::: col-sm-4
-<img src="images/people/William-Norfolk.jpg" alt="William Norfolk" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-William Norfolk
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-College of Public Health
-
-</p>
-
-<p class="departmentSchool1">
-
-Environmental Health Science
-
-</p>
-
-<p class="position">
-
-PhD Student
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-<a class="personal-website btn-sm btn-primary" href="https://handelgroup.uga.edu" target="_blank">
-more \> </a>
-:::
-:::
-
-::: col-sm-4
-<img src="images/people/Eamon-ODea.jpg" alt="Eamon O&apos;Dea" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Eamon O'Dea
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="departmentSchool1">
-
-Center for the Ecology of Infectious Diseases
-
-</p>
-
-<p class="position">
-
-Postdoctoral Associate
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-
-<a class="personal-website btn-sm btn-primary" href="https://www.ecology.uga.edu/directory/Eamon-ODea/" target="_blank">
-more \></a>
-:::
-:::
-:::
-
-<!-- end of row-->
-
-::: {.row .row-people}
-::: col-sm-4
-<img src="images/people/Tierney-OSullivan_.jpg" alt="Tierney O&apos;Sullivan" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Tierney O'Sullivan
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-Center for the Ecology of Infectious Diseases
-
-</p>
-
-<p class="position">
-
-Staff Statistician
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-<a class="personal-website btn-sm btn-primary" href="https://www.researchgate.net/profile/Tierney_Osullivan" target="_blank">
-more \> </a>
-:::
-:::
-
-::: col-sm-4
-<img src="images/people/Chloe-Parker.jpg" alt="Chloe Parker" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Chloe Parker
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-Center for the Ecology of Infectious Diseases
-
-</p>
-
-<p class="position">
-
-Graphic Design Intern
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-<a class="personal-website btn-sm btn-primary" href="https://chloeparker.myportfolio.com/" target="_blank">
-more \> </a>
-:::
-:::
-
-::: col-sm-4
-<img src="images/people/Tom-Pulliam.jpg" alt="Tom Pulliam" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Tom Pulliam
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-Odum School of Ecology
-
-</p>
-
-<p class="position">
-
-Scientific Programmer, Drake Lab
-
-</p>
-
-<!-- Personal personal-website btn-sm btn-primarys -->
-
-<a class="personal-website btn-sm btn-primary" href="https://daphnia.ecology.uga.edu/drakelab/" target="_blank">
-more \> </a>
-:::
-:::
-:::
-
-<!-- end of row-->
-
-::: {.row .row-people}
-::: col-sm-4
-<img src="images/people/Robbie-Richards.jpg" alt="Robbie Richards" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Robbie Richards
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-Odum School of Ecology
-
-</p>
-
-<p class="position">
-
-PhD Student
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-<a class="personal-website btn-sm btn-primary" href="http://ezenwalab.uga.edu/people/" target="_blank">
-more \> </a>
-:::
-:::
-
-::: col-sm-4
-<img src="images/people/Trippe-Ross.jpg" alt="Trippe Ross" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Trippe Ross
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-Center for the Ecology of Infectious Diseases
-
-</p>
-
-<p class="position">
-
-Administrative Specialist & Graduate Student (MPA)
-
-</p>
-:::
-:::
-
-::: col-sm-4
-<img src="images/people/Kate-Sabey.jpg" alt="Kate Sabey" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Kate Sabey
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-College of Veterinary Medicine
-
-</p>
-
-<p class="position">
-
-IDEAS PhD Student
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-<a class="personal-website btn-sm btn-primary" href="http://ezenwalab.uga.edu/people/" target="_blank">
-more \> </a>
-:::
-:::
-:::
-
-<!-- end of row-->
-
-::: {.row .row-people}
-::: col-sm-4
-<img src="images/people/Liliana-Salvador.jpg" alt="Liliana Salvador" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Liliana Salvador
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-College of Veterinary Medicine
-
-</p>
-
-<p class="department">
-
-Department of Infectious Diseases & Institute of Bioinformatics
-
-</p>
-
-<p class="position">
-
-Assistant Professor
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-<a class="personal-website btn-sm btn-primary" href="https://vet.uga.edu/person/liliana-salvador/" target="_blank">
-more \> </a>
-:::
-:::
-
-::: col-sm-4
-<img src="images/people/Cecilia-Sánchez.jpg" alt="Cecilia-Sánchez" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Cecilia Sánchez
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-Center for the Ecology of Infectious Diseases
-
-</p>
-
-<p class="position">
-
-Postdoctoral Associate
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-<a class="personal-website btn-sm btn-primary" href="https://ceciliaasanchez.weebly.com/" target="_blank">
-more \></a>
-:::
-:::
-
-::: col-sm-4
-<img src="images/people/JP-Schmidt.jpg" alt="JP Schmidt" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-JP Schmidt
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-Odum School of Ecology
-
-</p>
-
-<p class="position">
-
-Lecturer
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-
-<a class="personal-website btn-sm btn-primary" href="https://www.ecology.uga.edu/directory/john-paul-schmidt/" target="_blank">
-more \> </a>
-:::
-:::
-:::
-
-<!-- end of row-->
-
-::: {.row .row-people}
-::: col-sm-4
-<img src="images/people/Margaret-Schrayer.jpg" alt="Margaret Schrayer" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Margaret Schrayer
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-College of Education
-
-</p>
-
-<p class="position">
-
-Graduate Research Assistant
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-<a class="personal-website btn-sm btn-primary" href="https://ceciliaasanchez.weebly.com/" target="_blank">
-more \></a>
-:::
-:::
-
-::: col-sm-4
-<img src="images/people/Andrea-Silletti.jpg" alt="Andrea Silletti" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Andrea-Silletti
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-Odum School of Ecology
-
-</p>
-
-<p class="position">
-
-Lab Manager (Drake Lab)
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-<a class="personal-website btn-sm btn-primary" href="https://www.ecology.uga.edu/directory/andrea-silletti/" target="_blank">
-more \></a>
-:::
-:::
-
-::: col-sm-4
-<img src="images/people/Patrick-Stephens.jpg" alt="Patrick Stephens" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Patrick Stephens
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-Odum School of Ecology
-
-</p>
-
-<p class="position">
-
-Associate Research Scientist
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-<a class="personal-website btn-sm btn-primary" href="https://prstephens.ecology.uga.edu/" target="_blank">
-more \> </a>
-:::
-:::
-:::
-
-<!-- end of row-->
-
-::: {.row .row-people}
-::: col-sm-4
-<img src="images/people/Chao-Song.jpg" alt="Chao Song" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Chao Song
-
-</h2>
-
-<p class="Institution">
-
-Michigan State University
-
-</p>
-
-<p class="position">
-
-Postdoctoral Associate
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-<a class="personal-website btn-sm btn-primary" href="https://songchao1986.github.io/" target="_blank">
-more \> </a>
-:::
-:::
-
-::: col-sm-4
-<img src="images/people/Daniel-Suh.jpg" alt="Daniel Suh" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Daniel Suh
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-Odum School of Ecology
-
-</p>
-
-<p class="position">
-
-IDEAS PhD Student
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-<a class="personal-website btn-sm btn-primary" href="http://parklab.ecology.uga.edu/" target="_blank">
-more \> </a>
-:::
-:::
-
-::: col-sm-4
-<img src="images/people/Benjamin-Taylor.jpg" alt="Benjamin Taylor" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Benjamin Taylor
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-Odum School of Ecology
-
-</p>
-
-<p class="position">
-
-Public Relations Specialist
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-<a class="personal-website btn-sm btn-primary" href="https://sasakilab.ecology.uga.edu/people/" target="_blank">
-more \> </a>
-:::
-:::
-:::
-
-<!-- end of row-->
-
-::: {.row .row-people}
-::: col-sm-4
-<img src="images/people/Olivia-Thomas.jpg" alt="Olivia Thomas" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Olivia Thomas
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-Franklin College of Arts & Sciences
-
-</p>
-
-<p class="position">
-
-Undergraduate Researcher
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-<a class="personal-website btn-sm btn-primary" href="https://sasakilab.ecology.uga.edu/people/" target="_blank">
-more \> </a>
-:::
-:::
-
-::: col-sm-4
-<img src="images/people/Andrew-Tredennick.jpg" alt="Andrew Tredennick" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Andrew Tredennick
-
-</h2>
-
-<p class="Institution">
-
-WEST Environmental and Statistical Consultants
-
-</p>
-
-<p class="position">
-
-Biometrician
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-<a class="personal-website btn-sm btn-primary" href="https://atredennick.github.io/" target="_blank">
-more \> </a>
-:::
-:::
-
-::: col-sm-4
-<img src="images/people/David-Vasquez.jpg" alt="David Vasquez" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-David Vasquez
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-Odum School of Ecology
-
-</p>
-
-<p class="position">
-
-IDEAS PhD Student
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-<a class="personal-website btn-sm btn-primary" href="https://davidvasquezjr.wixsite.com/diseaseecology" target="_blank">
-more \> </a>
-:::
-:::
-:::
-
-<!-- end of row-->
-
-::: {.row .row-people}
-::: col-sm-4
-<img src="images/people/Joy-Vaz.jpg" alt="Joy Vaz" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Joy Vaz
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-Odum School of Ecology
-
-</p>
-
-<p class="position">
-
-IDEAS PhD Student
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-<a class="personal-website btn-sm btn-primary" href="https://daphnia.ecology.uga.edu/drakelab/" target="_blank">
-more \> </a>
-:::
-:::
-
-::: col-sm-4
-<img src="images/people/Jessica-Wenclawiak.jpg" alt="Jessica Wenclawiak" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Jessica Wenclawiak
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-Center for the Ecology of Infectious Diseases
-
-</p>
-
-<p class="position">
-
-Scientific Writing Intern
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-
-<a class="personal-website btn-sm btn-primary" href="https://daphnia.ecology.uga.edu/drakelab/" target="_blank">
-more \> </a>
-:::
-:::
-
-::: col-sm-4
-<img src="images/people/Tim-Wildauer.jpg" alt="Tim Wildauer" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Tim Wildauer
-
-</h2>
-
-<p class="Institution">
-
-St. Joseph Mercy Health System
-
-</p>
-
-<!-- <p class="college"></p> -->
-
-<p class="position">
-
-Programmer Analyst
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-
-<a class="personal-website btn-sm btn-primary" href="https://www.linkedin.com/in/timothy-wildauer" target="_blank">
-more \> </a>
-:::
-:::
-:::
-
-<!-- end of row-->
-
-::: {.row .row-people}
-::: col-sm-4
-<img src="images/people/Anna-Willoughby.jpg" alt="Anna Willoughby" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Anna Willoughby
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-Odum School of Ecology
-
-</p>
-
-<p class="position">
-
-IDEAS PhD Student
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-
-<a class="personal-website btn-sm btn-primary" href="https://daphnia.ecology.uga.edu/drakelab/" target="_blank">
-more \> </a>
-:::
-:::
-
-::: col-sm-4
-<img src="images/people/Cali-Wilson.jpg" alt="Cali Wilson" class="card-img-top img-circle"/>
-
-::: card-body
-<h2 class="card-title name">
-
-Cali Wilson
-
-</h2>
-
-<p class="Institution">
-
-University of Georgia
-
-</p>
-
-<p class="college">
-
-Odum School of Ecology
-
-</p>
-
-<p class="position">
-
-IDEAS PhD Student
-
-</p>
-
-<!--Personal personal-website btn-sm btn-primarys -->
-<a class="personal-website btn-sm btn-primary" href="http://halllab.ecology.uga.edu/" target="_blank">
-more \> </a>
-:::
-:::
 :::
 
 <!-- end of row-->

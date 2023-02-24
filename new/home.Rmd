@@ -14,7 +14,7 @@ title: "home"
 
 <h2 class="lead">
 
-The COVID‑19 Portal is a resource for researchers, policymakers, and the public that provides tracking, modeling, and analysis of the ongoing COVID‑19 pandemic.
+XXXXXXXXX  XXXXXXXXXX XXXXX XXXXXX XXXXXXXX XXXXXXX XXXXXXXX XXXX
 
 </h2>
 
@@ -42,8 +42,6 @@ Center for the Ecology of Infectious Diseases  <a href="https://www.ceid.u
 
 <!-- container-fluid main-container -->
 
-::: row
-::: col-sm-8
 ### Webinar
 
 ```{=html}
@@ -58,30 +56,7 @@ CEID Director John Drake discusses how COVID‑19 modeling informs public policy
 
 Listen the podcast <a href="https://tinyurl.com/yc7m85ax" target="_blank">here</a>.
 
-### John Drake feature article on FiveThirtyEight
 
-**Why One Expert Is Still Making COVID‑19 Models, Despite The Uncertainty**\
-April 17, 2020 \| by John M. Drake \| FiveThirtyEight.com
-
-Read the full article on [FiveThirtyEight.com](https://fivethirtyeight.com/features/why-one-expert-is-still-making-covid-19-models-despite-the-uncertainty/).
-
-### New tracker for cases, deaths and hospitalizations
-
-The <a href="https://www.ceid.uga.edu" target="_blank">Center for the Ecology of Infectious Diseases (CEID)</a> and the <a href="https://publichealth.uga.edu" target="_blank">College of Public Health (CPH)</a> at UGA have created a [new interactive tracker](tracker.html) that allows users to track the spread of COVID‑19 both in the US and worldwide. The tracker allows users to explore cases, hospitalizations, deaths and number of tests for every US state, as well as cases and deaths worldwide. Users can adjust the plots by choosing total or daily numbers, absolute or normalized values, and calendar date versus date since a certain number of cases occurred. The data comes from the Covid Tracking Project and the Johns Hopkins University Center for Systems Science and Engineering.
-
-### Op-ed by CEID Director John Drake
-
-**Dr. John Drake urges swift, decisive action to curb spread of COVID‑19.**
-
-In an op-ed in the *Atlanta Journal-Constitution*, CEID Director Dr. John Drake has called for immediate and decisive intervention to slow the spread of COVID‑19. Based on a study of government intervention in China following the initial outbreak of COVID‑19 in Wuhan, CEID researchers found a very strong correlation (90%) between how early a major intervention was imposed in a province and the ultimate severity of the outbreak there. The results show that early action yields critical gains, with every delay of 3.8 days leading to a tenfold increase in cases.
-
-<a href="https://www.ajc.com/news/opinion/opinion-now-the-time-act-coronavirus/AwELZ1Fm9GMZVJsW6rsHJL/" target="_blank">Opinion: Now's the time to act on coronavirus.</a> Guest column. *Atlanta Journal-Constitution,* March 13, 2020
-:::
-
-<!--NEWS ITEMS-->
-
-::: col-sm-4
-::: {.card .mb-0}
 <!-- <a href="https://www.ceid.uga.edu/support/" target='_blank'>Support CEID</a> -->
 
 ::: card-header
@@ -101,7 +76,13 @@ In an op-ed in the *Atlanta Journal-Constitution*, CEID Director Dr. John Drake 
 <small class="card-subtitle mb-2 text-muted">MMYYY</small><br> xxxxxxxxx
 
 </p>
+<!--to get the text from the rmarkdown displayed in html-->
+```{r,setup,echo=FALSE,include=TRUE, results="asis"}
 
+cat(htmltools::includeMarkdown("hey.md"))
+
+
+```
 <!-- <div class="card-link"> -->
 
 <!-- [READ MORE &rarr;](news.html#) -->
@@ -109,10 +90,11 @@ In an op-ed in the *Atlanta Journal-Constitution*, CEID Director Dr. John Drake 
 <!-- </div> -->
 :::
 :::
-:::
-:::
 
-::: container
-<small><a href="https://www.ceid.uga.edu" target="_blank"> data science, basic biology, and scientific synthesis.</small>
-:::
-:::
+
+<!--- to remove the border of the box while creating the block--->
+<style>
+    pre {
+        border: 0;
+    }
+</style>
