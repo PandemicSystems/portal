@@ -1,0 +1,37 @@
+---
+title: "system of systems"
+output: html_document
+
+---
+<!---</div>
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Systems-of-Systems (SoS) Approach
+
+The System-of-Systems (SoS) approach was developed for complex engineering problems to establish a platform focused on real-time pandemic prediction and public behavior guidance. PIPP plans to adopt and adapt the SoS approach to promote interdependence by enabling integration within a heterogeneous model space to understand data as it is constantly updating, with interactive feedback influencing the outputs of multiple models that comprise the SoS. For example, System A might be a compartmental model of disease transmission while System B is an economic model of supply chains, an interdependency studied in the context of COVID-19. Outputs of such systems are inputs to other systems. The SoS parameters determine the dependency structure and rates of flow among subsystems, and these parameters may themselves be fit to data. This framework will enable the achievement of three goals for infectious disease intelligence: (1) to anticipate spillover events; (2) to reliably predict the course of outbreaks before they evolve into epidemics or pandemics; and (3) to generate guidance on the probable outcomes of alternative actions designed to mitigate epidemic impacts from models. We envision that the SoS paradigm will provide a full range of intelligence tools fitted to a broad action space, scalable to multiple infectious diseases.
+--->
+
+```{r echo=FALSE, out.extra='id="system_of_systems" scrolling="no" width="100%"'}
+knitr::include_url("system_of_systems_summary.html")
+```
+<script>iFrameResize({ log: false }, '#system_of_systems')</script>
+
+## Supplemental Information
+
+<div class="container-frames">
+
+<p>Preprint:<br>
+  <a href="https://github.com/CEIDatUGA/covid-university-reopening/raw/master/manuscript.pdf" target="_blank">
+  Systems-of-Systems (SoS) Approach</a> (pdf)
+</p>
+
+<p>
+  <a href="https://github.com/CEIDatUGA/covid-university-reopening" target="_blank">
+    <img src="images/GitHub-Mark-64px.png" id="github-icon" alt="GitHub repository"/>
+    GitHub repository (public)
+  </a>
+</p>
+
+</div>
