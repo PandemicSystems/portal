@@ -6,10 +6,14 @@ title: "CEID COVID-19 - Maps"
 <p id="disclaimer"></p>
 ## Data Sources
 CEID now maintains a public repository of datasets used in our COVID-19 projects. The datasets in the repository were compiled by members of the CEID COVID-19 working group. The data have been formated to be used 'as-is' and are updated often. Data sets were either created from html scraping or manually entered. In the case of the automated web scraping, the raw data and scripts are included. 
-
+## Data is available here: 
 
 ```{r,setup,echo=FALSE,include=TRUE,results="asis"}
 
+## Data on the publications is  available here: 
+
+
+DT::datatable(mtcars[1:10 ,1:4])
 
 # get a list of all the files in the folder
 file_list <- list.files(path = "hey", full.names = TRUE)
@@ -24,8 +28,8 @@ for (file in file_list) {
   # get the file name
   file_name <- as.character(file)
 
-  # get the date created
-  date_created <- as.character(file.info(file)$ctime)
+  # get the date created $mtime determines the time for the modification
+  date_created <- as.character(file.info(file)$mtime)
 
   # add the file information to the data frame
   df <- rbind(df, data.frame(filename = file_name,
@@ -35,8 +39,9 @@ for (file in file_list) {
 
 # data frame in decreasing order of date
 df <- df[order(df$date_created,decreasing= TRUE),]
+
 #displaying the latest
-cat(htmltools::includeMarkdown(df[1,1]))
+cat(htmltools::includeMarkdown(df[3,1]))
 ```
 <!---to make the boxes disappear--->
 <style>

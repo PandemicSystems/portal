@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>people</title>
+
+<script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<meta name="application-name" content="CEID 2019 nCoV"/>
+<!-- Chrome for Android -->
+<meta name="theme-color" content="#ba0c2f" />
+<!-- Web App -->
+<link rel="manifest" href="manifest.json" />
+<!-- iOS icons -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="icons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="icons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="icons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="icons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="icons/apple-touch-icon-152x152.png" />
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="icons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="icons/favicon-192.png" sizes="192x192" />
+<link rel="icon" type="image/png" href="icons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="icons/favicon-128.png" sizes="128x128" />
+<!-- IE 11+ -->
+<meta name="msapplication-config" content="ieconfig.xml" />
+<!-- scripts -->
+<script type="text/javascript" src="js/iframeResizer.min.js"></script>
+<script type="text/javascript" src="js/ga-analytics.js"></script>
+<script type="text/javascript" src="js/reload-iframe.js"></script>
+<script type="application/ld+json">
+	{
+		"@context": "http://www.schema.org",
+		"@type": "CollegeOrUniversity",
+		"name": "Center for the Ecology of Infectious Diseases",
+		"alternatename": "CEID",
+		"url": "https://www.covid19.uga.edu/",
+		"logo": "https://www.uga.edu/_resources/images/GEORGIA-V-FC.png",
+		"description": "The UGA Center for the Ecology of Infectious Diseases (CEID) COVID-19 Portal is a resource for researchers, policymakers, and the public that provides tracking, modeling, and analysis of the ongoing COVID‑19 pandemic.",
+		"location": {
+			"@type": "PostalAddress",
+			"addressLocality": "Athens",
+			"addressRegion": "GA",
+			"postalCode": "30602",
+			"addressCountry": "US"
+		},
+		"contactPoint": {
+			"@type": "ContactPoint",
+			"telephone": "+1-706-542-1930",
+			"contactType": "Customer Service"
+		},
+		"sameAs" : [ 
+			"https://twitter.com/ceid_uga"
+		]
+	}
+</script>
+
+<meta name="description" content="The COVID-19 Portal is a resource for researchers, policymakers, and the public that provides tracking, modeling, and analysis of the ongoing COVID‑19 pandemic."/>
+<meta name="twitter:title" content="CEID Covid-19 tracker"/>
+<meta name="twitter:description" content="The COVID-19 Portal is a resource for researchers, policymakers, and the public that provides tracking, modeling, and analysis of the ongoing COVID‑19 pandemic."/>
+<meta name="twitter:url" content="https://www.covid19.uga.edu/"/>
+<meta name="twitter:image:src" content="https://www.covid19.uga.edu/images/home_olympic.jpg"/>
+<meta name="twitter:image:alt" content="Coronavirus CEID image"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:creator" content="@ceid_uga"/>
+<meta name="twitter:site" content="@ceid_uga"/>
+<meta property="og:title" content="CEID Covid-19 tracker"/>
+<meta property="og:description" content="The COVID-19 Portal is a resource for researchers, policymakers, and the public that provides tracking, modeling, and analysis of the ongoing COVID‑19 pandemic."/>
+<meta property="og:url" content="https://www.covid19.uga.edu/"/>
+<meta property="og:image" content="https://www.covid19.uga.edu/images/home_olympic.jpg"/>
+<meta property="og:image:alt" content="Coronavirus CEID image"/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="en_US"/>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+          <a class="navbar-brand" href="home.html">PIPP Phase I <span class="d-none d-md-inline"><span class="divider"> | </span><span class="subtext-brand">Heterogeneous Model Integration for Infectious Disease Intelligence</span></span>
+    <div class="navbar-header active">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active">
+  <a href="home.html">
+    <svg class="bi bi-house-door-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M6.5 10.995V14.5a.5.5 0 01-.5.5H2a.5.5 0 01-.5-.5v-7a.5.5 0 01.146-.354l6-6a.5.5 0 01.708 0l6 6a.5.5 0 01.146.354v7a.5.5 0 01-.5.5h-4a.5.5 0 01-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
+  <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5z" clip-rule="evenodd"/>
+</svg>
+
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Research
+
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="system_of_systems.html">System of systems</a></li>
+    <li><a href="DP1.html">DP1:Knowledge and reasoning engine</a></li>
+    <li><a href="DP2.html">DP2:XAI</a></li>
+    <li><a href="DP3.html">DP3:Integration of communication science</a></li>
+    <li><a href="DP4.html">DP4:Social tipping points</a></li>
+    <li><a href="DP5.html">DP5:Influenza A phylogeny and evolution</a></li>
+    <li><a href="DP6.html">DP6: Multiscale modeling</a></li>
+  </ul>
+</li>
+<li>
+  <!--<a href="news.html">News</a>-->
+  <a href="home.html#updates">Updates</a>
+</li>
+<li>
+  <a href="publications.html">Publications</a>
+</li>
+<li>
+  <a href="data.html">Data</a>
+</li>
+<li>
+  <a href="people.html">People</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div>
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">people</h1>
+
+</div>
+
+
+</div>
+<div id="contributors" class="jumbotron jumbotron-fluid homepagebanner">
+<div class="container">
+<h1>
+People
+</h1>
+</div>
+</div>
+<div class="container-fluid main-container">
+
+<!-- container-fluid main-container -->
+<div class="row row-people">
+<div class="col-sm-4">
+<p><img src="images/people/AminGhadami.jpg" alt="Amin Ghadami" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Amin Ghadami</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="departmentSchool1">
+<p>Center for the Ecology of Infectious Diseases</p>
+</p>
+<p class="position">
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<!--
+<a class="personal-website btn-sm btn-primary" href="https://www.anabento.io/">
+more \></a>--->
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/BarbaraHan.jpg" alt="Barbara Han" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Barbara Han</p>
+</h2>
+<p class="Institution">
+<p>Cary Institute of Ecosystem Studies</p>
+</p>
+<p class="position">
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<!--
+<a class="personal-website btn-sm btn-primary" href="https://www.anabento.io/">
+more \></a>--->
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/BogdanEpureanu.jpg" alt="Bogdan Epureanu" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Bogdan Epureanu</p>
+</h2>
+<p class="Institution">
+<p>University of Michigan</p>
+</p>
+<p class="position">
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<!--
+<a class="personal-website btn-sm btn-primary" href="https://www.anabento.io/">
+more \></a>--->
+</div>
+</div>
+</div>
+<!-- end of row-->
+<div class="row row-people">
+<div class="col-sm-4">
+<p><img src="images/people/EllieGraeden.jpg" alt="Ellie Graeden" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Ellie Graeden</p>
+</h2>
+<p class="Institution">
+<p>Talus Analytics</p>
+</p>
+<p class="college">
+</p>
+<p class="position">
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<!--   <a class="personal-website btn-sm btn-primary" href="https://www.caes.uga.edu/about/personnel/person.html?pk_id=20393&name=Tommy%20Bui" target="_blank"> more > </a> -->
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/EricMarty.jpg" alt="Eric Marty" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Eric Marty</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="departmentSchool1">
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<!--
+<a class="personal-website btn-sm btn-primary" href="https://www.anabento.io/">
+more \></a>--->
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/GarrickStott.jpg" alt="Garrick Stott" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Garrick Stott</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+</p>
+<p class="position">
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<!--
+<a class="personal-website btn-sm btn-primary" href="https://www.anabento.io/">
+more \></a>--->
+</div>
+</div>
+</div>
+<!-- end of row-->
+<div class="row row-people">
+<div class="col-sm-4">
+<p><img src="images/people/HaileyRobertson.jpg" alt="Hailey Robertson" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Hailey Robertson</p>
+</h2>
+<p class="Institution">
+<p>Talus Analytics</p>
+</p>
+<p class="position">
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<!--
+<a class="personal-website btn-sm btn-primary" href="https://www.anabento.io/">
+more \></a>--->
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/JohnDrake.jpg" alt="John Drake" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>John Drake</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+</p>
+<p class="department">
+</p>
+<p class="position">
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<!--
+<a class="personal-website btn-sm btn-primary" href="https://www.anabento.io/">
+more \></a>--->
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/JohnKing.jpg" alt="John King" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>John King</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+</p>
+<p class="department">
+</p>
+<p class="position">
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<!--
+<a class="personal-website btn-sm btn-primary" href="https://www.anabento.io/">
+more \></a>--->
+</div>
+</div>
+</div>
+<!-- end of row-->
+<div class="row row-people">
+<div class="col-sm-4">
+<p><img src="images/people/JustinBahl.jpg" alt="Justin Bahl" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Justin Bahl</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+</p>
+<p class="position">
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<!--
+<a class="personal-website btn-sm btn-primary" href="https://www.anabento.io/">
+more \></a>--->
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/MadisonWilson.jpg" alt="Madison Wilson" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Madison Wilson</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+</p>
+<p class="position">
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<!--
+<a class="personal-website btn-sm btn-primary" href="https://www.anabento.io/">
+more \></a>--->
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/MichaelCacciatore.jpg" alt="Michael Cacciatore" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Michael Cacciatore</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+</p>
+<p class="position">
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<!--
+<a class="personal-website btn-sm btn-primary" href="https://www.anabento.io/">
+more \></a>--->
+</div>
+</div>
+</div>
+<!-- end of row-->
+<div class="row row-people">
+<div class="col-sm-4">
+<p><img src="images/people/PejmanRohani.jpg" alt="Pejman Rohani" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Pejman Rohani</p>
+</h2>
+<p class="Institution">
+University of Georgia
+</p>
+<p class="department">
+</p>
+<p class="position">
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<!--
+<a class="personal-website btn-sm btn-primary" href="https://www.anabento.io/">
+more \></a>--->
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/RyanZimmerman.jpg" alt="Ryan Zimmerman" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Ryan Zimmerman</p>
+</h2>
+<p class="Institution">
+<p>Talus Analytics</p>
+</p>
+<p class="department">
+</p>
+<p class="position">
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<!--
+<a class="personal-website btn-sm btn-primary" href="https://www.anabento.io/">
+more \></a>--->
+</div>
+</div>
+<div class="col-sm-4">
+<p><img src="images/people/SukantaSarkar.jpg" alt="Sukanta Sarkar" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Sukanta Sarkar</p>
+</h2>
+<p class="Institution">
+<p>University of Georgia</p>
+</p>
+<p class="college">
+</p>
+<p class="position">
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<!--
+<a class="personal-website btn-sm btn-primary" href="https://www.anabento.io/">
+more \></a>--->
+</div>
+</div>
+</div>
+<!-- end of row-->
+<p><img src="images/people/TessStephens.jpg" alt="Tess Stephens" class="card-img-top img-circle"/></p>
+<div class="card-body">
+<h2 class="card-title name">
+<p>Tess Stephens</p>
+</h2>
+<p class="Institution">
+<p>Talus Analytics</p>
+</p>
+<p class="college">
+</p>
+<p class="position">
+<p>Tess is a user experience designer at Talus Analytics focused on
+creating visuals that allow data to be thoughtfully investigated. Her
+work is informed by her interest in systems design, her background in
+writing and editing, and her commitment to clarity and
+functionality.</p>
+<p>Tess earned her MA in Strategic Communication Design from the
+University of Colorado Boulder and has an undergraduate degree in
+English from Northwestern University.</p>
+</p>
+<!--Personal personal-website btn-sm btn-primarys -->
+<!--
+<a class="personal-website btn-sm btn-primary" href="https://www.anabento.io/">
+more \></a>--->
+</div>
+<!-- end of row-->
+<!--End of People -->
+
+</iframe> <!-- iframe -->
+
+<footer class="container-fluid ceidfooter" id = "pageFooter">
+			<div class="row">
+				<div class='col-sm-6 col-md-4'>
+					<p>
+					  
+					  
+					  
+					<img src="images/UGA.png"></p>
+          
+						<!--
+						<br><small>203&nbsp;D.&nbsp;W.&nbsp;Brooks&nbsp;Drive, Athens,&nbsp;GA&nbsp;30602<br>
+						706&#8209;542&#8209;1930</small>
+						-->
+					<br>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/brands.css" integrity="sha384-nT8r1Kzllf71iZl81CdFzObMsaLOhqBU1JD2+XoAALbdtWaXDOlWOZTR4v1ktjPE" crossorigin="anonymous">
+
+						
+					
+				</div>
+				<div class='col-sm-6 col-md-4'>
+				  <p>
+					<img src="images/UM.png"></p>
+					<p>
+					<img src="images/cary.png"></p>
+			<!--		<p><small><strong>External Resources:</strong></small><br><br>
+					<small>
+				<!-- LINKS TO EXTERNAL RESOURCES HERE -->
+				
+				</small></p>
+				<!--
+				  <p><small><strong>Contributors:</strong></small></p>
+          <p><small>Lewis Bartlett, Ana Bento, Rebecca Borchering, John Drake, Yang Ge, Andreas Handel, Drew Kramer, Culzean Kennedy, Brian McKay, Eric Marty, Rachel Mercaldo, Paige Miller, Tierney O'Sullivan, Chloe Parker, Robbie Richards, Trippe Ross, Kate Sabey, Liliana Salvador, Cecilia Sanchez, JP Schmidt, Patrick Stephens, Chao Song, Daniel Suh, Benjamin Taylor, David Vasquez, Joy Vaz, Jessica Wenclawiak, Anna Willoughby, Cali Wilson</small></p>
+          -->
+					</div>
+				<div class='col-sm-6 col-md-4'>
+				  <br>
+				  <p><small>Contact: <a href="mailto:jdrake@uga.edu">John M. Drake (jdrake@uga.edu)</a>
+				  <br><strong>Data Use:</strong></small>
+				  <p><small>Content and data on this site are licensed under a 
+				    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target='_blank'>Creative Commons Attribution 4.0 International License</a>.</small><br>
+				    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target='_blank'>
+  					  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+  					<a href="https://opendefinition.org/" target='_blank'>
+  					  <img src="https://opendefinition.org/assets.okfn.org/images/ok_buttons/oc_80x15_blue.png" alt="This material is Open Content"/></a>
+  					<a href="https://opendefinition.org/" target='_blank'>
+  					  <img src="https://opendefinition.org/assets.okfn.org/images/ok_buttons/od_80x15_blue.png" alt="This material is Open Data"/></a><br>
+  					  <small><a href="https://eits.uga.edu/access_and_security/infosec/pols_regs/policies/privacy/">Privacy Policy</a></small><br>
+  					  <a class="ceidfooter__social-link" aria-label="ceid on github" href="https://github.com/CEIDatUGA/2019nCoV-Dashboard">
+							  <i class="fab fa-fw fa-github" title="Github" aria-hidden></i>
+						    <span class="ceidfooter__social-label"><small>Website code</small></span>
+						  </a>
+						
+				</div>
+				<div class='col-sm-6 col-md-12'>
+				
+
+			</div>
+		</div>
+</footer>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+</body>
+</html>

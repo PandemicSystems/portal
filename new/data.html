@@ -32,6 +32,14 @@
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.26/datatables.js"></script>
+<link href="site_libs/dt-core-1.12.1/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.12.1/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.12.1/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
 <meta name="application-name" content="CEID 2019 nCoV"/>
 <!-- Chrome for Android -->
 <meta name="theme-color" content="#ba0c2f" />
@@ -239,6 +247,15 @@ pre code {
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
+        <li class="active">
+  <a href="home.html">
+    <svg class="bi bi-house-door-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M6.5 10.995V14.5a.5.5 0 01-.5.5H2a.5.5 0 01-.5-.5v-7a.5.5 0 01.146-.354l6-6a.5.5 0 01.708 0l6 6a.5.5 0 01.146.354v7a.5.5 0 01-.5.5h-4a.5.5 0 01-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
+  <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5z" clip-rule="evenodd"/>
+</svg>
+
+  </a>
+</li>
 <li class="dropdown">
   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
     Research
@@ -246,11 +263,13 @@ pre code {
     <span class="caret"></span>
   </a>
   <ul class="dropdown-menu" role="menu">
-    <li><a href="option1.html">option1</a></li>
-    <li><a href="option2.html">option2</a></li>
-    <li><a href="option3.html">option3</a></li>
-    <li><a href="option4.html">option4</a></li>
-    <li><a href="option5.html">option5</a></li>
+    <li><a href="system_of_systems.html">System of systems</a></li>
+    <li><a href="DP1.html">DP1:Knowledge and reasoning engine</a></li>
+    <li><a href="DP2.html">DP2:XAI</a></li>
+    <li><a href="DP3.html">DP3:Integration of communication science</a></li>
+    <li><a href="DP4.html">DP4:Social tipping points</a></li>
+    <li><a href="DP5.html">DP5:Influenza A phylogeny and evolution</a></li>
+    <li><a href="DP6.html">DP6: Multiscale modeling</a></li>
   </ul>
 </li>
 <li>
@@ -292,7 +311,10 @@ COVID-19 projects. The datasets in the repository were compiled by
 members of the CEID COVID-19 working group. The data have been formated
 to be used ‘as-is’ and are updated often. Data sets were either created
 from html scraping or manually entered. In the case of the automated web
-scraping, the raw data and scripts are included.</p>
+scraping, the raw data and scripts are included. ## Data is available
+here:</p>
+<div id="htmlwidget-6685d8152b7aab0fa962" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-6685d8152b7aab0fa962">{"x":{"filter":"none","vertical":false,"data":[["Mazda RX4","Mazda RX4 Wag","Datsun 710","Hornet 4 Drive","Hornet Sportabout","Valiant","Duster 360","Merc 240D","Merc 230","Merc 280"],[21,21,22.8,21.4,18.7,18.1,14.3,24.4,22.8,19.2],[6,6,4,6,8,6,8,4,4,6],[160,160,108,258,360,225,360,146.7,140.8,167.6],[110,110,93,110,175,105,245,62,95,123]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>mpg<\/th>\n      <th>cyl<\/th>\n      <th>disp<\/th>\n      <th>hp<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 <h2>
 pavan
 </h2>
@@ -333,12 +355,7 @@ cat(text2)--->
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/brands.css" integrity="sha384-nT8r1Kzllf71iZl81CdFzObMsaLOhqBU1JD2+XoAALbdtWaXDOlWOZTR4v1ktjPE" crossorigin="anonymous">
 
-						<a class="ceidfooter__social-link" aria-label="ceid on Twitter" href="https://twitter.com/ceid_uga">
-							<i class="fab fa-fw fa-twitter" title="Twitter" aria-hidden></i>
-							<span class="ceidfooter__social-label"><small>Twitter</small></span>
-							</a>
-            </p>
-            <p><a href="https://www.ceid.uga.edu/support/" target='_blank'>Support CEID</a></p>
+						
 					
 				</div>
 				<div class='col-sm-6 col-md-4'>

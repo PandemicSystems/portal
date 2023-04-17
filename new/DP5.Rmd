@@ -1,0 +1,39 @@
+---
+title: "DP5"
+author: "pavan"
+
+output: html_document
+---
+<!---</div>
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Demonstration Project 5: Competition dynamics, spread and diversity of co-circulating avian influenza A viruses with pandemic potential in wild and domestic hosts
+
+The influenza A virus has the ability to infect a variety of species. Though transmission between species is limited, it can lead to human pandemics and panzootics among domestic animals. It is difficult to prepare for these spillover events due to a lack of knowledge of viral traits that impact human transmission and limitations in quantifying the risk of exposure to reservoir populations. The goal of DP5 is to generate new knowledge about the underlying processes impacting influenza A virus spread, transmission potential, and adaptation. This project involves creating an integrated framework to examine the collective role of epidemiological, immunological, and evolutionary processes in shaping viral phylogenies.
+
+--->
+```{r echo=FALSE, out.extra='id="DP5" scrolling="no" width="100%"'}
+knitr::include_url("DP5_summary.html")
+```
+<script>iFrameResize({ log: false }, '#DP5')</script>
+
+## Supplemental Information
+
+<div class="container-frames">
+
+<p>Preprint:<br>
+  <a href="https://github.com/CEIDatUGA/covid-university-reopening/raw/master/manuscript.pdf" target="_blank">
+  Demonstration Project 5: Competition dynamics, spread and diversity of co-circulating avian influenza A viruses with pandemic potential in wild and domestic hosts</a> (pdf)
+</p>
+
+<p>
+  <a href="https://github.com/CEIDatUGA/covid-university-reopening" target="_blank">
+    <img src="images/GitHub-Mark-64px.png" id="github-icon" alt="GitHub repository"/>
+    GitHub repository (public)
+  </a>
+</p>
+
+</div>
