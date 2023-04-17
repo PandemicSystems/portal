@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+<meta name="author" content="pavan" />
+
+<meta name="date" content="2022-11-09" />
+
+<title>cimidi</title>
+
+<script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/selectize-0.12.4/css/selectize.bootstrap3.css" rel="stylesheet" />
+<script src="site_libs/selectize-0.12.4/js/selectize.min.js"></script>
+<script src="site_libs/selectize-0.12.4/accessibility/js/selectize-plugin-a11y.min.js"></script>
+<meta name="application-name" content="CEID 2019 nCoV"/>
+<!-- Chrome for Android -->
+<meta name="theme-color" content="#ba0c2f" />
+<!-- Web App -->
+<link rel="manifest" href="manifest.json" />
+<!-- iOS icons -->
+<link rel="apple-touch-icon-precomposed" sizes="57x57" href="icons/apple-touch-icon-57x57.png" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="icons/apple-touch-icon-114x114.png" />
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="icons/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="icons/apple-touch-icon-144x144.png" />
+<link rel="apple-touch-icon-precomposed" sizes="60x60" href="icons/apple-touch-icon-60x60.png" />
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="icons/apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon-precomposed" sizes="76x76" href="icons/apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="icons/apple-touch-icon-152x152.png" />
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="icons/favicon-196x196.png" sizes="196x196" />
+<link rel="icon" type="image/png" href="icons/favicon-192.png" sizes="192x192" />
+<link rel="icon" type="image/png" href="icons/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16" />
+<link rel="icon" type="image/png" href="icons/favicon-128.png" sizes="128x128" />
+<!-- IE 11+ -->
+<meta name="msapplication-config" content="ieconfig.xml" />
+<!-- scripts -->
+<script type="text/javascript" src="js/iframeResizer.min.js"></script>
+<script type="text/javascript" src="js/ga-analytics.js"></script>
+<script type="text/javascript" src="js/reload-iframe.js"></script>
+<script type="application/ld+json">
+	{
+		"@context": "http://www.schema.org",
+		"@type": "CollegeOrUniversity",
+		"name": "Center for the Ecology of Infectious Diseases",
+		"alternatename": "CEID",
+		"url": "https://www.covid19.uga.edu/",
+		"logo": "https://www.uga.edu/_resources/images/GEORGIA-V-FC.png",
+		"description": "The UGA Center for the Ecology of Infectious Diseases (CEID) COVID-19 Portal is a resource for researchers, policymakers, and the public that provides tracking, modeling, and analysis of the ongoing COVID‑19 pandemic.",
+		"location": {
+			"@type": "PostalAddress",
+			"addressLocality": "Athens",
+			"addressRegion": "GA",
+			"postalCode": "30602",
+			"addressCountry": "US"
+		},
+		"contactPoint": {
+			"@type": "ContactPoint",
+			"telephone": "+1-706-542-1930",
+			"contactType": "Customer Service"
+		},
+		"sameAs" : [ 
+			"https://twitter.com/ceid_uga"
+		]
+	}
+</script>
+
+<meta name="description" content="The COVID-19 Portal is a resource for researchers, policymakers, and the public that provides tracking, modeling, and analysis of the ongoing COVID‑19 pandemic."/>
+<meta name="twitter:title" content="CEID Covid-19 tracker"/>
+<meta name="twitter:description" content="The COVID-19 Portal is a resource for researchers, policymakers, and the public that provides tracking, modeling, and analysis of the ongoing COVID‑19 pandemic."/>
+<meta name="twitter:url" content="https://www.covid19.uga.edu/"/>
+<meta name="twitter:image:src" content="https://www.covid19.uga.edu/images/home_olympic.jpg"/>
+<meta name="twitter:image:alt" content="Coronavirus CEID image"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:creator" content="@ceid_uga"/>
+<meta name="twitter:site" content="@ceid_uga"/>
+<meta property="og:title" content="CEID Covid-19 tracker"/>
+<meta property="og:description" content="The COVID-19 Portal is a resource for researchers, policymakers, and the public that provides tracking, modeling, and analysis of the ongoing COVID‑19 pandemic."/>
+<meta property="og:url" content="https://www.covid19.uga.edu/"/>
+<meta property="og:image" content="https://www.covid19.uga.edu/images/home_olympic.jpg"/>
+<meta property="og:image:alt" content="Coronavirus CEID image"/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="en_US"/>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+      .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+          <a class="navbar-brand" href="index.html">COVID-19 Portal <span class="d-none d-md-inline"><span class="divider"> | </span><span class="subtext-brand">Center for the Ecology of Infectious Diseases</span></span><span class="subtext-brand d-md-none"> | (CEID)</span><span class="subtext-brand d-none d-md-inline">, University of Georgia</span></a>
+    <div class="navbar-header active">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active">
+  <a href="index.html">
+    <svg class="bi bi-house-door-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M6.5 10.995V14.5a.5.5 0 01-.5.5H2a.5.5 0 01-.5-.5v-7a.5.5 0 01.146-.354l6-6a.5.5 0 01.708 0l6 6a.5.5 0 01.146.354v7a.5.5 0 01-.5.5h-4a.5.5 0 01-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
+  <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5z" clip-rule="evenodd"/>
+</svg>
+
+  </a>
+</li>
+
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Tracking
+    
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="tracker.html">Tracker: Cases, Deaths & Hospitalizations (World, US states, US counties)</a>
+    </li>
+    <li>
+      <a href="maps.html">Maps of Spread (World, US, China)</a>
+    </li>
+    <li>
+      <a href="wastewater-athens.html">Wastewater Surveillance in Athens, GA</a>
+    </li>
+  </ul>
+</li>
+
+<li>
+  <a href="forecast.html">Forecast</a>
+</li>
+<li>
+  <a href="nowcast.html">Nowcast</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Epidemic Characteristics
+
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="context.html">COVID-19 in Context</a>
+    </li>
+    <li>
+      <a href="parameters.html">Epidemic Characteristics (Global &amp; US)</a>
+    </li>
+    <li>
+      <a href="reff-outside.html">Effective Reproduction Number outside China</a>
+    </li>
+  </ul>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Models &amp; Research
+
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="stochastic.html">Stochastic Model for Wuhan (China)</a>
+    </li>
+    <li>
+      <a href="stochastic-GA.html">Stochastic Model for Georgia (USA)</a>
+    </li>
+    <li>
+      <a href="university-model.html">Model for University Reopening</a>
+    </li>
+    <li>
+      <a href="spatial-us.html">Spatial Model for US Counties</a>
+    </li>
+    <li>
+      <a href="spatial-china.html">Spatial Model for China</a>
+    </li>
+    <li>
+      <a href="us-importation-risk.html">Model of Importation Risk for the US</a>
+    </li>
+    <li>
+      <a href="final-size.html">Probability of Widespread Transmission</a>
+    </li>
+    <li>
+      <a href="early-intervention.html">Effect of Early Intervention</a>
+    </li>
+    <li>
+      <a href="mass_testing.html">Effect of Mass Testing</a>
+    </li>
+    <li>
+      <a href="suppression.html">Suppression without Distancing</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <!--<a href="news.html">News</a>-->
+  <a href="index.html#news">News</a>
+</li>
+<li>
+  <a href="data.html">Data</a>
+</li>
+<li>
+  <a href="about.html">About</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div>
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">cimidi</h1>
+<h4 class="author">pavan</h4>
+<h4 class="date">2022-11-09</h4>
+
+</div>
+
+
+<div
+id="plotting-the-species-vs-noof-zoonoses-to-understand-the-patterns-in-better-way"
+class="section level2">
+<h2>plotting the species vs no:of zoonoses to understand the patterns in
+better way</h2>
+<pre class="r"><code>mpg&lt;- read.csv(&quot;CarnivoreTraits22Mar2021.csv&quot;)
+m&lt;- mpg %&gt;% select(species,num_zoonoses,label,species_id)
+# Use inputs search
+s &lt;- &quot;1&quot;
+
+# return subset based on search
+subset &lt;- m %&gt;% filter(label == s)
+# Some metadata and simple stats on the subset
+unique_species &lt;- subset$species %&gt;% unique()
+nspecies &lt;- length(unique_species)
+selectInput(inputId = &quot;id1&quot;,
+            label = &quot;Select species:&quot;,
+            choices = unique_species,
+            selected = &quot;Ailurus fulgens&quot;)</code></pre>
+<div class="form-group shiny-input-container">
+<label class="control-label" id="id1-label" for="id1">Select species:</label>
+<div>
+<select id="id1"><option value="Ailurus fulgens" selected>Ailurus fulgens</option>
+<option value="Conepatus chinga">Conepatus chinga</option>
+<option value="Mephitis macroura">Mephitis macroura</option>
+<option value="Mephitis mephitis">Mephitis mephitis</option>
+<option value="Eira barbara">Eira barbara</option>
+<option value="Gulo gulo">Gulo gulo</option>
+<option value="Martes americana">Martes americana</option>
+<option value="Martes foina">Martes foina</option>
+<option value="Martes martes">Martes martes</option>
+<option value="Martes melampus">Martes melampus</option>
+<option value="Pekania pennanti">Pekania pennanti</option>
+<option value="Melogale moschata">Melogale moschata</option>
+<option value="Melogale subaurantiaca">Melogale subaurantiaca</option>
+<option value="Galictis cuja">Galictis cuja</option>
+<option value="Vormela peregusna">Vormela peregusna</option>
+<option value="Enhydra lutris">Enhydra lutris</option>
+<option value="Lontra canadensis">Lontra canadensis</option>
+<option value="Lontra felina">Lontra felina</option>
+<option value="Lutra lutra">Lutra lutra</option>
+<option value="Meles anakuma">Meles anakuma</option>
+<option value="Meles leucurus">Meles leucurus</option>
+<option value="Meles meles">Meles meles</option>
+<option value="Mellivora capensis">Mellivora capensis</option>
+<option value="Mustela altaica">Mustela altaica</option>
+<option value="Mustela erminea">Mustela erminea</option>
+<option value="Mustela furo">Mustela furo</option>
+<option value="Mustela itatsi">Mustela itatsi</option>
+<option value="Mustela lutreola">Mustela lutreola</option>
+<option value="Mustela nigripes">Mustela nigripes</option>
+<option value="Mustela nivalis">Mustela nivalis</option>
+<option value="Mustela putorius">Mustela putorius</option>
+<option value="Mustela sibirica">Mustela sibirica</option>
+<option value="Mustela vison">Mustela vison</option>
+<option value="Taxidea taxus">Taxidea taxus</option>
+<option value="Bassaricyon gabbii">Bassaricyon gabbii</option>
+<option value="Bassariscus astutus">Bassariscus astutus</option>
+<option value="Nasua narica">Nasua narica</option>
+<option value="Nasua nasua">Nasua nasua</option>
+<option value="Potos flavus">Potos flavus</option>
+<option value="Procyon lotor">Procyon lotor</option>
+<option value="Procyon pygmaeus">Procyon pygmaeus</option>
+<option value="Odobenus rosmarus">Odobenus rosmarus</option>
+<option value="Arctocephalus pusillus">Arctocephalus pusillus</option>
+<option value="Arctophoca australis">Arctophoca australis</option>
+<option value="Arctophoca forsteri">Arctophoca forsteri</option>
+<option value="Arctophoca gazella">Arctophoca gazella</option>
+<option value="Arctophoca townsendi">Arctophoca townsendi</option>
+<option value="Callorhinus ursinus">Callorhinus ursinus</option>
+<option value="Eumetopias jubatus">Eumetopias jubatus</option>
+<option value="Neophoca cinerea">Neophoca cinerea</option>
+<option value="Otaria flavescens">Otaria flavescens</option>
+<option value="Phocarctos hookeri">Phocarctos hookeri</option>
+<option value="Zalophus californianus">Zalophus californianus</option>
+<option value="Cystophora cristata">Cystophora cristata</option>
+<option value="Erignathus barbatus">Erignathus barbatus</option>
+<option value="Halichoerus grypus">Halichoerus grypus</option>
+<option value="Leptonychotes weddellii">Leptonychotes weddellii</option>
+<option value="Lobodon carcinophaga">Lobodon carcinophaga</option>
+<option value="Mirounga angustirostris">Mirounga angustirostris</option>
+<option value="Mirounga leonina">Mirounga leonina</option>
+<option value="Neomonachus schauinslandi">Neomonachus schauinslandi</option>
+<option value="Phoca largha">Phoca largha</option>
+<option value="Phoca vitulina">Phoca vitulina</option>
+<option value="Pusa hispida">Pusa hispida</option>
+<option value="Ailuropoda melanoleuca">Ailuropoda melanoleuca</option>
+<option value="Melursus ursinus">Melursus ursinus</option>
+<option value="Ursus americanus">Ursus americanus</option>
+<option value="Ursus arctos">Ursus arctos</option>
+<option value="Ursus maritimus">Ursus maritimus</option>
+<option value="Ursus thibetanus">Ursus thibetanus</option>
+<option value="Canis aureus">Canis aureus</option>
+<option value="Canis familiaris">Canis familiaris</option>
+<option value="Canis latrans">Canis latrans</option>
+<option value="Canis lupus">Canis lupus</option>
+<option value="Canis simensis">Canis simensis</option>
+<option value="Cerdocyon thous">Cerdocyon thous</option>
+<option value="Chrysocyon brachyurus">Chrysocyon brachyurus</option>
+<option value="Lupulella adustus">Lupulella adustus</option>
+<option value="Lupulella mesomelas">Lupulella mesomelas</option>
+<option value="Lycalopex griseus">Lycalopex griseus</option>
+<option value="Lycalopex gymnocercus">Lycalopex gymnocercus</option>
+<option value="Lycalopex vetulus">Lycalopex vetulus</option>
+<option value="Lycaon pictus">Lycaon pictus</option>
+<option value="Nyctereutes procyonoides">Nyctereutes procyonoides</option>
+<option value="Nyctereutes viverrinus">Nyctereutes viverrinus</option>
+<option value="Otocyon megalotis">Otocyon megalotis</option>
+<option value="Speothos venaticus">Speothos venaticus</option>
+<option value="Urocyon cinereoargenteus">Urocyon cinereoargenteus</option>
+<option value="Urocyon littoralis">Urocyon littoralis</option>
+<option value="Vulpes cana">Vulpes cana</option>
+<option value="Vulpes corsac">Vulpes corsac</option>
+<option value="Vulpes ferrilata">Vulpes ferrilata</option>
+<option value="Vulpes lagopus">Vulpes lagopus</option>
+<option value="Vulpes vulpes">Vulpes vulpes</option>
+<option value="Acinonyx jubatus">Acinonyx jubatus</option>
+<option value="Caracal caracal">Caracal caracal</option>
+<option value="Felis catus">Felis catus</option>
+<option value="Felis margarita">Felis margarita</option>
+<option value="Felis silvestris">Felis silvestris</option>
+<option value="Herpailurus yagouaroundi">Herpailurus yagouaroundi</option>
+<option value="Leopardus colocola">Leopardus colocola</option>
+<option value="Leopardus geoffroyi">Leopardus geoffroyi</option>
+<option value="Leopardus pardalis">Leopardus pardalis</option>
+<option value="Leopardus tigrinus">Leopardus tigrinus</option>
+<option value="Leopardus wiedii">Leopardus wiedii</option>
+<option value="Leptailurus serval">Leptailurus serval</option>
+<option value="Lynx canadensis">Lynx canadensis</option>
+<option value="Lynx lynx">Lynx lynx</option>
+<option value="Lynx pardinus">Lynx pardinus</option>
+<option value="Lynx rufus">Lynx rufus</option>
+<option value="Otocolobus manul">Otocolobus manul</option>
+<option value="Prionailurus bengalensis">Prionailurus bengalensis</option>
+<option value="Prionailurus viverrinus">Prionailurus viverrinus</option>
+<option value="Puma concolor">Puma concolor</option>
+<option value="Neofelis nebulosa">Neofelis nebulosa</option>
+<option value="Panthera leo">Panthera leo</option>
+<option value="Panthera onca">Panthera onca</option>
+<option value="Panthera pardus">Panthera pardus</option>
+<option value="Panthera tigris">Panthera tigris</option>
+<option value="Panthera uncia">Panthera uncia</option>
+<option value="Nandinia binotata">Nandinia binotata</option>
+<option value="Cryptoprocta ferox">Cryptoprocta ferox</option>
+<option value="Atilax paludinosus">Atilax paludinosus</option>
+<option value="Cynictis penicillata">Cynictis penicillata</option>
+<option value="Herpestes ichneumon">Herpestes ichneumon</option>
+<option value="Urva fusca">Urva fusca</option>
+<option value="Urva javanica">Urva javanica</option>
+<option value="Crossarchus obscurus">Crossarchus obscurus</option>
+<option value="Mungos mungo">Mungos mungo</option>
+<option value="Suricata suricatta">Suricata suricatta</option>
+<option value="Crocuta crocuta">Crocuta crocuta</option>
+<option value="Hyaena hyaena">Hyaena hyaena</option>
+<option value="Genetta genetta">Genetta genetta</option>
+<option value="Genetta servalina">Genetta servalina</option>
+<option value="Chrotogale owstoni">Chrotogale owstoni</option>
+<option value="Arctictis binturong">Arctictis binturong</option>
+<option value="Paguma larvata">Paguma larvata</option>
+<option value="Paradoxurus zeylonensis">Paradoxurus zeylonensis</option>
+<option value="Civettictis civetta">Civettictis civetta</option>
+<option value="Viverra tangalunga">Viverra tangalunga</option></select>
+<script type="application/json" data-for="id1" data-nonempty="">{"plugins":["selectize-plugin-a11y"]}</script>
+</div>
+</div>
+<pre class="r"><code>selectedDat &lt;- reactive({
+  m[unique_species$species==input$id1]
+})
+
+
+ggplot(data=mpg)+       # reference to data
+  geom_point(mapping=aes(x= species_id,y= num_zoonoses ) )+
+  geom_line(mapping=aes(x=species_id,y=TemperatureMean_dC))</code></pre>
+<p><img src="cimidi_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+</div>
+<div id="plot-for-the-wos-hits" class="section level2">
+<h2>plot for the WOS hits</h2>
+<pre class="r"><code>ggplot(data=mpg)+       # reference to data
+  geom_point(mapping=aes(x= species_id,y= WOSHits_n ) )</code></pre>
+<p><img src="cimidi_files/figure-html/unnamed-chunk-2-1.png" width="672" /></p>
+</div>
+
+</iframe> <!-- iframe -->
+
+<footer class="container-fluid ceidfooter" id = "pageFooter">
+			<div class="row">
+				<div class='col-sm-6 col-md-4'>
+					<p><a href='https://www.ceid.uga.edu/' target='_blank'>
+					<img src="images/Screen-CEID-H-FC.png" alt="Center for the Ecology of Infectious Diseases, University of Georgia"/></a></p>
+          <p><small>Contact: <a href="mailto:jdrake@uga.edu">John M. Drake (jdrake@uga.edu)</a></small>
+						<!--
+						<br><small>203&nbsp;D.&nbsp;W.&nbsp;Brooks&nbsp;Drive, Athens,&nbsp;GA&nbsp;30602<br>
+						706&#8209;542&#8209;1930</small>
+						-->
+					<br>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/fontawesome.css" integrity="sha384-HbmWTHay9psM8qyzEKPc8odH4DsOuzdejtnr+OFtDmOcIVnhgReQ4GZBH7uwcjf6" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/brands.css" integrity="sha384-nT8r1Kzllf71iZl81CdFzObMsaLOhqBU1JD2+XoAALbdtWaXDOlWOZTR4v1ktjPE" crossorigin="anonymous">
+
+						<a class="ceidfooter__social-link" aria-label="ceid on Twitter" href="https://twitter.com/ceid_uga">
+							<i class="fab fa-fw fa-twitter" title="Twitter" aria-hidden></i>
+							<span class="ceidfooter__social-label"><small>Twitter</small></span>
+							</a>
+            </p>
+            <p><a href="https://www.ceid.uga.edu/support/" target='_blank'>Support CEID</a></p>
+					
+				</div>
+				<div class='col-sm-6 col-md-4'>
+				  <p><a href='https://publichealth.uga.edu/' target='_blank'>
+					<img src="images/Screen-CPH-H-FC.png" alt="College of Public Health, University of Georgia"/></a></p>
+					<p><small><strong>External Resources:</strong></small><br><br>
+					<small>
+				<!-- LINKS TO EXTERNAL RESOURCES HERE -->
+
+				<a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" target='_blank'>WHO</a>&emsp; 
+				<a href="https://www.cdc.gov/coronavirus/2019-ncov/" target='_blank'>CDC</a>&emsp; 
+				<a href="https://www.mobs-lab.org/2019ncov.html" target='_blank'>Northeastern&nbsp;University</a>&emsp; 
+				<a href="https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6" target='_blank'>Johns&nbsp;Hopkins&nbsp;University</a>&emsp; 
+				<a href="https://nextstrain.org/ncov" target='_blank'>Nextstrain</a>&emsp; 
+				<a href="https://covid-measures.github.io" target='_blank'>Long&#8209;Term&nbsp;Intervention&nbsp;Strategies</a>&emsp; 
+				<a href="https://covidtracking.com/" target='_blank'>COVID&nbsp;Tracking&nbsp;Project</a>&emsp;
+				<a href="https://www.nytimes.com/interactive/2020/us/coronavirus-us-cases.html" target='_blank'>NY&nbsp;Times&nbsp;Map&nbsp;&amp;&nbsp;Case&nbsp;Count</a>
+				
+				</small></p>
+				<!--
+				  <p><small><strong>Contributors:</strong></small></p>
+          <p><small>Lewis Bartlett, Ana Bento, Rebecca Borchering, John Drake, Yang Ge, Andreas Handel, Drew Kramer, Culzean Kennedy, Brian McKay, Eric Marty, Rachel Mercaldo, Paige Miller, Tierney O'Sullivan, Chloe Parker, Robbie Richards, Trippe Ross, Kate Sabey, Liliana Salvador, Cecilia Sanchez, JP Schmidt, Patrick Stephens, Chao Song, Daniel Suh, Benjamin Taylor, David Vasquez, Joy Vaz, Jessica Wenclawiak, Anna Willoughby, Cali Wilson</small></p>
+          -->
+					</div>
+				<div class='col-sm-6 col-md-4'>
+				  <p><small><strong>Data Use:</strong></small></p>
+				  <p><small>Content and data on this site are licensed under a 
+				    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target='_blank'>Creative Commons Attribution 4.0 International License</a>.</small><br>
+				    <a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target='_blank'>
+  					  <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
+  					<a href="https://opendefinition.org/" target='_blank'>
+  					  <img src="https://opendefinition.org/assets.okfn.org/images/ok_buttons/oc_80x15_blue.png" alt="This material is Open Content"/></a>
+  					<a href="https://opendefinition.org/" target='_blank'>
+  					  <img src="https://opendefinition.org/assets.okfn.org/images/ok_buttons/od_80x15_blue.png" alt="This material is Open Data"/></a><br>
+  					  <small><a href="https://eits.uga.edu/access_and_security/infosec/pols_regs/policies/privacy/">Privacy Policy</a></small><br>
+  					  <a class="ceidfooter__social-link" aria-label="ceid on github" href="https://github.com/CEIDatUGA/2019nCoV-Dashboard">
+							  <i class="fab fa-fw fa-github" title="Github" aria-hidden></i>
+						    <span class="ceidfooter__social-label"><small>Website code</small></span>
+						  </a>
+						<p><small>
+						<script language="javascript">
+							document.write("Last updated "+document.lastModified);
+						</script>
+					</small></p>
+				</div>
+				<div class='col-sm-6 col-md-12'>
+				
+
+			</div>
+		</div>
+</footer>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+</body>
+</html>

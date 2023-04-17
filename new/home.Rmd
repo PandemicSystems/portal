@@ -1,0 +1,100 @@
+---
+title: "home"
+---
+
+</div>
+
+<!-- container-fluid main-container -->
+
+<div class="jumbotron homepagebanner jumbotron-fluid">
+
+<div class="container">
+
+<!--<h1 class="display-3"></h1>-->
+
+<h2 class="lead">
+
+XXXXXXXXX  XXXXXXXXXX XXXXX XXXXXX XXXXXXXX XXXXXXX XXXXXXXX XXXX
+
+</h2>
+
+<h4 class="lead">
+
+Center for the Ecology of Infectious Diseases  <a href="https://www.ceid.uga.edu" target="_blank">(CEID)</a> Coronavirus Working Group<br>in partnership with the <a href="https://publichealth.uga.edu/" target="_blank">College of  Public Health</a><br> University of Georgia
+
+</h3>
+
+<a class="btn btn-primary btn-sm" href="#news" role="button">News & Updates</a>
+
+</h2>
+
+<br> <small>Information for UGA students and staff: <a href="https://coronavirus.uga.edu/" target="_blank">coronavirus.uga.edu</a></small>
+
+</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<div class="container-fluid main-container" id="news">
+
+<!-- container-fluid main-container -->
+
+### Webinar
+
+```{=html}
+<img src="images/InfectousDiseases_Twitter_UIDP_March_2_2021.jpg"/ 
+alt="Webinar: Infectious Disease Intelligence: Predicting the Next Pandemic. John Drake, Presenter">
+```
+### John Drake on "Debriefing the Briefing" with Major Garrett
+
+May 7, 2020
+
+CEID Director John Drake discusses how COVID‑19 modeling informs public policy and mitigation efforts on Debriefing the Briefing with CBS News Washington Correspondent Major Garrett.
+
+Listen the podcast <a href="https://tinyurl.com/yc7m85ax" target="_blank">here</a>.
+
+
+<!-- <a href="https://www.ceid.uga.edu/support/" target='_blank'>Support CEID</a> -->
+
+::: card-header
+### Latest Updates
+:::
+
+<!--NEWS ITEM-->
+
+::: card
+::: card-body
+::: card-title
+#### US county level spatial model released
+:::
+
+<p class="card-text">
+
+<small class="card-subtitle mb-2 text-muted">MMYYY</small><br> xxxxxxxxx
+
+</p>
+<!--to get the text from the rmarkdown displayed in html-->
+```{r,setup,echo=FALSE,include=TRUE, results="asis"}
+
+cat(htmltools::includeMarkdown("hey.md"))
+
+
+```
+<!-- <div class="card-link"> -->
+
+<!-- [READ MORE &rarr;](news.html#) -->
+
+<!-- </div> -->
+:::
+:::
+
+
+<!--- to remove the border of the box while creating the block--->
+<style>
+    pre {
+        border: 0;
+    }
+</style>
