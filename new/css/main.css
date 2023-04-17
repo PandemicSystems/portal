@@ -654,18 +654,23 @@ pre.r{
 }
 
 /*card styles for news section*/
+
+
 .card{
     background-color: #fff;
-    border-bottom: #DCDCDC;
-    border-bottom: 1px solid rgba(220, 220, 220, 0.5);
+    border-radius:0;
+    margin:10px auto;
 }
 
 .card-title{
-  line-height: 1.5em;
+text-transform: uppercase;
+	color: #E44424;
 }
 .card-text{
-  padding: 0 5px 0 5px;
-  line-height: 1.5;
+  margin-top:10px;
+	margin-bottom: 10px;
+	background-color:#FFFFFF;
+	color:#000000;
 }
 .row-people{
   padding-bottom:15px;
@@ -677,7 +682,8 @@ pre.r{
     font-size: x-small;
     line-height: 1;
 }
-
+a.btn, a.btn:visited {
+    color:#333333;
 figcaption{
   font-style: italic;
   font-size: xx-small;
