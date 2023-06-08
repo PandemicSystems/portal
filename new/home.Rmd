@@ -47,7 +47,14 @@ alt="Webinar: Infectious Disease Intelligence: Predicting the Next Pandemic. Joh
 <p>
 Project Summary
 
-To transform the science of epidemic intelligence, PIPP is a multi-disciplinary, multi-institutional project seeking to apply the engineering System-of-Systems (SoS) concept to the problem of integrating models across disciplines and scales. This project will introduce a new paradigm (SoS) for infectious disease modeling. Activities of our Phase I project include the development of a “Vision Paper” outlining this idea and providing a blueprint for a Phase II application; six interdisciplinary demonstration projects focusing on Highly Pathogenic Avian Influenza (HPAI) and applying SoS thinking to problems at the intersections of biology (BIO), computer science (CISE), social science (SBE), and engineering (ENG); training of undergraduates, graduate students, and a postdoctoral associate; and formation of an advisory board and network of stakeholders for Phase II. Broader impacts of the PIPP include (i) workforce enhancement; (ii) development of innovative and translational modeling approaches that are relevant to various US mission agencies (e.g. USDA, EPA, NIH, and CDC), global organizations (e.g. WHO, FAO, OIE, UN), and nonprofits (e.g. BMGF, Ending Pandemics, Rockefeller Foundation); and (iii) creation of extensible, open-access computer code for generic and project-specific tasks.
+Heterogeneous Model Integration for Infectious Disease Intelligence
+A multi-disciplinary, multi-institutional project seeking to apply the engineering System-of-Systems (SoS) concept to the grand challenge of integrating models across disciplines and scales. This project introduces a new paradigm (SoS) for infectious disease modeling. 
+
+This project is funded by a NSF Predictive Intelligence for Pandemic Prevention Phase I Development Grant (PIPP Phase I). Our Phase I activities will culminate in the development of a “Vision Paper” outlining the SoS approach to infectious disease model integration and providing a blueprint for a Phase II. We are conducting six interdisciplinary demonstration projects focusing on Highly Pathogenic Avian Influenza (HPAI) and applying SoS thinking to problems at the intersections of biology (BIO), computer science (CISE), social science (SBE), and engineering (ENG).
+
+During Phase I, we are engaging in workforce enhancement through the training of undergraduates, graduate students, and postdoctoral associates. Broader impacts of our project include the development of innovative and translational modeling approaches with relevance to various US mission agencies (e.g. USDA, EPA, NIH, and CDC) and global organizations (e.g. WHO, FAO, OIE, UN), as well as the creation of extensible, open-access computer code and data pipelines for integrative infectious disease modeling.
+
+We are currently forming an advisory board of leaders from academic, industry, government and non-governmental sectors, and building a network of stakeholders in advance of Phase II.
 
 
 </p>
