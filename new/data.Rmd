@@ -1,6 +1,9 @@
 ---
-title: "CEID COVID-19 - Maps"
+title: "data"
+output: html_document
 ---
+</div>
+<div class="container">
 
 
 <p id="disclaimer"></p>

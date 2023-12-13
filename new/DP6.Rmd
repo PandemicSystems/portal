@@ -2,7 +2,8 @@
 title: "DP6"
 output: html_document
 ---
-
+</div>
+<div class="container">
 ## Demonstration Project 6: Scaling from virus properties to transmission
 
 <!---</div>

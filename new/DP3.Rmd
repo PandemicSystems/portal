@@ -2,7 +2,8 @@
 title: "DP3"
 output: html_document
 ---
-
+</div>
+<div class="container">
 ## Demonstration Project 3:  Integration of pandemic and infectious disease-related health and risk-benefit communication science and data into models
 <!---</div>
 ```{r setup, include=FALSE}

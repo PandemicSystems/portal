@@ -1,5 +1,7 @@
 ---
 title: "home"
+output: html_document
+
 ---
 
 </div>
