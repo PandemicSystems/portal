@@ -11,9 +11,9 @@
 
 
 
-<title>style</title>
+<title>people</title>
 
-<script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.25/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -229,7 +229,7 @@ pre code {
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
-          <a class="navbar-brand" href="home.html">PIPP Phase I <span class="d-none d-md-inline"><span class="divider"> | </span><span class="subtext-brand">Heterogeneous Model Integration for Infectious Disease Intelligence</span></span>
+          <a class="navbar-brand" href="new/index.html">PIPP Phase I <span class="d-none d-md-inline"><span class="divider"> | </span><span class="subtext-brand">Heterogeneous Model Integration for Infectious Disease Intelligence</span></span>
     <div class="navbar-header active">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
         <span class="icon-bar"></span>
@@ -240,7 +240,7 @@ pre code {
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
         <li class="active">
-  <a href="home.html">
+  <a href="index.html">
     <svg class="bi bi-house-door-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
   <path d="M6.5 10.995V14.5a.5.5 0 01-.5.5H2a.5.5 0 01-.5-.5v-7a.5.5 0 01.146-.354l6-6a.5.5 0 01.708 0l6 6a.5.5 0 01.146.354v7a.5.5 0 01-.5.5h-4a.5.5 0 01-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"/>
   <path fill-rule="evenodd" d="M13 2.5V6l-2-2V2.5a.5.5 0 01.5-.5h1a.5.5 0 01.5.5z" clip-rule="evenodd"/>
@@ -266,7 +266,7 @@ pre code {
 </li>
 <li>
   <!--<a href="news.html">News</a>-->
-  <a href="home.html#updates">Updates</a>
+  <a href="index.html#updates">Updates</a>
 </li>
 <li>
   <a href="publications.html">Publications</a>
@@ -289,7 +289,7 @@ pre code {
 
 
 
-<h1 class="title toc-ignore">style</h1>
+<h1 class="title toc-ignore">people</h1>
 
 </div>
 
@@ -826,6 +826,7 @@ h1 {
 /*==================================================================  */
 body {
   background-color: white;
+  font-size: 12px;
 }
 
 .profile {
@@ -837,19 +838,23 @@ body {
   border-radius: 0.1rem;
 }
 
-
-
 .profile_info h2 {
   display: flex;
   margin-top: 0.1rem;
-  padding:0;
+  padding-left: 30px;
   line-width:auto;
 }
 
 .profile_info p {
   margin-top: 0.1rem;
   line-height: 1.5;
+  padding-left: 40px;
 }
+.toggle-text-button {
+            color: var(--primary-color);
+            cursor: pointer;
+            padding-left:40px;
+        }
 
 .hidden-text {
   display: none;
@@ -886,9 +891,6 @@ if ($(this).text() == "Read more") {
 
 });
 </script>
-<blockquote>
-
-</blockquote>
 
 </iframe> <!-- iframe -->
 

@@ -2,12 +2,15 @@
 title: "DP6"
 output: html_document
 ---
+</div>
+<div class="container">
+## Demonstration Project 6: Scaling from virus properties to transmission
+
 <!---</div>
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Demonstration Project 6: Scaling from virus properties to transmission
 
 Avian species have been implicated in outbreaks of influenza A viruses in previous human pandemics, with severe consequences for public health and the global economy. Currently, experts are unable to determine which influenza viruses have pandemic potential and need to be closely monitored. Subtypes that kill poultry and infect humans are considered a pandemic threat. This project will develop models that integrate knowledge from virology and immunology to address knowledge gaps regarding viral vulnerability and inform virus pandemic potential. Initial models will focus on the H7 subtype, extracting information regarding virus replication to develop models capable of reliably capturing the infection dynamics across the transmission cycle in birds. Models developed in Phase II  will integrate data on host-virus biology across scales with the aim of generating early warning systems. This project will also better target surveillance of highest risk avian systems (DP1), and better tailor risk communications to at-risk human communities (DP4-6). 
 --->

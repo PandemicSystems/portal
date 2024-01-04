@@ -2,12 +2,15 @@
 title: "DP3"
 output: html_document
 ---
+</div>
+<div class="container">
+## Demonstration Project 3:  Integration of pandemic and infectious disease-related health and risk-benefit communication science and data into models
 <!---</div>
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## Demonstration Project 3:  Integration of pandemic and infectious disease-related health and risk-benefit communication science and data into models
+
 
 To address communicable diseases, effective communication is essential when implementing preventative or response measures from a local to global scale. Understanding how demographics, political ideologies, race, ethnicity, and location impact human behaviors during outbreaks and pandemics is important. This project will analyze national datasets collected by the Grady College Center for Health & Risk Communication about influenza and COVID-19 to identify empirical patterns and provide insight on human health decision making and population characteristics related to respiratory illnesses. This analysis can identify relationships between factors such as vaccination status, health decision-making preferences, health-information seeking, political ideologies, and key demographics to inform forecasting and models to support decision making.
 

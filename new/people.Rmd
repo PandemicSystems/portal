@@ -1,9 +1,10 @@
 ---
-title: "style"
+title: "people"
 output: html_document
 ---
 
 </div>
+
 <head>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
@@ -20,6 +21,7 @@ output: html_document
 ::: card-body
 <h1>Project Council</h1>
 :::
+
 
 ::: card-body
 <div class="profile">
@@ -327,19 +329,23 @@ body {
   border-radius: 0.1rem;
 }
 
-
-
 .profile_info h2 {
   display: flex;
   margin-top: 0.1rem;
-  padding:0;
+  padding-left: 30px;
   line-width:auto;
 }
 
 .profile_info p {
   margin-top: 0.1rem;
   line-height: 1.5;
+  padding-left: 40px;
 }
+.toggle-text-button {
+            color: var(--primary-color);
+            cursor: pointer;
+            padding-left:40px;
+        }
 
 .hidden-text {
   display: none;
@@ -377,8 +383,7 @@ if ($(this).text() == "Read more") {
 }
 
 });
-</script>>
-
+</script>
 
 
 
