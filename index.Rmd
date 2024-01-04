@@ -4,96 +4,64 @@ output: html_document
 
 ---
 
-</div>
+</div> <!-- container-fluid main-container -->
 
-<!-- container-fluid main-container -->
+<!-- BANNER --> 
 
 <div class="jumbotron homepagebanner jumbotron-fluid">
-
 <div class="container">
 
-<!--<h1 class="display-3"></h1>-->
+## **Heterogeneous Model Integration for Infectious Disease Intelligence (&nbsp;HeMI&nbsp;:&nbsp;IDI&nbsp;)** {.lead}
 
-<h2 class="lead">
+## Applying System-of-Systems (SoS) thinking to the integration of models across scales & disciplines {.lead .tagline}
 
-Heterogeneous Model Integration for Infectious Disease Intelligence
+<!-- <a class="btn btn-primary btn-sm" href="#news" role="button">News & Updates</a> -->
 
-</h2>
+</div> <!--end container-->
+</div> <!--end jumbotron-->
 
-<h4 class="lead">
+<!-- MAIN CONTENT --> 
+<div class="container-fluid main-container">
+<div class="row">
 
-A multi-disciplinary, multi-institutional project seeking to apply the engineering System-of-Systems (SoS) concept to the problem of integrating models across disciplinary paradigms and scales.
-</h3>
+<!-- SUMMARY (LEFT COLUMN) --> 
+<div class="col-sm-8">
 
-<a class="btn btn-primary btn-sm" href="#news" role="button">News & Updates</a>
+## Project Summary
 
-</h2>
-</p>
+**Heterogeneous Model Integration for Infectious Disease Intelligence (&nbsp;HeMI&nbsp;:&nbsp;IDI&nbsp;)**
+is a multi-disciplinary, multi-institutional project seeking to apply the engineering System-of-Systems (SoS) concept to the grand challenge of integrating models across disciplines and scales. This project introduces a new paradigm (SoS) for infectious disease modeling. 
 
-</div>
-
-</div>
-
-<hr>
-
-<div class="container-fluid main-container" id="updates">
-
-<!-- container-fluid main-container -->
-
-<!---
-```{=html}
-<img src="images/InfectousDiseases_Twitter_UIDP_March_2_2021.jpg"/ 
-alt="Webinar: Infectious Disease Intelligence: Predicting the Next Pandemic. John Drake, Presenter">
-```
---->
-<p>
-Project Summary
-
-Heterogeneous Model Integration for Infectious Disease Intelligence
-A multi-disciplinary, multi-institutional project seeking to apply the engineering System-of-Systems (SoS) concept to the grand challenge of integrating models across disciplines and scales. This project introduces a new paradigm (SoS) for infectious disease modeling. 
-
-This project is funded by a NSF Predictive Intelligence for Pandemic Prevention Phase I Development Grant (PIPP Phase I). Our Phase I activities will culminate in the development of a “Vision Paper” outlining the SoS approach to infectious disease model integration and providing a blueprint for a Phase II. We are conducting six interdisciplinary demonstration projects focusing on Highly Pathogenic Avian Influenza (HPAI) and applying SoS thinking to problems at the intersections of biology (BIO), computer science (CISE), social science (SBE), and engineering (ENG).
+This project is funded by an **NSF Predictive Intelligence for Pandemic Prevention Phase I Development Grant (PIPP Phase I)**. Our Phase I activities will culminate in the development of a vision paper outlining the SoS approach to infectious disease model integration. Focusing on Highly Pathogenic Avian Influenza (HPAI) and SARS&#8209;CoV&#8209;2 as study systems, we are conducting six interdisciplinary demonstration projects applying SoS thinking to problems at the intersections of biology, computer science, social science, and engineering.
 
 During Phase I, we are engaging in workforce enhancement through the training of undergraduates, graduate students, and postdoctoral associates. Broader impacts of our project include the development of innovative and translational modeling approaches with relevance to various US mission agencies (e.g. USDA, EPA, NIH, and CDC) and global organizations (e.g. WHO, FAO, OIE, UN), as well as the creation of extensible, open-access computer code and data pipelines for integrative infectious disease modeling.
 
 We are currently forming an advisory board of leaders from academic, industry, government and non-governmental sectors, and building a network of stakeholders in advance of Phase II.
 
+</div> <!--end SUMMARY (LEFT COLUMN) --> 
 
-</p>
 
+<!--LATEST UPDATES (RIGHT COLUMN)-->
+<div class="col-sm-4">
+<!-- <div class="card mb-0"> -->
 
-<div class="container-fluid main-container" id="updates">
-::: card-header
-### Latest Updates
+::: card-header 
+## Latest Updates 
 :::
+
+<hr>
 
 <!--NEWS ITEM-->
 
-::: card
-::: card-body
-::: card-title
-
-:::
-
-<p class="card-text">
-
-<small class="card-subtitle mb-2 text-muted">day MMM YYY</small><br> xxxxxxxxx
-
-</p>
 <!--to get the text from the rmarkdown displayed in html-->
-```{r,setup,echo=FALSE,include=TRUE, results="asis"}
-
+```{r, echo=FALSE,include=TRUE, results="asis"}
 cat(htmltools::includeMarkdown("hey.md"))
-
-
 ```
-<!-- <div class="card-link"> -->
 
-<!-- [READ MORE &rarr;](news.html#) -->
 
-</div>
-:::
-:::
+</div> <!-- end LATEST UPDATES (RIGHT COLUMN)-->
+
+
 
 
 <!--- to remove the border of the box while creating the block--->
