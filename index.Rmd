@@ -40,10 +40,7 @@ We are currently forming an advisory board of leaders from academic, industry, g
 
 </div> <!--end SUMMARY (LEFT COLUMN) --> 
 
-
-<!--LATEST UPDATES (RIGHT COLUMN)-->
-<div class="col-sm-4">
-<!-- <div class="card mb-0"> -->
+<div class="col-sm-4"> <!--LATEST UPDATES (RIGHT COLUMN)-->
 
 ::: card-header 
 ## Latest Updates 
