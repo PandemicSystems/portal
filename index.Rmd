@@ -49,11 +49,42 @@ We are currently forming an advisory board of leaders from academic, industry, g
 <hr>
 
 <!--NEWS ITEMS-->
+```{r preprocessing, include=FALSE}
+process_update <- function(rmdfile) {
+  rmd_metadata <- rmarkdown::yaml_front_matter(rmdfile)
+  rmd_body <- ottrpal::remove_yaml_header(rmdfile)
+  
+  readmore <- character()
+  if(!is.null(rmd_metadata$link)){
+    readmore <- c(
+      '::: card-link',
+      paste0('[MORE INFO &rarr;](', rmd_metadata$link, ')'),
+      ':::'
+    )
+  }
+  
+  out <- c(
+    "::::: card",
+    ":::: card-body",
+    paste("###", rmd_metadata$title, "{.card-title}"),
+    '<small class="card-subtitle mb-2 text-muted">',
+    format(as.Date(rmd_metadata$date),"%B %d, %Y"),
+    '</small>',
+    '<p class="card-text">',
+    rmd_body,
+    '</p>',
+    readmore,
+    "::::",
+    ":::::"
+  )
+  cat(htmltools::includeMarkdown(out))
+}
+```
 
 <!--to get the text from the rmarkdown displayed in html-->
 ```{r, echo=FALSE,include=TRUE, results="asis"}
-cat(htmltools::includeMarkdown("hey.md"))
-cat(htmltools::includeMarkdown("hey.md"))
+
+process_update("updates/NewMembers.md")
 
 ```
 
