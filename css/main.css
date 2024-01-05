@@ -16,7 +16,7 @@ body {
 }
 
 .section h2{
-  padding-top:0px;
+  padding-top:20px;
 }
 
 
@@ -368,6 +368,7 @@ iframe {
 h1,h2,h3,a, a:active{
     font-family:'Oswald','Roboto',"Source Sans Pro", "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
     font-weight:400;
+    padding-top: 20px;
 }
 
 h4,h5,h6{
