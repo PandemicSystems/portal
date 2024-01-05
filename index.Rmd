@@ -48,13 +48,14 @@ We are currently forming an advisory board of leaders from academic, industry, g
 
 <hr>
 
-<!--NEWS ITEM-->
+<!--NEWS ITEMS-->
 
 <!--to get the text from the rmarkdown displayed in html-->
 ```{r, echo=FALSE,include=TRUE, results="asis"}
 cat(htmltools::includeMarkdown("hey.md"))
-```
+cat(htmltools::includeMarkdown("hey.md"))
 
+```
 
 </div> <!-- end LATEST UPDATES (RIGHT COLUMN)-->
 
