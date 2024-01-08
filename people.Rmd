@@ -7,7 +7,7 @@ output: html_document
 
 ::: {#contributors .jumbotron .jumbotron-fluid .homepagebanner}
 ::: container
-<h1>People</h1>
+# People
 :::
 :::
 
@@ -16,9 +16,29 @@ output: html_document
 <!-- container-fluid main-container -->
 
 ::: card-body
-<h1>Project Council</h1>
+# Project Council
 :::
 
+::: card-body
+<div class="profile">
+<img src="images/people/JohnDrake.jpg" alt="John Drake" class="card-img-top img-circle"/>
+
+<div class="profile_info">
+<h2>John Drake (Principal Investigator)</h2>
+
+John Drake is Regents Professor in the Odum School of Ecology and Director of the Center for the Ecology of Infectious Diseases (CEID) at the University of Georgia. He also directs the Global Infectious Disease Intelligence Consortium (GIDIC). Drake is a leading expert in modelling the dynamics of biological populations and epidemics, and has studied the emergence and spread of  numerous infectious diseases, including White-nose syndrome in North America, Ebola in Africa, and SARS-CoV-2 globally.
+
+<a class="toggle-text-button">Read more</a>
+
+<div class="toggle-text" style="display: none;">
+Drake is working to advance the field of Infectious Disease Intelligence by developing the infrastructure and expertise to provide decision makers with timely, actionable information on disease risk, emergence, and spread. 
+
+</div>
+<a href="#" class="read-less" style="display:none;">Read less</a>
+
+</div>
+</div>
+:::
 
 ::: card-body
 <div class="profile">
@@ -27,37 +47,23 @@ output: html_document
 <div class="profile_info">
 <h2>Justin Bahl</h2>
 
-<p>
-      Justin Bahl is an Associate Professor at the University of Georgia with appointments in the College of Public Health,       College of Veterinary Medicine, and Institute of Bioinformatics.  
-      Having completed a B.S. with Honors at the University of Toronto, he pursued a PhD in Molecular Systematics and            Evolution at the University of Hong Kong.  With Hong Kong as the epicenter of the 2003 SARS-CoV global epidemic,           Justin changed his research focus to ecology and evolution of infectious diseases.</p>
+Justin Bahl is an Associate Professor at the University of Georgia with a joint appointment in the College of Public Health (Department of Epidemiology & Biostatistics) and College of Veterinary Medicine (Department of Infectious Diseases). He is also a member of the Institute of Bioinformatics, the Center for the Ecology of Infectious Diseases, and the Center for Vaccines and Immunology at UGA. Bahl leads the Center for Applied Pathogen Epidemiology and Outbreak Response, a CDC Pathogen Genomics Center of Excellence (PGCoE).
+
 <a class="toggle-text-button">Read more</a>
-<p class="toggle-text" style="display: none;">
-    After completing his PhD, he joined the State Key Laboratory for Emerging Infectious Diseases as a postdoctoral fellow and researched viral ecology and evolution. The State Key Laboratory is a World Health Organization (WHO) reference laboratory for the diagnosis of influenza A/H5 and is part of the NIAID Centers for Excellence for Influenza Research and Surveillance. He later moved to Singapore to continue his postdoctoral training in Molecular Epidemiology at Duke-NUS Graduate Medical School and was promoted to Assistant Professor. He later joined the University of Texas School of Public Health in Houston as an Associate Professor before relocating to the University of Georgia. 
-    His training in evolutionary biology, epidemiology and ecology has equipped him for a research career focused on infectious disease dynamics.
-  </p>
+<div class="toggle-text" style="display: none;">
+Bahl holds a PhD in Molecular Systematics and Evolution from the University of Hong Kong.  
+With Hong Kong as the epicenter of the 2003 SARS-CoV global epidemic, Bahl changed his research focus to ecology and evolution of infectious diseases.
+
+After completing his PhD, Bahl joined the State Key Laboratory for Emerging Infectious Diseases as a postdoctoral fellow and researching viral ecology and evolution. The State Key Laboratory is a World Health Organization (WHO) reference laboratory for the diagnosis of influenza A/H5, and a NIAID Center for Excellence for Influenza Research and Surveillance. 
+
+He later joined Duke-NUS Graduate Medical School in Singapore, first as a postdoctoral associate in Molecular Epidemiology, then as Assistant Professor, then moved to the University of Texas School of Public Health in Houston as an Associate Professor before joining the University of Georgia. Bahl's training in evolutionary biology, epidemiology and ecology has equipped him for a research career focused on infectious disease dynamics.
+</div>
+  
   <a href="#" class="read-less" style="display:none;">Read less</a>
 </div>
 </div>
 :::
-::: card-body
-<div class="profile">
-<img src="images/people/JohnDrake.jpg" alt="John Drake" class="card-img-top img-circle"/>
 
-<div class="profile_info">
-<h2>John Drake</h2>
-
-<p>
-    John Drake is Regents Professor of Ecology, Odum School of Ecology and Director of the Center for the Ecology of Infectious Diseases (CEID) and the Global Infectious Disease Intelligence Consortium (GIDIC), University of Georgia.A biological modeler who studies the dynamics of zoonotic infectious diseases, John has previously used spatial interaction models to understand and predict the spread of White-nose syndrome in the North America, the 2013-2015 West African Ebola epidemic, SARS-CoV-2 across the United States in 2020, and COVID-19 importation risk into United States port of entry airports. 
-</p>
-<a class="toggle-text-button">Read more</a>
-<p class="toggle-text" style="display: none;">
-His research additionally seeds to understand how zoonotic Infectious Disease Intelligence can be used to inform leaders when an outbreak is beggingging, and how it may spread.As the PIPP Grant Phase I Principal Investigator (PI), John is leading a team of five scientists who are associated with the Cary Institute of Ecosystem Studies, Department of Mechanical Engineering at the University of Michigan, and several colleges and schools at the University of Georgia.John holds a PhD in Biological Sciences from Notre Dame University. 
-</p>
-  <a href="#" class="read-less" style="display:none;">Read less</a>
-
-</div>
-</div>
-:::
 ::: card-body
 <div class="profile">
 <img src="images/people/BogdanEpureanu.jpg" alt="Bogdan Epureanu" class="card-img-top img-circle"/>
@@ -65,17 +71,19 @@ His research additionally seeds to understand how zoonotic Infectious Disease In
 <div class="profile_info">
 <h2>Bogdan Epureanu</h2>
 
-<p>Bogdan I. Epureanu is an Arthur F. Thurnau Professor in the Department of Mechanical Engineering at the University of Michigan and has a courtesy appointment in Electrical Engineering and Computer Science. He is the Director of the Automotive Research Center (ARC), a $50 million center for innovating cutting-edge technologies that serve the next generation of ground transportation systems. The ARC is the flagship academic partner of the U.S. Army Ground Vehicle Systems Center, and at the heart of an ecosystem of research and education.
-</p>
+Bogdan I. Epureanu is an Arthur F. Thurnau Professor in the Department of Mechanical Engineering at the University of Michigan and has a courtesy appointment in Electrical Engineering and Computer Science. He is the Director of the Automotive Research Center (ARC), a $50 million center for innovating cutting-edge technologies that serve the next generation of ground transportation systems. The ARC is the flagship academic partner of the U.S. Army Ground Vehicle Systems Center, and at the heart of an ecosystem of research and education.
+
 <a class="toggle-text-button">Read more</a>
-<p class="toggle-text" style="display: none;">
-Bogdan has earned an international reputation for modeling the dynamics of an exceptionally broad range of complex, nonlinear systems. His work is notable in its real-world impact on aerospace, ground transportation and energy, as well as biologic and ecologic systems. Many of Bogdan’s algorithms and models of the dynamics of airplane engine components have been implemented into manufacturing processes by long standing industry partners, enabling next-generation turbo-jet engines for both military and commercial aircraft. The methods he developed to use vibration to assess the health of lithium-ion battery packs have led to new design approaches to prolong battery life in hybrid electric vehicles. His work elucidating how structures interact with complex materials has led to new approaches to building foundations for offshore wind turbines. He has published over 350 articles in journals, conferences, and books.He received his Ph.D. from Duke University in 1999. 
-</p>
-  <a href="#" class="read-less" style="display:none;">Read less</a>
+<div class="toggle-text" style="display: none;">
+His research focuses on nonlinear dynamics of complex systems, such as teaming of autonomous vehicles, enhanced aircraft safety and performance, early detection of neurodegenerative diseases, and forecasting tipping points in disease epidemics and ecology. His research brings together interdisciplinary teams and consortia such as Government (NIH, NSF, DOE, DOD), Industry (Ford, Pratt & Whitney, GE, Airbus), and Academia. He has published over 350 articles in journals, conferences, and books. He received his Ph.D. from Duke University in 1999. 
+</div>
+
+<a href="#" class="read-less" style="display:none;">Read less</a>
 
 </div>
 </div>
 :::
+
 ::: card-body
 <div class="profile">
 <img src="images/people/BarbaraHan.jpg" alt="Barbara Han" class="card-img-top img-circle"/>
@@ -139,11 +147,15 @@ Michael's research has examined the communication of science and risk topics ran
 ::: card-body
 <div class="profile">
 <img src="images/people/AminGhadami.jpg" alt="Amin Ghadami" class="card-img-top img-circle"/>
+
 <div class="profile_info">
 <h2>Amin Ghadami</h2>
 <p>
-      XXXX XXXX XXXX XXXXXX XXXXX
-      XXXX XXXX XXXX
+Dr. Amin Ghadami is a Research Assistant Professor at the Sonny Astani Department of Civil and Environmental Engineering. He received his Ph.D. in Mechanical Engineering from the University of Michigan-Ann Arbor in 2019 and was a postdoctoral research fellow at the University of Michigan before joining the University of Southern California in 2023. He also earned his M.Sc. in Mechanical Engineering from Sharif University of Technology (2013) and B.Sc. in Mechanical Engineering from Isfahan University of Technology (2011).
+
+Dr. Ghadami's research interest focuses on developing data-driven and artificial intelligence techniques to predict, design, and control the dynamics of complex systems. The ultimate goal is to ensure the systems can best withstand undesirable and unexpected outcomes in their dynamics. These developments range from predicting catastrophic phenomena in the dynamics of natural and engineered systems to analysis and improving the resilience of multi-agent system dynamics while operating in uncertain environments. 
+
+Research areas: Dynamical systems and control, Data-driven methods, Machine learning in dynamical systems
 </p>
 </div>
 </div>

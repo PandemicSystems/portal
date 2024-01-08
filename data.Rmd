@@ -4,22 +4,35 @@ output: html_document
 ---
 </div>
 <div class="container">
-
-
 <p id="disclaimer"></p>
-## Data Sources
-CEID now maintains a public repository of datasets used in our COVID-19 projects. The datasets in the repository were compiled by members of the CEID COVID-19 working group. The data have been formated to be used 'as-is' and are updated often. Data sets were either created from html scraping or manually entered. In the case of the automated web scraping, the raw data and scripts are included. 
-## Data is available here: 
+<div class="container-frames">
+## Data
+
+Curated data sources will be made available here.
+
+## Code
+
+Data and code for our demonstration projects will be made available here:
+
+<p>
+  <a href="https://github.com/cimidi/" taget="_blank">
+  <img src="images/GitHub-Mark-64px.png" id="github-icon" alt="GitHub organization"/>
+  GitHub.com/cimidi
+  </a>
+</p>
+  
+</div>
+ 
 
 ```{r,setup,echo=FALSE,include=TRUE,results="asis"}
 
 ## Data on the publications is  available here: 
 
 
-DT::datatable(mtcars[1:10 ,1:4])
+# DT::datatable(mtcars[1:10 ,1:4])
 
 # get a list of all the files in the folder
-file_list <- list.files(path = "hey", full.names = TRUE)
+file_list <- list.files(path = "updates", full.names = TRUE)
 
 # initialize a data frame to store the file information
 df <- data.frame(filename = character(),
@@ -44,8 +57,9 @@ for (file in file_list) {
 df <- df[order(df$date_created,decreasing= TRUE),]
 
 #displaying the latest
-cat(htmltools::includeMarkdown(df[3,1]))
+# cat(htmltools::includeMarkdown(df[3,1]))
 ```
+
 <!---to make the boxes disappear--->
 <style>
     pre {
