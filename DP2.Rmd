@@ -2,9 +2,12 @@
 title: "DP2"
 output: html_document
 ---
-</div>
+::: {#contributors .jumbotron .jumbotron-fluid .homepagebanner}
+::: container
+Research
+:::
+:::
 
-<div class="container">
 ## Demonstration Project 2:  Explainable Artificial Intelligence (XAI) for pandemic preparedness
 
 <!---</div>

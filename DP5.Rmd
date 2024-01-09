@@ -2,8 +2,12 @@
 title: "DP5"
 output: html_document
 ---
-</div>
-<div class="container">
+::: {#contributors .jumbotron .jumbotron-fluid .homepagebanner}
+::: container
+Research
+:::
+:::
+
 ## Demonstration Project 5: Competition dynamics, spread and diversity of co-circulating avian influenza A viruses with pandemic potential in wild and domestic hosts
 
 <!---</div>

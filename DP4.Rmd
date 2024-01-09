@@ -3,8 +3,12 @@ title: "DP4"
 output: html_document
 
 ---
-</div>
-<div class="container">
+::: {#contributors .jumbotron .jumbotron-fluid .homepagebanner}
+::: container
+Research
+:::
+:::
+
 ## Demonstration Project 4: Social tipping points in infectious disease transmission
 
 <!---</div>

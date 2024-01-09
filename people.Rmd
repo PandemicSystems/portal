@@ -2,7 +2,6 @@
 title: "people"
 output: html_document
 ---
-
 </div>
 
 :::: {#contributors .jumbotron .jumbotron-fluid .homepagebanner}
@@ -20,6 +19,7 @@ output: html_document
 ::: card-body
 <div class="profile">
 <img src="images/people/JohnDrake.jpg" alt="John Drake" class="card-img-top img-circle"/>
+
 <div class="profile_info">
 ## John Drake (Principal Investigator)
 
@@ -37,6 +37,7 @@ Drake is working to advance the field of Infectious Disease Intelligence by deve
 ::: card-body
 <div class="profile">
 <img src="images/people/JustinBahl.jpg" alt="Justin Bahl" class="card-img-top img-circle"/>
+
 <div class="profile_info">
 ## Justin Bahl
 
@@ -59,6 +60,7 @@ He later joined Duke-NUS Graduate Medical School in Singapore, first as a postdo
 ::: card-body
 <div class="profile">
 <img src="images/people/BogdanEpureanu.jpg" alt="Bogdan Epureanu" class="card-img-top img-circle"/>
+
 <div class="profile_info">
 ## Bogdan Epureanu
 
@@ -68,6 +70,7 @@ Bogdan I. Epureanu is an Arthur F. Thurnau Professor in the Department of Mechan
 <div class="toggle-text" style="display: none;">
 His research focuses on nonlinear dynamics of complex systems, such as teaming of autonomous vehicles, enhanced aircraft safety and performance, early detection of neurodegenerative diseases, and forecasting tipping points in disease epidemics and ecology. His research brings together interdisciplinary teams and consortia such as Government (NIH, NSF, DOE, DOD), Industry (Ford, Pratt & Whitney, GE, Airbus), and Academia. He has published over 350 articles in journals, conferences, and books. He received his PhD from Duke University in 1999. 
 </div>
+
 <a href="#" class="read-less" style="display:none;">Read less</a>
 </div>
 </div>
@@ -76,6 +79,7 @@ His research focuses on nonlinear dynamics of complex systems, such as teaming o
 ::: card-body
 <div class="profile">
 <img src="images/people/BarbaraHan.jpg" alt="Barbara Han" class="card-img-top img-circle"/>
+
 <div class="profile_info">
 ## Barbara Han
 
@@ -93,6 +97,7 @@ Han completed a PhD in Zoology at Oregon State University. During her PhD, she a
 ::: card-body
 <div class="profile">
 <img src="images/people/GlenNowak.jpg" alt="Glen Nowak" class="card-img-top img-circle"/>
+
 <div class="profile_info">
 ## Glen Nowak
 
@@ -110,6 +115,7 @@ Prior to joining CDC in January 1999, Nowak was an Associate Professor of Advert
 ::: card-body
 <div class="profile">
 <img src="images/people/PejmanRohani.jpg" alt="Pejman Rohani" class="card-img-top img-circle"/>
+
 <div class="profile_info">
 ## Pejman Rohani
 
@@ -131,6 +137,7 @@ Rohani’s research is focused on population biology, with emphasis on host-natu
 ::: card-body
 <div class="profile">
 <img src="images/people/MichaelCacciatore.jpg" alt="Michael Cacciatore" class="card-img-top img-circle"/>
+
 <div class="profile_info">
 ## Michael Cacciatore
 
@@ -148,6 +155,7 @@ Cacciatore's research has examined the communication of science and risk topics 
 ::: card-body
 <div class="profile">
 <img src="images/people/AminGhadami.jpg" alt="Amin Ghadami" class="card-img-top img-circle"/>
+
 <div class="profile_info">
 ## Amin Ghadami
 
@@ -165,6 +173,7 @@ Ghadami's research interest focuses on developing data-driven and artificial int
 ::: card-body
 <div class="profile">
 <img src="images/people/EllieGraeden.jpg" alt="Ellie Graeden" class="card-img-top img-circle"/>
+
 <div class="profile_info">
 ## Ellie Graeden
 
@@ -188,6 +197,7 @@ Graeden now leads the health intelligence research pillar at the Center, includi
 ::: card-body
 <div class="profile">
 <img src="images/people/Kerri-AnnAnderson.jpg" alt="Kerri-Ann Anderson" class="card-img-top img-circle"/>
+
 <div class="profile_info">
 ## Kerri-Ann Anderson (Postdoctoral Associate)
 
@@ -205,6 +215,7 @@ Anderson's current goals as part of PIPP Phase 1 project team are to identify an
 ::: card-body
 <div class="profile">
 <img src="images/people/Faizulla.jpg" alt="Sakil Faizulla" class="card-img-top img-circle"/>
+
 <div class="profile_info">
 ## Sakil Faizullah (PhD Student)
 
@@ -222,6 +233,7 @@ Faizullah worked for the BBC World Service in Bangladesh as a producer for TV/ra
 ::: card-body
 <div class="profile">
 <img src="images/people/JohnKing.jpg" alt="John King" class="card-img-top img-circle"/>
+
 <div class="profile_info">
 ## John King (Project Manager)
 
@@ -239,6 +251,7 @@ King recently co-organized the symposium *Japanese Encephalitis Virus: Emerging 
 ::: card-body
 <div class="profile">
 <img src="images/people/EricMarty.jpg" alt="Eric Marty" class="card-img-top img-circle"/>
+
 <div class="profile_info">
 ## Éric Marty (Data Visualization)
 
@@ -256,6 +269,7 @@ Marty holds a PhD in Music Composition from the University of California at Berk
 ::: card-body
 <div class="profile">
 <img src="images/people/HaileyRobertson.jpg" alt="Hailey Robertson" class="card-img-top img-circle"/>
+
 <div class="profile_info">
 ## Hailey Robertson
 
@@ -309,6 +323,7 @@ Stephens earned her MA in Strategic Communication Design from the University of 
 ::: card-body
 <div class="profile">
 <img src="images/people/GarrickStott.jpg" alt="Garrick Stott" class="card-img-top img-circle"/>
+
 <div class="profile_info">
 ## Garrick "Guppy" Stott (PhD Student)
 
@@ -326,6 +341,7 @@ Stott spent a year at the CDC for an ORISE fellowship with the influenza divisio
 ::: card-body
 <div class="profile">
 <img src="images/people/MadisonWilson.jpg" alt="Madison Wilson" class="card-img-top img-circle"/>
+
 <div class="profile_info">
 ## Madison Wilson (Administrator)
 
@@ -343,6 +359,7 @@ Madison is also managing PIPP Phase I project budget allocation with principal i
 ::: card-body
 <div class="profile">
 <img src="images/people/RyanZimmerman.jpg" alt="Ryan Zimmerman" class="card-img-top img-circle"/>
+
 <div class="profile_info">
 ## Ryan Zimmerman
 
