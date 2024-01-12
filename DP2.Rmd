@@ -2,13 +2,17 @@
 title: "DP2"
 output: html_document
 ---
-::: {#contributors .jumbotron .jumbotron-fluid .homepagebanner}
-::: container
-Research
-:::
-:::
 
-## Demonstration Project 2:  Explainable Artificial Intelligence (XAI) for pandemic preparedness
+<!-- BANNER --> 
+</div> <!-- container-fluid main-container -->
+<div class="jumbotron homepagebanner jumbotron-fluid">
+<div class="container">
+## **Research**<br>Demonstration Project 2:<br>Explainable Artificial Intelligence (XAI) for pandemic preparedness {.lead .tagline}
+</div> <!--end container-->
+</div> <!--end jumbotron-->
+
+<!-- MAIN CONTENT --> 
+<div class="container-fluid main-container">
 
 <!---</div>
 ```{r setup, include=FALSE}

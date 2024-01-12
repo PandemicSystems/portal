@@ -3,16 +3,17 @@ title: "DP1"
 output: html_document
 
 ---
-::: {#contributors .jumbotron .jumbotron-fluid .homepagebanner}
-::: container
-Research
-:::
-:::
 
-### Demonstration Project 1:  Advancing knowledge and reasoning in Artificial Intelligence to predict and understand zoonotic transmission and spillover
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+<!-- BANNER --> 
+</div> <!-- container-fluid main-container -->
+<div class="jumbotron homepagebanner jumbotron-fluid">
+<div class="container">
+## **Research**<br>Demonstration Project 1:<br>Advancing knowledge and reasoning in Artificial Intelligence to predict and understand zoonotic transmission and spillover {.lead .tagline}
+</div> <!--end container-->
+</div> <!--end jumbotron-->
+
+<!-- MAIN CONTENT --> 
+<div class="container-fluid main-container">
 
 <!---Zoonotic diseases are impacted by multiple interconnected systems involving animals, humans, and the environment. The viral evolution and basis of transmission are often examined in isolation, without considering interactions between host behavior and ecology. This project aims to use artificial intelligence to enhance predictive intelligence by learning patterns from data to advance system reasoning (what will happen next and why?). This project will utilize existing knowledge about system relations and disease-specific systems to create a comprehensive framework of knowledge about HPAI across both human and non-human animals at a global scale. Additionally, this project expects to create an electronic reasoning engine that can be experimentally tested to fill in informational gaps in areas of HPAI. 
 <p id="disclaimer"></p>--->
@@ -24,7 +25,7 @@ knitr::include_url("DP1_summary.html")
 
 ## Supplemental Information
 
-<div class="container-frames">
+::: container-frames
 
 <p>Preprint:<br>
   <a href="https://github.com/CEIDatUGA/covid-university-reopening/raw/master/manuscript.pdf" target="_blank">
@@ -38,4 +39,6 @@ knitr::include_url("DP1_summary.html")
   </a>
 </p>
 
-</div>
+:::
+
+

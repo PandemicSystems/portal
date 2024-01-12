@@ -7,6 +7,7 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+
 ### Systems-of-Systems (SoS) for Infectious Disease Intelligence (IDI)
 
 The COVID-19 pandemic demonstrated the interconnectedness of disease transmission, public health policy, human behavior, economics, supply chains, and numerous other systems normally considered in isolation. 
