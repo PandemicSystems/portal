@@ -2,28 +2,21 @@
 title: "data"
 output: html_document
 ---
-</div>
+<!-- BANNER --> 
+</div> <!-- container-fluid main-container -->
+<div class="jumbotron homepagebanner jumbotron-fluid">
 <div class="container">
-<p id="disclaimer"></p>
-<div class="container-frames">
-## Data
+## **Data** {.lead .tagline}
+</div> <!--end container-->
+</div> <!--end jumbotron-->
+
+<!-- MAIN CONTENT --> 
+<div class="container-fluid main-container">
+
+### Data sources
 
 Curated data sources will be made available here.
-
-## Code
-
-Data and code for our demonstration projects will be made available here:
-
-<p>
-  <a href="https://github.com/cimidi/" taget="_blank">
-  <img src="images/GitHub-Mark-64px.png" id="github-icon" alt="GitHub organization"/>
-  GitHub.com/cimidi
-  </a>
-</p>
-  
-</div>
- 
-
+<!--
 ```{r,setup,echo=FALSE,include=TRUE,results="asis"}
 
 ## Data on the publications is  available here: 
@@ -59,13 +52,27 @@ df <- df[order(df$date_created,decreasing= TRUE),]
 #displaying the latest
 # cat(htmltools::includeMarkdown(df[3,1]))
 ```
+-->
+### Code
+
+Data and code for our demonstration projects will be made available here:
+
+<p>
+  <a href="https://github.com/cimidi/" taget="_blank">
+  <img src="images/GitHub-Mark-64px.png" id="github-icon" alt="GitHub organization"/>
+  GitHub.com/cimidi
+  </a>
+</p>
+  
+
+
 
 <!---to make the boxes disappear--->
-<style>
-    pre {
-        border: 0;
-    }
-</style>
+<!-- <style> -->
+<!--     pre { -->
+<!--         border: 0; -->
+<!--     } -->
+<!-- </style> -->
 
 <!---text2 <- readLines("hey1.txt")
 text2 <- paste0("### Title \n", text2)

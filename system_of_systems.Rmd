@@ -3,12 +3,16 @@ title: "System of Systems"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+<!-- BANNER --> 
+</div> <!-- container-fluid main-container -->
+<div class="jumbotron homepagebanner jumbotron-fluid">
+<div class="container">
+## **Research**<br>Systems-of-Systems (SoS) for Infectious Disease Intelligence (IDI) {.lead .tagline}
+</div> <!--end container-->
+</div> <!--end jumbotron-->
 
-
-### Systems-of-Systems (SoS) for Infectious Disease Intelligence (IDI)
+<!-- MAIN CONTENT --> 
+<div class="container-fluid main-container">
 
 The COVID-19 pandemic demonstrated the interconnectedness of disease transmission, public health policy, human behavior, economics, supply chains, and numerous other systems normally considered in isolation. 
 
