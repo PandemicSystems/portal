@@ -304,12 +304,12 @@ Sarkar has been studying consumer behavior using dynamical modeling of a real-wo
 
 ::: card-body
 <div class="profile">
-<img src="images/people/TessStephens.jpg" alt="Tess Stephens" class="card-img-top img-circle"/>
+<img src="images/people/TessStevens.jpg" alt="Tess Stevens" class="card-img-top img-circle"/>
 
 <div class="profile_info">
-## Tess Stephens
+## Tess Stevens
 
-Tess Stephens is a user experience designer at Talus Analytics focused on creating visuals that allow data to be thoughtfully investigated. Her work is informed by her interest in systems design, her background in writing and editing, and her commitment to clarity and functionality. 
+Tess Stevens is a user experience designer at Talus Analytics focused on creating visuals that allow data to be thoughtfully investigated. Her work is informed by her interest in systems design, her background in writing and editing, and her commitment to clarity and functionality. 
 
 <a class="toggle-text-button">Read more</a>
 <div class="toggle-text" style="display: none;">
@@ -374,9 +374,6 @@ Zimmerman has been a passionate storyteller and communicator across several type
 </div>
 :::
 
-</div>
-
-
 
 
 <!--- to remove the border of the box while creating the block--->
@@ -384,7 +381,7 @@ Zimmerman has been a passionate storyteller and communicator across several type
     pre {
         border: 0;
     }
-    /*==================================================================  */
+/*==================================================================  */
 /* Default Styles =========================== */
 /*==================================================================  */
 :root {
