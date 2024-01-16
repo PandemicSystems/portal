@@ -6,7 +6,7 @@ output: html_document
 </div> <!-- container-fluid main-container -->
 <div class="jumbotron homepagebanner jumbotron-fluid">
 <div class="container">
-## **Data** {.lead .tagline}
+## PANDEMIC SYSTEMS GROUP<br>**Data** {.lead}
 </div> <!--end container-->
 </div> <!--end jumbotron-->
 
@@ -53,6 +53,7 @@ df <- df[order(df$date_created,decreasing= TRUE),]
 # cat(htmltools::includeMarkdown(df[3,1]))
 ```
 -->
+
 ### Code
 
 Data and code for our demonstration projects will be made available here:
@@ -64,7 +65,7 @@ Data and code for our demonstration projects will be made available here:
   </a>
 </p>
   
-
+&nbsp;
 
 
 <!---to make the boxes disappear--->
