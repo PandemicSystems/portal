@@ -97,5 +97,6 @@ rsconnect/
 #------------- PROJECT -------------#
 twitter/
 *.psd
+*.ai
 Rplot.*
 local/
