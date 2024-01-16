@@ -1,5 +1,5 @@
 output_dir: '.'
-name: "CEID 2019 nCoV"
+name: "The Pandemic Systems Group"
 output:
   html_document:
     self_contained: false

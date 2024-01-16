@@ -7,7 +7,7 @@ output: html_document
 </div> <!-- container-fluid main-container -->
 <div class="jumbotron homepagebanner jumbotron-fluid">
 <div class="container">
-## **Research**<br>Systems-of-Systems (SoS) for Infectious Disease Intelligence (IDI) {.lead .tagline}
+## **Research --- HeMI : IDI**<br>Systems-of-Systems (SoS) for Infectious Disease Intelligence {.lead .tagline}
 </div> <!--end container-->
 </div> <!--end jumbotron-->
 

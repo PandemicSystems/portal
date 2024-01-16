@@ -6,7 +6,7 @@ output: html_document
 
 :::: {#contributors .jumbotron .jumbotron-fluid .homepagebanner}
 ::: container
-# People
+## PANDEMIC SYSTEMS GROUP<br>**People** {.lead}
 :::
 ::::
 
@@ -232,6 +232,25 @@ Faizullah worked for the BBC World Service in Bangladesh as a producer for TV/ra
 
 ::: card-body
 <div class="profile">
+<img src="images/people/person.jpg" alt="Ali Ghadami" class="card-img-top img-circle"/>
+
+<div class="profile_info">
+## Ali Ghadami (PhD Student)
+
+Ali Ghadami is a PhD student at the Univeristy of Michigan working with Bogdan Epureanu.
+<!--
+<a class="toggle-text-button">Read more</a>
+<div class="toggle-text" style="display: none;">
+More. 
+</div>
+<a href="#" class="read-less" style="display:none;">Read less</a>
+-->
+</div>
+</div>
+:::
+
+::: card-body
+<div class="profile">
 <img src="images/people/JohnKing.jpg" alt="John King" class="card-img-top img-circle"/>
 
 <div class="profile_info">
@@ -298,6 +317,25 @@ Sukanta Sarkar is a postdoctoral associate working with Dr. John Drake.  In this
 Sarkar has been studying consumer behavior using dynamical modeling of a real-world social contagion system and working to understand social tipping points in infectious disease transmission through dynamical systems. He is exploring whether statistical early warning signals are detectable in such systems and which perform most robustly. Sarkar holds a PhD in Mathematics from the Indian Institute of Technology, Ropar. 
 </div>
 <a href="#" class="read-less" style="display:none;">Read less</a>
+</div>
+</div>
+:::
+
+::: card-body
+<div class="profile">
+<img src="images/people/person.jpg" alt="Minsun Shim" class="card-img-top img-circle"/>
+
+<div class="profile_info">
+## Minsun Shim (MSc Student)
+
+Minsun Shim is a MSc student at the University of Southern California working with Amin Ghadami.
+<!--
+<a class="toggle-text-button">Read more</a>
+<div class="toggle-text" style="display: none;">
+More. 
+</div>
+<a href="#" class="read-less" style="display:none;">Read less</a>
+-->
 </div>
 </div>
 :::

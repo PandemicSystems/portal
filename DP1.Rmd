@@ -8,7 +8,7 @@ output: html_document
 </div> <!-- container-fluid main-container -->
 <div class="jumbotron homepagebanner jumbotron-fluid">
 <div class="container">
-## **Research**<br>Demonstration Project 1:<br>Advancing knowledge and reasoning in Artificial Intelligence to predict and understand zoonotic transmission and spillover {.lead .tagline}
+## **Research --- HeMI : IDI**<br>Demonstration Project 1:<br>Advancing knowledge and reasoning in Artificial Intelligence to predict and understand zoonotic transmission and spillover {.lead .tagline}
 </div> <!--end container-->
 </div> <!--end jumbotron-->
 

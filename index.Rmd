@@ -3,14 +3,12 @@ title: "home"
 output: html_document
 ---
 
-</div> <!-- container-fluid main-container -->
-
 <!-- BANNER --> 
-
+</div> <!-- container-fluid main-container -->
 <div class="jumbotron homepagebanner jumbotron-fluid">
 <div class="container">
 
-## **Heterogeneous Model Integration for Infectious Disease Intelligence (&nbsp;HeMI&nbsp;:&nbsp;IDI&nbsp;)** {.lead}
+## PANDEMIC SYSTEMS GROUP<br>**Heterogeneous Model Integration for Infectious Disease Intelligence (&nbsp;HeMI&nbsp;:&nbsp;IDI&nbsp;)** {.lead}
 
 ## Applying System-of-Systems (SoS) thinking to the integration of models across scales & disciplines {.lead .tagline}
 
@@ -26,10 +24,16 @@ output: html_document
 <!-- SUMMARY (LEFT COLUMN) --> 
 <div class="col-sm-8">
 
-## Project Summary
+## The Pandemic Systems Group
+
+The **Pandemic Systems Group** is an multi-disciplinary, multi-institutional research group established to advance the understanding of pandemics from a human systems perspective.
+
+We develop infectious disease intelligence grounded in the study of interacting human systems, including epidemiological, evolutionary, environmental, social, political and econmic systems. 
+
+## Heterogeneous Model Integration for Infectious Disease Intelligence
 
 **Heterogeneous Model Integration for Infectious Disease Intelligence (&nbsp;HeMI&nbsp;:&nbsp;IDI&nbsp;)**
-is a multi-disciplinary, multi-institutional project seeking to apply the engineering System-of-Systems (SoS) concept to the grand challenge of integrating models across disciplines and scales. This project introduces a new paradigm (SoS) for infectious disease modeling. 
+is an interdisciplinary project seeking to apply the engineering System-of-Systems (SoS) concept to the grand challenge of integrating models across disciplines and scales. This project introduces a new paradigm (SoS) for infectious disease modeling. 
 
 This project is funded by an **NSF Predictive Intelligence for Pandemic Prevention Phase I Development Grant (PIPP Phase I)**. Our Phase I activities will culminate in the development of a vision paper outlining the SoS approach to infectious disease model integration. Focusing on Highly Pathogenic Avian Influenza (HPAI) and SARS&#8209;CoV&#8209;2 as study systems, we are conducting six interdisciplinary demonstration projects applying SoS thinking to problems at the intersections of biology, computer science, social science, and engineering.
 
@@ -88,9 +92,9 @@ process_update("updates/NewMembers.md")
 ```
 
 </div> <!-- end LATEST UPDATES (RIGHT COLUMN)-->
+</div> <!-- end row -->
 
-
-
+&nbsp;
 
 <!--- to remove the border of the box while creating the block--->
 <style>

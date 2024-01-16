@@ -6,7 +6,7 @@ output: html_document
 </div> <!-- container-fluid main-container -->
 <div class="jumbotron homepagebanner jumbotron-fluid">
 <div class="container">
-## **Research**<br>Demonstration Project 3:<br>Integration of pandemic and infectious disease-related health and risk-benefit communication science and data into models {.lead .tagline}
+## **Research --- HeMI : IDI**<br>Demonstration Project 3:<br>Integration of pandemic and infectious disease-related health and risk-benefit communication science and data into models {.lead .tagline}
 </div> <!--end container-->
 </div> <!--end jumbotron-->
 

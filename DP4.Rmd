@@ -7,7 +7,7 @@ output: html_document
 </div> <!-- container-fluid main-container -->
 <div class="jumbotron homepagebanner jumbotron-fluid">
 <div class="container">
-## **Research**<br>Demonstration Project 4:<br>Social tipping points in infectious disease transmission {.lead .tagline}
+## **Research --- HeMI : IDI**<br>Demonstration Project 4:<br>Social tipping points in infectious disease transmission {.lead .tagline}
 </div> <!--end container-->
 </div> <!--end jumbotron-->
 
