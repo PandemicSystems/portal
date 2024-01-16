@@ -325,13 +325,13 @@ Stephens earned her MA in Strategic Communication Design from the University of 
 <img src="images/people/GarrickStott.jpg" alt="Garrick Stott" class="card-img-top img-circle"/>
 
 <div class="profile_info">
-## Garrick "Guppy" Stott (PhD Student)
+## Guppy Stott (PhD Student)
 
-Garrick Stott is a PhD student in the lab of Dr. Justin Bahl, College of Public Health at the University of Georgia.  Stott’s research focuses on SARS-CoV-2 and influenza phylogenetics. Stott studied mathematics at Clemson University and earned a master’s degree in statistics from North Carolina State University while working as a data scientist for TIAA.
+Guppy Stott is a PhD student in the lab of Dr. Justin Bahl, College of Public Health at the University of Georgia.  Stott’s research focuses on SARS-CoV-2 and influenza phylogenetics. Stott studied mathematics at Clemson University and earned a master’s degree in statistics from North Carolina State University while working as a data scientist for TIAA.
 
 <a class="toggle-text-button">Read more</a>
 <div class="toggle-text" style="display: none;">
-Stott spent a year at the CDC for an ORISE fellowship with the influenza division prior to starting their PhD in bioinformatics at UGA in 2021. Stott is treasurer for the Bioinformatics Graduate Student Association at the University of Georgia and an editor for the Athens Science Observer in Athens, GA. 
+Stott spent a year at the CDC for an ORISE fellowship with the influenza division prior to starting their PhD in bioinformatics at UGA in 2021. Stott is representative for the Bioinformatics Graduate Student Association at the University of Georgia and editor-in-chief for the Athens Science Observer in Athens, GA. 
 </div>
 <a href="#" class="read-less" style="display:none;">Read less</a>
 </div>
