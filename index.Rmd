@@ -26,9 +26,9 @@ output: html_document
 
 ## The Pandemic Systems Group
 
-The **Pandemic Systems Group** is an multi-disciplinary, multi-institutional research group established to advance the understanding of pandemics from a human systems perspective.
+The **Pandemic Systems Group** is a multi-disciplinary, multi-institutional research group established to advance the understanding of pandemics from a human systems perspective.
 
-We develop infectious disease intelligence grounded in the study of interacting human systems, including epidemiological, evolutionary, environmental, social, political and econmic systems. 
+We develop infectious disease intelligence grounded in the study of interacting human systems, including epidemiological, evolutionary, environmental, social, political and economic systems. 
 
 ## Heterogeneous Model Integration for Infectious Disease Intelligence
 
