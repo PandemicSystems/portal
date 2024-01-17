@@ -13,17 +13,20 @@ output: html_document
 <!-- MAIN CONTENT --> 
 <div class="container-fluid main-container">
 
-<!---</div>
-## Demonstration Project 5: Competition dynamics, spread and diversity of co-circulating avian influenza A viruses with pandemic potential in wild and domestic hosts
+<!-- <p id="disclaimer"></p> -->
+
+## Project abstract
 
 The influenza A virus has the ability to infect a variety of species. Though transmission between species is limited, it can lead to human pandemics and panzootics among domestic animals. It is difficult to prepare for these spillover events due to a lack of knowledge of viral traits that impact human transmission and limitations in quantifying the risk of exposure to reservoir populations. The goal of DP5 is to generate new knowledge about the underlying processes impacting influenza A virus spread, transmission potential, and adaptation. This project involves creating an integrated framework to examine the collective role of epidemiological, immunological, and evolutionary processes in shaping viral phylogenies.
 
---->
+<!--
 ```{r echo=FALSE, out.extra='id="DP5" scrolling="no" width="100%"'}
 knitr::include_url("DP5_summary.html")
 ```
 <script>iFrameResize({ log: false }, '#DP5')</script>
+-->
 
+<!--
 ## Supplemental Information
 
 <div class="container-frames">
@@ -41,3 +44,4 @@ knitr::include_url("DP5_summary.html")
 </p>
 
 </div>
+-->

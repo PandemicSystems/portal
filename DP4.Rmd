@@ -14,16 +14,24 @@ output: html_document
 <!-- MAIN CONTENT --> 
 <div class="container-fluid main-container">
 
-<!---</div>
-The COVID-19 pandemic highlighted how the decisions of individuals regarding vaccination and mask-wearing were highly politicized and influenced by the messaging of visible spokespersons. This project focuses on developing a transmission model to classify individuals as either compliant or non-compliant with policies such as shelter-in-place, mask-wearing, or vaccination to explore long-term dynamics and identify “social tipping points” in infectious disease transmission. “Social tipping points” are conditions under which a combination of interventions, including public messaging, may lead to either rapid containment or a major outbreak. This model assumes that individuals are either Susceptible (S), Infectious (I), or Recovered and immune (R)  to illness. This model also considers a variable determining the severity of the policy. For example, lockdowns are more severe than gathering bans which are more severe than mask-wearing mandates. 
---->
+<!-- <p id="disclaimer"></p> -->
+
+## Project Abstract
+
+The COVID-19 pandemic highlighted how the decisions of individuals regarding vaccination and mask-wearing were highly politicized and influenced by the messaging of visible spokespersons. This project focuses on developing a transmission model to classify individuals as either compliant or non-compliant with policies such as shelter-in-place, mask-wearing, or vaccination to explore long-term dynamics and identify “social tipping points” in infectious disease transmission. 
+
+"Social tipping points" are conditions under which a combination of interventions, including public messaging, may lead to either rapid containment or a major outbreak. This model assumes that individuals are either Susceptible (S), Infectious (I), or Recovered and immune (R)  to illness. This model also considers a variable determining the severity of the policy. For example, lockdowns are more severe than gathering bans which are more severe than mask-wearing mandates. 
+
+<!--
 ```{r echo=FALSE, out.extra='id="DP2" scrolling="no" width="100%"'}
 knitr::include_url("DP4_summary.html")
 ```
 <script>iFrameResize({ log: false }, '#DP4')</script>
+-->
 
 ## Supplemental Information
 
+<!--
 <div class="container-frames">
 
 <p>Preprint:<br>
@@ -39,3 +47,4 @@ knitr::include_url("DP4_summary.html")
 </p>
 
 </div>
+-->

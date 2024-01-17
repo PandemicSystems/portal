@@ -51,7 +51,7 @@ body {
 /*disclaimer*/
 
 #disclaimer::before {
-  content:"Some models and findings included on this website are not yet peer reviewed and subject to change.";
+  content:"Some models and findings included on this website are not yet peer reviewed and are subject to change.";
   font-size: .75em;
   color: #808080;
 }

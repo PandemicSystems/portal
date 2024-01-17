@@ -1,7 +1,6 @@
 ---
 title: "DP1"
 output: html_document
-
 ---
 
 <!-- BANNER --> 
@@ -15,14 +14,27 @@ output: html_document
 <!-- MAIN CONTENT --> 
 <div class="container-fluid main-container">
 
-Zoonotic diseases are impacted by multiple interconnected systems involving animals, humans, and the environment. The viral evolution and basis of transmission are often examined in isolation, without considering interactions between host behavior and ecology. This project aims to use artificial intelligence to enhance predictive intelligence by learning patterns from data to advance system reasoning (what will happen next and why?). This project will utilize existing knowledge about system relations and disease-specific systems to create a comprehensive framework of knowledge about HPAI across both human and non-human animals at a global scale. Additionally, this project expects to create an electronic reasoning engine that can be experimentally tested to fill in informational gaps in areas of HPAI. 
-<p id="disclaimer"></p>
+<!-- <p id="disclaimer"></p> -->
 
+## Project abstract
+
+Zoonotic diseases are impacted by multiple interconnected systems involving animals, humans, and the environment. The viral evolution and basis of transmission are often examined in isolation, without considering interactions between host behavior and ecology. This project aims to use artificial intelligence to enhance predictive intelligence by learning patterns from data to advance system reasoning (what will happen next and why?). 
+
+This demonstration project will utilize existing knowledge about disease-specific systems and system relations to create a comprehensive framework of knowledge about Highly Pathegenic Avian Influenza (HPAI) across both human and non-human animals at a global scale. Additionally, this project expects to create and test an automated reasoning engine to fill in gaps in informational concerning HPAI.
+
+<!--
 ```{r echo=FALSE, out.extra='id="DP1" scrolling="no" width="100%"'}
+insert_tag <- function(html,tag,before="</body>") {
+  gsub(before,paste0(tag,"\n",before),html)
+}
+
 knitr::include_url("DP1_summary.html")
 ```
 <script>iFrameResize({ log: false }, '#DP1')</script>
+-->
 
+
+<!--
 ## Supplemental Information
 
 ::: container-frames
@@ -40,5 +52,5 @@ knitr::include_url("DP1_summary.html")
 </p>
 
 :::
-
+-->
 
