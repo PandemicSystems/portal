@@ -232,19 +232,19 @@ Faizullah worked for the BBC World Service in Bangladesh as a producer for TV/ra
 
 ::: card-body
 <div class="profile">
-<img src="images/people/person.jpg" alt="Ali Ghadami" class="card-img-top img-circle"/>
+<img src="images/people/AliGhadami.jpg" alt="Ali Ghadami" class="card-img-top img-circle"/>
 
 <div class="profile_info">
 ## Ali Ghadami (PhD Student)
 
-Ali Ghadami is a PhD student at the Univeristy of Michigan working with Bogdan Epureanu.
-<!--
+Ali Ghadami is currently pursuing a Ph.D. in the Mechanical Engineering Department at the University of Michigan, Ann Arbor. Prior to this, he earned an MSc degree in mechanical engineering from Sharif University of Technology, Iran, in 2023. His research focuses on machine learning and AI, dynamical systems control, and autonomous systems.
+
 <a class="toggle-text-button">Read more</a>
 <div class="toggle-text" style="display: none;">
-More. 
+Ghadami is currently working on applying explainable AI to analyze nonlinear dynamics of outbreaks. His work involves developing methods to identify key features within these systems that significantly influence disease outcomes and other objectives of interest.
 </div>
 <a href="#" class="read-less" style="display:none;">Read less</a>
--->
+
 </div>
 </div>
 :::
@@ -290,7 +290,7 @@ Marty holds a PhD in Music Composition from the University of California at Berk
 <img src="images/people/HaileyRobertson.jpg" alt="Hailey Robertson" class="card-img-top img-circle"/>
 
 <div class="profile_info">
-## Hailey Robertson
+## Hailey Robertson (Data Research Analyst)
 
 Hailey Robertson is a Data Research Analyst at the Data Lab in the Center for Global Health Science and Security, Georgetown University. As part of the Data Lab, Robertson works across projects at the intersection of infectious disease, health policy, and computing, with a focus on transforming complex data into actionable insights for decision-makers.
 
@@ -323,19 +323,19 @@ Sarkar has been studying consumer behavior using dynamical modeling of a real-wo
 
 ::: card-body
 <div class="profile">
-<img src="images/people/person.jpg" alt="Minsun Shim" class="card-img-top img-circle"/>
+<img src="images/people/MinsunShim.jpg" alt="Minsun Shim" class="card-img-top img-circle"/>
 
 <div class="profile_info">
 ## Minsun Shim (MSc Student)
 
-Minsun Shim is a MSc student at the University of Southern California working with Amin Ghadami.
-<!--
+Minsun Shim is currently pursuing a Master's degree in Computer Science at the University of Southern California (USC), working with Amin Ghadami in the Data-Driven Dynamics Lab. Her primary research interest lies in solving challenging problems related to Network Security, Computer Networking, Machine Learning, and Dynamical Systems.
+
 <a class="toggle-text-button">Read more</a>
 <div class="toggle-text" style="display: none;">
-More. 
+Prior to joining USC, Shim completed a BE degree in Information Security (Cybersecurity) from Seoul Women's University. 
 </div>
 <a href="#" class="read-less" style="display:none;">Read less</a>
--->
+
 </div>
 </div>
 :::
@@ -345,7 +345,7 @@ More.
 <img src="images/people/TessStevens.jpg" alt="Tess Stevens" class="card-img-top img-circle"/>
 
 <div class="profile_info">
-## Tess Stevens
+## Tess Stevens (User Experience Designer)
 
 Tess Stevens is a user experience designer at Talus Analytics focused on creating visuals that allow data to be thoughtfully investigated. Her work is informed by her interest in systems design, her background in writing and editing, and her commitment to clarity and functionality. 
 
@@ -399,7 +399,7 @@ Madison is also managing PIPP Phase I project budget allocation with principal i
 <img src="images/people/RyanZimmerman.jpg" alt="Ryan Zimmerman" class="card-img-top img-circle"/>
 
 <div class="profile_info">
-## Ryan Zimmerman
+## Ryan Zimmerman (Developer)
 
 Ryan Zimmerman is a researcher and full stack developer, combining technical implementation skills with a BA in economics to build visualizations and user interactions which explore data in an actionable and accurate way while championing accessibility.
 
