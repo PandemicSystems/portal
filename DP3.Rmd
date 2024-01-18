@@ -15,7 +15,11 @@ output: html_document
 
 <!-- <p id="disclaimer"></p> -->
 
-## Project abstract
+## Abstract
+
+```{r fig1, echo=FALSE, out.width='30%', out.extra='style="float:left; padding:10px"', fig.cap=''}
+knitr::include_graphics("images/PIPP_DP3.png")
+```
 
 To address communicable diseases, effective communication is essential when implementing preventative or response measures from a local to global scale. Understanding how demographics, political ideologies, race, ethnicity, and location impact human behaviors during outbreaks and pandemics is important. 
 

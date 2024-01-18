@@ -16,8 +16,11 @@ output: html_document
 
 <!-- <p id="disclaimer"></p> -->
 
-## Project abstract
+## Abstract
 
+```{r fig1, echo=FALSE, out.width='30%', out.extra='style="float:left; padding:10px"', fig.cap=''}
+knitr::include_graphics("images/PIPP_DP1.png")
+```
 Zoonotic diseases are impacted by multiple interconnected systems involving animals, humans, and the environment. The viral evolution and basis of transmission are often examined in isolation, without considering interactions between host behavior and ecology. This project aims to use artificial intelligence to enhance predictive intelligence by learning patterns from data to advance system reasoning (what will happen next and why?). 
 
 This demonstration project will utilize existing knowledge about disease-specific systems and system relations to create a comprehensive framework of knowledge about Highly Pathegenic Avian Influenza (HPAI) across both human and non-human animals at a global scale. Additionally, this project expects to create and test an automated reasoning engine to fill in gaps in informational concerning HPAI.

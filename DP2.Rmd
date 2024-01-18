@@ -16,7 +16,11 @@ output: html_document
 
 <!-- <p id="disclaimer"></p> -->
 
-## Project abstract
+## Abstract
+
+```{r fig1, echo=FALSE, out.width='30%', out.extra='style="float:left; padding:10px"', fig.cap=''}
+knitr::include_graphics("images/PIPP_DP2.png")
+```
 
 This project aims to use explainable artificial intelligence (XAI) to help understand artificial intelligence outputs. XAI has the capability to assess which features of a model are most impactful on the outcome: such as general features, model inputs, temporal events, specific data subsets or a combination of these features. This can be a tool to understand which  features of transmission dynamics most affect model predictions. 
 

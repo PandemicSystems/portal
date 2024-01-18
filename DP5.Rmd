@@ -15,8 +15,11 @@ output: html_document
 
 <!-- <p id="disclaimer"></p> -->
 
-## Project abstract
+## Abstract
 
+```{r fig1, echo=FALSE, out.width='30%', out.extra='style="float:left; padding:10px"', fig.cap=''}
+knitr::include_graphics("images/PIPP_DP5.png")
+```
 The influenza A virus has the ability to infect a variety of species. Though transmission between species is limited, it can lead to human pandemics and panzootics among domestic animals. It is difficult to prepare for these spillover events due to a lack of knowledge of viral traits that impact human transmission and limitations in quantifying the risk of exposure to reservoir populations. The goal of DP5 is to generate new knowledge about the underlying processes impacting influenza A virus spread, transmission potential, and adaptation. This project involves creating an integrated framework to examine the collective role of epidemiological, immunological, and evolutionary processes in shaping viral phylogenies.
 
 <!--

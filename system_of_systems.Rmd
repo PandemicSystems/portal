@@ -14,6 +14,8 @@ output: html_document
 <!-- MAIN CONTENT --> 
 <div class="container-fluid main-container">
 
+## Abstract 
+
 The COVID-19 pandemic demonstrated the interconnectedness of disease transmission, public health policy, human behavior, economics, supply chains, and numerous other systems normally considered in isolation. 
 
 Each of these systems had been studied in depth, but feedbacks and interactions among these systems were poorly understood and negatively impacted the ability of society to respond to the pandemic. The models used to study these systems are highly heterogeneous, with distinct data and model structures that make them difficult to integrate directly.
@@ -22,13 +24,13 @@ Pandemic preparedness and response requires a robust infrastructure for **Infect
 
 We propose to apply the **System-of-Systems (SoS)** paradigm, developed for complex engineering problems, to Infectious Disease Intelligence in order to advance outbreak preparedness and response during an infectious disease public health emergency.
 
-### What is Infectious Disease Intelligence (IDI)?
+## What is Infectious Disease Intelligence (IDI)?
 
 Infectious disease intelligence refers to the systematic collection, analysis, and interpretation of data related to infectious diseases. It is an emerging practice that draws from multiple disciplines including epidemiology, virology, data science, public health, and social sciences to understand human behavior in the context of disease spread. IDI for pandemic preparedness and response seeks to provide actionable insights that can be used by stakeholders (government, healthcare providers, the general public, etc.) to make informed decisions that will help them prepare for and respond to pandemic threats.
 
 Synthesizing information across the diverse component disciplines presents significant challenges, namely: 1) data variability, disparate analytical approaches, lack of common terminology and ontologies, lack of established collaboration platforms, and competing interest and objectives.
 
-### What is a System-of-Systems (SoS) and how can it help meet the challenges of IDI?
+## What is a System-of-Systems (SoS) and how can it help meet the challenges of IDI?
 
 A SoS is a system composed of constituent systems that are operationally independent (featuring self-contained dynamics, evolution and decision making), that nevertheless interact with each other via feedback mechanisms. For example, System A might be a compartmental model of disease transmission while System B is an economic model of supply chains, an interdependency studied in the context of COVID-19. 
 
