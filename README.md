@@ -26,7 +26,6 @@ The website is built in R using RMarkdown and some custom css and javascript.
 Each project has its own page on the website which present a summary of results, links to supplemental information, public repositories, preprints, and publications as these become available. 
 
 HTML reports from research projects may be imported from project repositories and rendered here. 
-
 Hosting is on GitHub Pages with a custom domain. Projects involving Shiny or other web applications may be hosted on separate servers and embedded here using iframes.
 
 To render the site locally for preview, clone this repository, open the Rproject in Rstudio, and press the `Build Website` button in the `Build` tab of the `Environment` pane, or run the R command `rmarkdown::render_site()`.

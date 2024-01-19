@@ -26,7 +26,7 @@ The COVID-19 pandemic highlighted how the decisions of individuals regarding vac
 "Social tipping points" are conditions under which a combination of interventions, including public messaging, may lead to either rapid containment or a major outbreak. This model assumes that individuals are either Susceptible (S), Infectious (I), or Recovered and immune (R)  to illness. This model also considers a variable determining the severity of the policy. For example, lockdowns are more severe than gathering bans which are more severe than mask-wearing mandates. 
 
 <!--
-```{r echo=FALSE, out.extra='id="DP2" scrolling="no" width="100%"'}
+```{r echo=FALSE, out.extra='id="DP4" scrolling="no" width="100%"'}
 knitr::include_url("DP4_summary.html")
 ```
 <script>iFrameResize({ log: false }, '#DP4')</script>

@@ -59,14 +59,13 @@ df <- df[order(df$date_created,decreasing= TRUE),]
 Data and code for our demonstration projects will be made available here:
 
 <p>
-  <a href="https://github.com/cimidi/" taget="_blank">
+  <a href="https://github.com/pandemicsystems/" taget="_blank">
   <img src="images/GitHub-Mark-64px.png" id="github-icon" alt="GitHub organization"/>
-  GitHub.com/cimidi
+  GitHub.com/PandemicSystems
   </a>
 </p>
   
 &nbsp;
-
 
 <!---to make the boxes disappear--->
 <!-- <style> -->
@@ -75,7 +74,3 @@ Data and code for our demonstration projects will be made available here:
 <!--     } -->
 <!-- </style> -->
 
-<!---text2 <- readLines("hey1.txt")
-text2 <- paste0("### Title \n", text2)
-text2 <- paste0("## Title \n", text2)
-cat(text2)--->
