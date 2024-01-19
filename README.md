@@ -30,4 +30,19 @@ Hosting is on GitHub Pages with a custom domain. Projects involving Shiny or oth
 
 To render the site locally for preview, clone this repository, open the Rproject in Rstudio, and press the `Build Website` button in the `Build` tab of the `Environment` pane, or run the R command `rmarkdown::render_site()`.
 
+## License
 
+This website and content contained herein are licensed under a 
+<a rel="license" href="https://creativecommons.org/licenses/by/4.0/" 
+target='_blank'>Creative Commons Attribution 4.0 International License</a>.
+
+<a rel="license" href="https://creativecommons.org/licenses/by/4.0/" target='_blank'>
+  <img alt="Creative Commons License" style="border-width:0" 
+  src="https://licensebuttons.net/l/by/4.0/80x15.png" /></a>
+  
+<a href="https://opendefinition.org/" target='_blank'>
+  <img src="https://opendefinition.org/assets.okfn.org/images/ok_buttons/oc_80x15_blue.png" alt="This material is Open Content"/></a>
+<a href="https://opendefinition.org/" target='_blank'>
+  <img src="https://opendefinition.org/assets.okfn.org/images/ok_buttons/od_80x15_blue.png" alt="This material is Open Data"/></a>
+  
+Privacy policy: <https://eits.uga.edu/access_and_security/infosec/pols_regs/policies/privacy/>

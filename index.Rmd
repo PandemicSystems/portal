@@ -39,7 +39,7 @@ This project is funded by an **NSF Predictive Intelligence for Pandemic Preventi
 
 During Phase I, we are engaging in workforce enhancement through the training of undergraduates, graduate students, and postdoctoral associates. Broader impacts of our project include the development of innovative and translational modeling approaches with relevance to various US mission agencies (e.g. USDA, EPA, NIH, and CDC) and global organizations (e.g. WHO, FAO, OIE, UN), as well as the creation of extensible, open-access computer code and data pipelines for integrative infectious disease modeling.
 
-We are currently forming an advisory board of leaders from academic, industry, government and non-governmental sectors, and building a network of stakeholders in advance of Phase II.
+<!-- We are currently forming an advisory board of leaders from academic, industry, government and non-governmental sectors, and building a network of stakeholders in advance of Phase II. -->
 
 </div> <!--end SUMMARY (LEFT COLUMN) --> 
 
