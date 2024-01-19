@@ -58,14 +58,16 @@ knitr::include_url("system_of_systems_summary.html")
 <script>iFrameResize({ log: false }, '#system_of_systems')</script>
 --->
 
-## Supplemental Information
+<!-- ## Supplemental Information -->
 
 ::: container-frames
 
+<!--
 <p>Preprint:<br>
   <a href="https://docs.google.com/document/d/16K7Et8PaiaeyjJBJtL3-D1m9xV5EipHm4I_Mafxk3GY/edit?usp=sharing" target="_blank">
   Using systems-of-systems thinking to advance infectious disease intelligence for preparedness and response</a> (pdf)
 </p>
+-->
 
 <!--
 <p>
