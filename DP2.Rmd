@@ -1,5 +1,5 @@
 ---
-title: "DP2"
+title: "Pandemic Systems Group: Explainable AI (XAI)"
 output: html_document
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "DP5"
+title: "Pandemic Systems Group: Influenza A Phylogeny & Evolution"
 output: html_document
 ---
 <!-- BANNER --> 

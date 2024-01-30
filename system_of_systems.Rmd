@@ -1,5 +1,5 @@
 ---
-title: "System of Systems"
+title: "Pandemic Systems Group: System of Systems"
 output: html_document
 ---
 

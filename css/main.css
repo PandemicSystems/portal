@@ -399,8 +399,10 @@ a,a:active, a:hover, a:focus{
 }
 
 
-
-
+/*footnotes styles */
+.footnote-ref ~ .footnote-ref :before {
+  content: ', '
+}
 
 
 /* code formatting */

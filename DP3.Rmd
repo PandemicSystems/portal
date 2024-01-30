@@ -1,5 +1,5 @@
 ---
-title: "DP3"
+title: "Pandemic Systems Group: Integration of Communication Science"
 output: html_document
 ---
 <!-- BANNER --> 

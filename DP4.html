@@ -11,7 +11,7 @@
 
 
 
-<title>DP4</title>
+<title>Pandemic Systems Group: Social Tipping Points</title>
 
 <script src="site_libs/header-attrs-2.22/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
@@ -276,7 +276,8 @@ pre code {
 
 
 
-<h1 class="title toc-ignore">DP4</h1>
+<h1 class="title toc-ignore">Pandemic Systems Group: Social Tipping
+Points</h1>
 
 </div>
 
@@ -301,26 +302,137 @@ infectious disease transmission</h2>
 <!-- <p id="disclaimer"></p> -->
 <div id="abstract" class="section level2">
 <h2>Abstract</h2>
-<p><img src="images/PIPP_DP4.png" width="30%" style="float:left; padding:10px" />
-The COVID-19 pandemic highlighted how the decisions of individuals
+<p><img src="images/DP4_model.png" width="600px" style="float:left; padding:10px" /></p>
+<p><small> <strong>Figure 1. Transmission model with policy and
+behavior.</strong> </small></p>
+<p>The COVID-19 pandemic highlighted how the decisions of individuals
 regarding vaccination and mask-wearing were highly politicized and
-influenced by the messaging of visible spokespersons. This project
-focuses on developing a transmission model to classify individuals as
-either compliant or non-compliant with policies such as
-shelter-in-place, mask-wearing, or vaccination to explore long-term
-dynamics and identify “social tipping points” in infectious disease
-transmission.</p>
-<p>“Social tipping points” are conditions under which a combination of
-interventions, including public messaging, may lead to either rapid
-containment or a major outbreak. This model assumes that individuals are
-either Susceptible (S), Infectious (I), or Recovered and immune (R) to
-illness. This model also considers a variable determining the severity
-of the policy. For example, lockdowns are more severe than gathering
-bans which are more severe than mask-wearing mandates.</p>
+influenced by the messaging of visible spokespersons. This project aims
+to develop a transmission model incorporating feedbacks among infection
+dynamics, behavior, and policy to explore long-term dynamics and
+identify <em>social tipping points</em> in infectious disease
+transmission wherein small changes in behavior or policy intervention
+strength can lead to qualitative changes in transmission leading to
+either rapid containment or a major outbreak.</p>
+<p>During outbreaks, various non-pharmaceutical interventions (NPIs)
+such as mask-wearing and social distancing may be effective in reducing
+the spread of infectious diseases, but not all members of a population
+may comply with public policies <a href="#fn1" class="footnote-ref"
+id="fnref1"><sup>1</sup></a><a href="#fn2" class="footnote-ref"
+id="fnref2"><sup>2</sup></a></p>
+<p>Therefore, the coupling between changing behaviors and disease
+dynamics may be important for anticipating the effectiveness of public
+policies. We developed a compartmental model to understand the
+contemporaneous spread of disease within a population comprising
+compliant and non-compliant groups.</p>
+</div>
+<div id="model-features" class="section level2">
+<h2>Model Features</h2>
+<p>We developed a compartmental model (Fig. 1) with the following
+characteristics:</p>
+<ul>
+<li>SIR model with compliant and non-compliant subpopulations.</li>
+<li>Policy strength <span
+class="math inline">0 &lt; <em>P</em> &lt; 1</span>, assumed to be a
+function of <span class="math inline"><em>I</em></span>.</li>
+<li>Sigmoid effect of policy intervention strength on transmission in
+compliant populations <span
+class="math inline"><em>ϕ</em><sub><em>c</em></sub>(<em>P</em>)</span>,
+modeled as with fittable parameters logistic function with fittable
+parameters <span class="math inline"><em>L</em></span>
+(leastupperbound), <span class="math inline"><em>k</em></span>
+(logisticgrowthrate), and <span
+class="math inline"><em>p</em><sub>0</sub></span> (value of midpoint).
+Policy is assumed to have no effect on transmission in non-compliant
+populations, i.e. <span
+class="math inline"><em>ϕ</em><sub><em>n</em></sub>(<em>P</em>) = 1</span>.
+Alternate functional forms are possible.<br />
+</li>
+<li>Behavioral mechanisms (peer pressure, fear of infection, acceptance
+of policy) modeled as parameters <span
+class="math inline">0 &lt; <strong>α</strong> &lt; 1</span> mediating
+flow between compliant and non-compliant populations.<br />
+</li>
+<li>Architecture allows for feebacks among policy strength, behavior,
+and infection dynamics.</li>
+</ul>
+</div>
+<div id="preliminary-results" class="section level2">
+<h2>Preliminary Results</h2>
+<p>We examined the effect of policy strength on infection dynamics,
+using fixed policy <span class="math inline"><em>P</em></span>, fixed
+parameters of <span
+class="math inline"><em>ϕ</em><sub><em>c</em></sub>(<em>P</em>)</span>
+and Latin hypercube sampling of epidemiological and behavioral
+parameters (Fig. 2). We also studied the effect of policy strength on
+peak prevalence and time to extinction, indicators of infectiousness and
+disease persistence, respectively <a href="#fn3" class="footnote-ref"
+id="fnref3"><sup>3</sup></a><a href="#fn4" class="footnote-ref"
+id="fnref4"><sup>4</sup></a>.</p>
+<p><img src="images/DP4_Policy_1.png" width="400px" style="float:left; padding:10px" /></p>
+<p><small> <strong>Figure 2. Time evolution of disease dynamics for
+various policy strengths.</strong> Policy strength has a significant
+impact on timing and duration of disease outbreaks.</p>
+<p>Initial conditions are: <span
+class="math inline"><em>S</em><sub><em>c</em></sub> = 0.4999</span>,
+<span
+class="math inline"><em>I</em><sub><em>c</em></sub> = 0.0001</span>,
+<span class="math inline"><em>R</em><sub><em>c</em></sub> = 0</span>,
+<span
+class="math inline"><em>S</em><sub><em>n</em></sub> = 0.4999</span>,
+<span
+class="math inline"><em>I</em><sub><em>n</em></sub> = 0.0001</span>,<span
+class="math inline"><em>R</em><sub><em>n</em></sub> = 0</span>.</p>
+<p>Parameters of <span
+class="math inline"><em>ϕ</em><sub><em>c</em></sub>(<em>P</em>)</span>
+are: <span class="math inline"><em>L</em> = 1</span>,<span
+class="math inline"><em>k</em> = 10</span>,and <span
+class="math inline"><em>p</em><sub>0</sub> = 0.5</span>.</p>
+<p>All other parameters are taken from the Latin hypercube sampling with
+<span class="math inline"><em>n</em> = 500</span>. </small></p>
+<p><br clear="all" /></p>
+<p><img src="images/DP4_Policy_2.png" width="350px" style="float:left; padding:10px" /></p>
+<p><small> <strong>Figure 3. Disease persistence (time to extinction)
+and peak prevalence as functions of policy strength <span
+class="math inline"><em>P</em></span>.</strong> As modeled, policy
+strength above a threshold has a significant and non- linear impact on
+disease persistence (time to extinction) and peak prevalence.</p>
+<p>Solid lines are the mean values over 1000 simulations using Latin
+hypercube sampling of parameters. Bands represent the standard deviation
+across simulations.</p>
+<p>The results are consistent with the concept of “flattening the curve”
+that entered the popular lexicon during the COVID-19 pandemic (i.e.,
+that interventions reduce peak prevalence at the cost of extending the
+outbreak in time. </small></p>
+<p><br clear="all" /></p>
 <!--
 <iframe src="DP4_summary.html" width="672" height="400px" data-external="1" id="DP4" scrolling="no" width="100%"></iframe>
 <script>iFrameResize({ log: false }, '#DP4')</script>
 -->
+</div>
+<div id="conclusions" class="section level2">
+<h2>Conclusions</h2>
+<ul>
+<li>Non-pharmaceutical interventions can have a significant effect on
+the timing and severity of disease outbreaks in populations with varying
+proportions of compliant and non-compliant individuals. Effects may be
+non-linear.</li>
+<li>Peer pressure, fear of infection, and degree of compliance can have
+a significant impact on disease dynamics, especially in the
+subpopulation of compliant, susceptible individuals.</li>
+<li>Policies aimed at preventing initially compliant (and susceptible)
+individuals from rejecting interventions may be most effective at
+reducing the impact of disease outbreaks.</li>
+</ul>
+</div>
+<div id="next-steps" class="section level2">
+<h2>Next Steps</h2>
+<ul>
+<li>Implement and study feedback between infection level and policy
+strength.</li>
+<li>Determine how to fit the model to empirical epidemiological,
+behavioral, and policy data.</li>
+</ul>
 </div>
 <div id="supplemental-information" class="section level2">
 <h2>Supplemental Information</h2>
@@ -343,6 +455,28 @@ diseases.” <em>MIDAS Network Annual Meeting.</em> October 29-31, 2023.
 GitHub repository (private) </a>
 </p>
 </div>
+</div>
+<div class="footnotes footnotes-end-of-document">
+<hr />
+<ol>
+<li id="fn1"><p>Ferguson NM, Laydon D, Nedjati-Gilani G, Imai N, Ainslie
+K, Baguelin M, Bhatia S, Boonyasiri A, Cucunubá Z, Cuomo-Dannenburg G,
+et al (2020). Impact of non-pharmaceutical interventions (npis) to
+reduce covid-19 mortality and healthcare demand. <em>Imperial College
+COVID-19 Response Team</em> 20(10.25561):77,482<a href="#fnref1"
+class="footnote-back">↩︎</a></p></li>
+<li id="fn2"><p>Eikenberry SE, Mancuso M, Iboi E, Phan T, Eikenberry K,
+Kuang Y, Kostelich E, Gumel AB (2020). To mask or not to mask: Modeling
+the potential for face mask use by the general public to curtail the
+covid-19 pandemic. <em>Infectious disease modelling</em> 5:293–308<a
+href="#fnref2" class="footnote-back">↩︎</a></p></li>
+<li id="fn3"><p>Allen LJ (2008). An introduction to stochastic epidemic
+models. <em>Mathematical epidemiology</em> pp. 81–130<a href="#fnref3"
+class="footnote-back">↩︎</a></p></li>
+<li id="fn4"><p>Barbour, AD (1975). The duration of the closed
+stochastic epidemic. <em>Biometrika</em> 62(2):477–48253<a
+href="#fnref4" class="footnote-back">↩︎</a></p></li>
+</ol>
 </div>
 
 </iframe> <!-- iframe -->

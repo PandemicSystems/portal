@@ -1,5 +1,5 @@
 ---
-title: "home"
+title: "Pandemic Systems Group"
 output: html_document
 ---
 
@@ -25,6 +25,10 @@ output: html_document
 <div class="col-sm-8">
 
 ## The Pandemic Systems Group
+
+```{r fig1, echo=FALSE, out.width='120px', out.extra='style="float:left; padding:10px"'}
+knitr::include_graphics("images/pandemicsystems.png")
+```
 
 The **Pandemic Systems Group** is a multi-disciplinary, multi-institutional research group established to advance the understanding of pandemics from a human systems perspective.
 
