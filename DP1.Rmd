@@ -18,12 +18,16 @@ output: html_document
 
 ## Abstract
 
-```{r fig1, echo=FALSE, out.width='30%', out.extra='style="float:left; padding:10px"', fig.cap=''}
-knitr::include_graphics("images/PIPP_DP1.png")
-```
+<div style="width:40%; min-width:300px; float:left; padding:10px">
+![](images/PIPP_DP1.png)
+<small>**Figure&nbsp;1. Conceptual overview of demonstration project.**</small>
+</div>
+
 Zoonotic diseases are impacted by multiple interconnected systems involving animals, humans, and the environment. The viral evolution and basis of transmission are often examined in isolation, without considering interactions between host behavior and ecology. This project aims to use artificial intelligence to enhance predictive intelligence by learning patterns from data to advance system reasoning (what will happen next and why?). 
 
 This demonstration project will utilize existing knowledge about disease-specific systems and system relations to create a comprehensive framework of knowledge about Highly Pathegenic Avian Influenza (HPAI) across both human and non-human animals at a global scale. Additionally, this project expects to create and test an automated reasoning engine to fill in gaps in informational concerning HPAI.
+
+<br clear="all" />
 
 ## HPAI Knowledge Graphs
 
@@ -35,27 +39,27 @@ Knowledge graphs offer a powerful solution for reconciliation, integration, and 
 
 Traditional data systems are not interoperable across sources (Fig 2). To make related heterogeneous datasets interoperable, we first define an ontology, represented as a graph of element types and relations among types (Fig 3). Source datasets can then be ingested into a knowledge graph with standardized elements and relations. 
 
-```{r fig2, echo=FALSE, out.width='500px', out.extra='style="float:left; padding:10px"', fig.cap=''}
-knitr::include_graphics("images/DP1_traditional.png")
-```
-
+<div style="width:50%; min-width:300px; float:left; padding:10px">
+![](images/DP1_traditional.png)
 <small>
 **Figure 2. Traditional data systems are not interoperable across sources.** The figure shows sample records from three source datasets. Each row shows the same species (*Passer domesticus*). Because the record id's are not standardized and the structure of the datasets are not the same, the datasets cannot easily be joined.
 </small>
+</div>
 
-<br clear="all" />
-
-```{r fig3, echo=FALSE, out.width='500px', out.extra='style="float:left; padding:10px"', fig.cap=''}
-knitr::include_graphics("images/DP1_ontology.png")
-```
-
+<div style="width:47.5%; min-width:300px; float:left; padding:10px">
+![](images/DP1_ontology.png)
 <small>
 **Figure 3. A zoonotic disease ontology aligns data across domains based on shared elements for integration in a knowledge graph.** Ontologies are defined in terms of data types (nodes) and relations between data types (edges). The graph represents the zoonotic disease ontology we have developed for our knowledge graph. Blue nodes represents elements of that have already been ingested from source datasets; gray nodes represent elements from other datasets that have yet to be ingested. 
 </small>
+</div>
 
 <br clear="all" />
 
-The completed knowledge graph can then be queried
+## Machine Learning Applied to Knowledge Graphs 
+
+The goal of our project is to develop a knowledge and reasoning engine for HPAI knowledge graphs. To do this, we use a class of machine learning models called Knowledge Graph Embeddings (KGE). Such models are able to learn the structure of a graph and predict links. These models are interpretable because they capture semantic information about entities and relations; this helps provide explanations for model predictions. 
+
+The technique has been proven for drug discovery and social network recommendations; we are applying KGEs to HPAI knowledge graphs for the first time. 
 
 
 <!--
@@ -82,7 +86,7 @@ knitr::include_url("DP1_summary.html")
 -->
 
 <p>**Poster:** Robertson, H., E. Graeden, A. Castellanos, D. Rosado, J.M. Drake, B. Han. "Knowledge Graphs for Scalable Data Integration: A Case Study of Highly Pathogenic Avian Influenza (HPAI)." *MIDAS Network Annual Meeting.* October 29-31, 2023. 
-<a href="pdf/DP#1 - PIPP Phase I 2023 MIDAS Poster.pdf" target="_blank">(pdf) </a>
+<a href="pdf/MIDAS_2023_poster_Robertson.pdf" target="_blank">(pdf) </a>
 </p>
 
 <!--

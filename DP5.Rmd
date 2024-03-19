@@ -47,6 +47,7 @@ In the next phase of this work, we will leverage the subsampling strategy as inp
 
 We will combine live animal trade flow and wild bird migratory pattern data to investigate the likely origins and independent introductions of avian influenza into North America during the recent outbreak of H5. We will also use Bayesian phylogenetic methods to investigate the changing host dynamics of H5, which has been identified on many occasions in mammals. This work may highlight gaps in our efforts to prevent spillover and highlight risk factors for future spillover events. 
 
+<br>
 
 <!--
 ```{r echo=FALSE, out.extra='id="DP5" scrolling="no" width="100%"'}

@@ -304,8 +304,11 @@ transmission and spillover</h2>
 <!-- <p id="disclaimer"></p> -->
 <div id="abstract" class="section level2">
 <h2>Abstract</h2>
-<p><img src="images/PIPP_DP1.png" width="30%" style="float:left; padding:10px" />
-Zoonotic diseases are impacted by multiple interconnected systems
+<div style="width:40%; min-width:300px; float:left; padding:10px">
+<p><img src="images/PIPP_DP1.png" /> <small><strong>Figure 1. Conceptual
+overview of demonstration project.</strong></small></p>
+</div>
+<p>Zoonotic diseases are impacted by multiple interconnected systems
 involving animals, humans, and the environment. The viral evolution and
 basis of transmission are often examined in isolation, without
 considering interactions between host behavior and ecology. This project
@@ -318,6 +321,7 @@ framework of knowledge about Highly Pathegenic Avian Influenza (HPAI)
 across both human and non-human animals at a global scale. Additionally,
 this project expects to create and test an automated reasoning engine to
 fill in gaps in informational concerning HPAI.</p>
+<p><br clear="all" /></p>
 </div>
 <div id="hpai-knowledge-graphs" class="section level2">
 <h2>HPAI Knowledge Graphs</h2>
@@ -340,25 +344,40 @@ depend.</strong></p>
 define an ontology, represented as a graph of element types and
 relations among types (Fig 3). Source datasets can then be ingested into
 a knowledge graph with standardized elements and relations.</p>
-<p><img src="images/DP1_traditional.png" width="500px" style="float:left; padding:10px" /></p>
-<p><small> <strong>Figure 2. Traditional data systems are not
-interoperable across sources.</strong> The figure shows sample records
-from three source datasets. Each row shows the same species (<em>Passer
-domesticus</em>). Because the record id’s are not standardized and the
-structure of the datasets are not the same, the datasets cannot easily
-be joined. </small></p>
+<div style="width:50%; min-width:300px; float:left; padding:10px">
+<p><img src="images/DP1_traditional.png" /> <small> <strong>Figure 2.
+Traditional data systems are not interoperable across sources.</strong>
+The figure shows sample records from three source datasets. Each row
+shows the same species (<em>Passer domesticus</em>). Because the record
+id’s are not standardized and the structure of the datasets are not the
+same, the datasets cannot easily be joined. </small></p>
+</div>
+<div style="width:47.5%; min-width:300px; float:left; padding:10px">
+<p><img src="images/DP1_ontology.png" /> <small> <strong>Figure 3. A
+zoonotic disease ontology aligns data across domains based on shared
+elements for integration in a knowledge graph.</strong> Ontologies are
+defined in terms of data types (nodes) and relations between data types
+(edges). The graph represents the zoonotic disease ontology we have
+developed for our knowledge graph. Blue nodes represents elements of
+that have already been ingested from source datasets; gray nodes
+represent elements from other datasets that have yet to be ingested.
+</small></p>
+</div>
 <p><br clear="all" /></p>
-<p><img src="images/DP1_ontology.png" width="500px" style="float:left; padding:10px" /></p>
-<p><small> <strong>Figure 3. A zoonotic disease ontology aligns data
-across domains based on shared elements for integration in a knowledge
-graph.</strong> Ontologies are defined in terms of data types (nodes)
-and relations between data types (edges). The graph represents the
-zoonotic disease ontology we have developed for our knowledge graph.
-Blue nodes represents elements of that have already been ingested from
-source datasets; gray nodes represent elements from other datasets that
-have yet to be ingested. </small></p>
-<p><br clear="all" /></p>
-<p>The completed knowledge graph can then be queried</p>
+</div>
+<div id="machine-learning-applied-to-knowledge-graphs"
+class="section level2">
+<h2>Machine Learning Applied to Knowledge Graphs</h2>
+<p>The goal of our project is to develop a knowledge and reasoning
+engine for HPAI knowledge graphs. To do this, we use a class of machine
+learning models called Knowledge Graph Embeddings (KGE). Such models are
+able to learn the structure of a graph and predict links. These models
+are interpretable because they capture semantic information about
+entities and relations; this helps provide explanations for model
+predictions.</p>
+<p>The technique has been proven for drug discovery and social network
+recommendations; we are applying KGEs to HPAI knowledge graphs for the
+first time.</p>
 <!--
 <iframe src="DP1_summary.html" width="672" height="400px" data-external="1" id="DP1" scrolling="no" width="100%"></iframe>
 <script>iFrameResize({ log: false }, '#DP1')</script>
@@ -378,8 +397,7 @@ have yet to be ingested. </small></p>
 Rosado, J.M. Drake, B. Han. “Knowledge Graphs for Scalable Data
 Integration: A Case Study of Highly Pathogenic Avian Influenza (HPAI).”
 <em>MIDAS Network Annual Meeting.</em> October 29-31, 2023.
-<a href="pdf/DP#1 - PIPP Phase I 2023 MIDAS Poster.pdf" target="_blank">(pdf)
-</a>
+<a href="pdf/MIDAS_2023_poster_Robertson.pdf" target="_blank">(pdf) </a>
 </p>
 <!--
 <p>
@@ -398,9 +416,9 @@ Integration: A Case Study of Highly Pathogenic Avian Influenza (HPAI).”
 			<div class="row">
 				<div class='col-sm-6 col-md-4'>
 					<p>
-					<img src="images/UGA_standardized.png" style="max-width:300px">
-					<img src="images/Cary_standardized.png" style="max-width:300px">
-					<img src="images/UM_standardized.png" style="max-width:300px">
+					<img src="images/UGA_standardized.png">
+					<img src="images/Cary_standardized.png">
+					<img src="images/UM_standardized.png">
 					</p>
 						
 				</div>
