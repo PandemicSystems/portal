@@ -17,13 +17,16 @@ output: html_document
 
 ## Abstract
 
-```{r teaser, echo=FALSE, out.width='30%', out.extra='style="float:left; padding:10px"', fig.cap=''}
-knitr::include_graphics("images/PIPP_DP3.png")
-```
+<div style="width:40%; min-width:300px; float:left; padding:10px">
+![](images/PIPP_DP3.png)
+<small>**Figure&nbsp;1. Conceptual overview of demonstration project.**</small>
+</div>
 
 To address communicable diseases, effective communication is essential when implementing preventative or response measures from a local to global scale. Understanding how demographics, political ideologies, race, ethnicity, and location impact human behaviors during outbreaks and pandemics is important. 
 
 This project will analyze national datasets collected by the Grady College Center for Health & Risk Communication about influenza and COVID-19 to identify empirical patterns and provide insight on human health decision making and population characteristics related to respiratory illnesses. This analysis can identify relationships between factors such as vaccination status, health decision-making preferences, health-information seeking, political ideologies, and key demographics to inform forecasting and models to support decision making. 
+
+<br clear="all" />
 
 ## Survey of COVID-19 and Influenza Vaccination Intent 
 
@@ -49,13 +52,12 @@ The survey was administered by NORC at the University of Chicago ([norc.org](htt
 - 46\% of respondents reported they would "definitely" or "probably" get an updated COVID-19 vaccine  
 - 72\% of respondents who identify as liberal and 23\% of conservatives plan to get an updated COVID-19 vaccine
 
-```{r fig1, echo=FALSE, out.width='700px', out.extra='style="float:left; padding:10px"', fig.cap=''}
-knitr::include_graphics("images/vaccine_intent_by_ideology.png")
-```
-
+<div style="width:80%; min-width:300px; float:left; padding:10px">
+![](images/vaccine_intent_by_ideology.png)
 <small>
-**Figure 1. Vaccination intention by political ideology.** University of Georgia 2023 national survey of 1,280 adults. 
+**Figure 2. Vaccination intention by political ideology.** University of Georgia 2023 national survey of 1,280 adults. 
 </small>
+</div>
 
 <br clear="all" />
 
@@ -69,15 +71,12 @@ The survey found a strong connection between perceived risk and likelihood to ge
 
 ## Next Steps
 
-The results of the surveys of vaccination intention and behavior will help identify social and demographic
-factors affecting policy acceptance. 
+The results of the surveys of vaccination intention and behavior will help identify social and demographic factors affecting policy acceptance. 
 
 We are now exploring how to encode these insights into behavioral transmission models, either structurally or through parameterization, in order to study the interactions of transmission, behavior and policy in a real population.
 Such a model may be used to suggest strategies for policy design and public
-health messaging. Initial analyses suggest, for example, that a significant factor in controlling
-the severity of an outbreak may be preventing a
-compliant population from rejecting existing public
-health guidelines and messages.
+health messaging. 
+Initial analyses suggest, for example, that a significant factor in controlling the severity of an outbreak may be preventing a compliant population from rejecting existing public health guidelines and messages.
 
 
 <!--
