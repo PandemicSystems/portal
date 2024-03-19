@@ -18,15 +18,14 @@ output: html_document
 
 ## Abstract
 
-```{r fig1, echo=FALSE, out.width='600px', out.extra='style="float:left; padding:10px"', fig.cap=''}
-knitr::include_graphics("images/DP4_model.png")
-```
+The COVID-19 pandemic highlighted how the decisions of individuals regarding vaccination and mask-wearing were highly politicized and influenced by the messaging of visible spokespersons. This project aims to develop a transmission model incorporating feedbacks among infection dynamics, behavior, and policy to explore long-term dynamics and identify *social tipping points* in infectious disease transmission wherein small changes in behavior or policy intervention strength can lead to qualitative changes in transmission leading to either rapid containment or a major outbreak.
 
+<div style="width:70%; min-width:400px; float:left; padding:10px">
+![](images/DP4_model.png)
 <small>
 **Figure 1. Transmission model with policy and behavior.**
 </small>
-
-The COVID-19 pandemic highlighted how the decisions of individuals regarding vaccination and mask-wearing were highly politicized and influenced by the messaging of visible spokespersons. This project aims to develop a transmission model incorporating feedbacks among infection dynamics, behavior, and policy to explore long-term dynamics and identify *social tipping points* in infectious disease transmission wherein small changes in behavior or policy intervention strength can lead to qualitative changes in transmission leading to either rapid containment or a major outbreak.
+</div>
 
 During outbreaks, various non-pharmaceutical interventions (NPIs) such as mask-wearing and social distancing may be effective in reducing the spread of infectious diseases, but not all members of a population may comply with public policies [^Ferguson][^Eikenberry]
 
@@ -55,26 +54,24 @@ fixed parameters of $\phi_c(P)$ and Latin hypercube sampling of epidemiological 
 [^Barbour]: Barbour, AD (1975). The duration of the closed stochastic epidemic. *Biometrika* 62(2):477–48253
 
 
-```{r fig2, echo=FALSE, out.width='400px', out.extra='style="float:left; padding:10px"', fig.cap=''}
-knitr::include_graphics("images/DP4_Policy_1.png")
-```
-
+<div style="width:50%; min-width:300px; float:left; padding:10px">
+![](images/DP4_Policy_1.png)
 <small>
 **Figure 2. Time evolution of disease dynamics for various policy strengths.** Policy strength has a significant impact on timing and duration of disease outbreaks. 
 
-Initial conditions are: $S_c = 0.4999$, $I_c = 0.0001$, $R_c=0$, $S_n=0.4999$, $I_n=0.0001$,$R_n=0$. 
+Initial conditions are:  
+$S_c = 0.4999$, $I_c = 0.0001$, $R_c=0$,  
+$S_n=0.4999$, $I_n=0.0001$,$R_n=0$. 
 
-Parameters of $\phi_c(P)$ are: $L=1$,$k=10$,and $p_0 =0.5$. 
+Parameters of $\phi_c(P)$ are:  
+$L=1$,$k=10$, and $p_0 =0.5$. 
 
 All other parameters are taken from the Latin hypercube sampling with $n = 500$.
 </small>
+</div>
 
-<br clear="all" />
-
-```{r fig3, echo=FALSE, out.width='350px', out.extra='style="float:left; padding:10px"', fig.cap=''}
-knitr::include_graphics("images/DP4_Policy_2.png")
-```
-
+<div style="width:50%; min-width:300px; float:left; padding:10px">
+![](images/DP4_Policy_2.png)
 <small>
 **Figure 3. Disease persistence (time to extinction) and peak prevalence as functions of policy strength $P$.** As modeled, policy strength above a threshold has a significant and non- linear impact on disease persistence (time to extinction) and peak prevalence.
 
@@ -82,15 +79,9 @@ Solid lines are the mean values over 1000 simulations using Latin hypercube samp
 
 The results are consistent with the concept of "flattening the curve" that entered the popular lexicon during the COVID-19 pandemic (i.e., that interventions reduce peak prevalence at the cost of extending the outbreak in time.
 </small>
+</div>
 
 <br clear="all" />
-
-<!--
-```{r echo=FALSE, out.extra='id="DP4" scrolling="no" width="100%"'}
-knitr::include_url("DP4_summary.html")
-```
-<script>iFrameResize({ log: false }, '#DP4')</script>
--->
 
 ## Conclusions
 - Non-pharmaceutical interventions can have a significant effect on the timing and severity of disease outbreaks in populations with varying proportions of compliant and non-compliant individuals. Effects may be non-linear.
@@ -101,6 +92,12 @@ knitr::include_url("DP4_summary.html")
 - Implement and study feedback between infection level and policy strength.
 - Determine how to fit the model to empirical epidemiological, behavioral, and policy data.
 
+<!--
+```{r echo=FALSE, out.extra='id="DP4" scrolling="no" width="100%"'}
+knitr::include_url("DP4_summary.html")
+```
+<script>iFrameResize({ log: false }, '#DP4')</script>
+-->
 
 ## Supplemental Information
 
