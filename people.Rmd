@@ -251,7 +251,7 @@ Ghadami is currently working on applying explainable AI to analyze nonlinear dyn
 
 ::: card-body
 <div class="profile">
-<img src="images/people/JohnKing.jpg" alt="John King" class="card-img-top img-circle"/>
+<img src="images/people/SeanKelly.jpg" alt="Sean Kelly" class="card-img-top img-circle"/>
 
 <div class="profile_info">
 ## Sean Kelly
