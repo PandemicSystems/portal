@@ -214,9 +214,10 @@ pre code {
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
-          <a class="navbar-brand" href="index.html">Pandemic Systems Group
+          <a class="navbar-brand" href="index.html">Pandemic Systems Group 
           <span class="d-none d-md-inline"><span class="divider"> | </span>
           <span class="subtext-brand">Infectious Disease Intelligence</span></span>
+          </a>
     <div class="navbar-header active">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
         <span class="icon-bar"></span>
@@ -303,8 +304,11 @@ potential in wild and domestic hosts</h2>
 <!-- <p id="disclaimer"></p> -->
 <div id="abstract" class="section level2">
 <h2>Abstract</h2>
-<p><img src="images/PIPP_DP5.png" width="30%" style="float:left; padding:10px" />
-The influenza A virus has the ability to infect a variety of species.
+<div style="width:50%; min-width:300px; float:left; padding:10px">
+<p><img src="images/PIPP_DP5.png" /> <small><strong>Figure 1. Conceptual
+overview of demonstration project.</strong></small></p>
+</div>
+<p>The influenza A virus has the ability to infect a variety of species.
 Though transmission between species is limited, it can lead to human
 pandemics and panzootics among domestic animals. It is difficult to
 prepare for these spillover events due to a lack of knowledge of viral
@@ -315,6 +319,51 @@ influenza A virus spread, transmission potential, and adaptation. This
 project involves creating an integrated framework to examine the
 collective role of epidemiological, immunological, and evolutionary
 processes in shaping viral phylogenies.</p>
+<p><br clear="all" /></p>
+</div>
+<div id="subsampling-strategy" class="section level2">
+<h2>Subsampling Strategy</h2>
+<p>The development of novel sequencing technologies has recently led to
+the rapid proliferation of large, readily available sequence datasets.
+While beneficial, it has led to new challenges for our traditional
+phylodynamic analysis pipelines. While some efforts have focused on
+developing heuristics to speed up computation times by reducing the
+complexity of analyses, Bayesian phylodynamic approaches often still
+require subsampling at the scale we see today. While some tools for
+subsampling have been developed in recent years to address this problem,
+many still need to offer features to ensure a balanced and well-spread
+sample. This can lead to erroneous results when it isn’t considered, as
+shown in the figure below, which shows a biased sampling process.</p>
+<div style="width:50%; min-width:300px; float:left; padding:40px">
+<p><img src="images/DP5_Subsampling.png" /> <br><br>
+<small><strong>Figure 1. Subsampling strategy.</strong></small></p>
+</div>
+<p>We are working to develop and systematically test new strategies for
+subsampling that will enable greater confidence in our estimates of
+epidemiologic parameters and help us better describe the history of an
+outbreak using sequence data. We have developed a novel subsampling
+tool, the <em>Phylogenetic Analysis Subsampling Tool (PAST)</em>, which
+allows us to generate a balanced and well-spread sample across many
+variables. To establish the veracity of our approach, we have built a
+Nextflow pipeline and simulation framework to test multiple subsampling
+strategies and analyze their impact. After concluding this
+investigation, we will be able to make definitive recommendations for
+subsampling strategy by using the phylodynamic research question.</p>
+<p><br clear="all" /></p>
+</div>
+<div id="avian-influenza-phylodynamics" class="section level2">
+<h2>Avian Influenza Phylodynamics</h2>
+<p>In the next phase of this work, we will leverage the subsampling
+strategy as input for our phylodynamic analysis of the recent H5
+outbreak in North America.</p>
+<p>We will combine live animal trade flow and wild bird migratory
+pattern data to investigate the likely origins and independent
+introductions of avian influenza into North America during the recent
+outbreak of H5. We will also use Bayesian phylogenetic methods to
+investigate the changing host dynamics of H5, which has been identified
+on many occasions in mammals. This work may highlight gaps in our
+efforts to prevent spillover and highlight risk factors for future
+spillover events.</p>
 <!--
 <iframe src="DP5_summary.html" width="672" height="400px" data-external="1" id="DP5" scrolling="no" width="100%"></iframe>
 <script>iFrameResize({ log: false }, '#DP5')</script>
@@ -346,9 +395,9 @@ processes in shaping viral phylogenies.</p>
 			<div class="row">
 				<div class='col-sm-6 col-md-4'>
 					<p>
-					<img src="images/UGA_standardized.png">
-					<img src="images/Cary_standardized.png">
-					<img src="images/UM_standardized.png">
+					<img src="images/UGA_standardized.png" style="max-width:300px">
+					<img src="images/Cary_standardized.png" style="max-width:300px">
+					<img src="images/UM_standardized.png" style="max-width:300px">
 					</p>
 						
 				</div>

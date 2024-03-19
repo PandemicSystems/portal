@@ -214,9 +214,10 @@ pre code {
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
-          <a class="navbar-brand" href="index.html">Pandemic Systems Group
+          <a class="navbar-brand" href="index.html">Pandemic Systems Group 
           <span class="d-none d-md-inline"><span class="divider"> | </span>
           <span class="subtext-brand">Infectious Disease Intelligence</span></span>
+          </a>
     <div class="navbar-header active">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
         <span class="icon-bar"></span>
@@ -317,29 +318,78 @@ framework of knowledge about Highly Pathegenic Avian Influenza (HPAI)
 across both human and non-human animals at a global scale. Additionally,
 this project expects to create and test an automated reasoning engine to
 fill in gaps in informational concerning HPAI.</p>
+</div>
+<div id="hpai-knowledge-graphs" class="section level2">
+<h2>HPAI Knowledge Graphs</h2>
+<p>The growing occurrence of zoonotic disease outbreaks underscores the
+interconnectedness of animal and human networks.</p>
+<p>Researchers have developed numerous mechanistic, statistical, and
+machine learning models to capture the multifaceted and dynamic nature
+of zoonotic disease outbreaks systems from multiple disciplinary
+perspectives. However, bridging data and models across disciplines
+presents a significant challenge, in part due to the lack of
+interoperability between datasets.</p>
+<p>Knowledge graphs offer a powerful solution for reconciliation,
+integration, and synthesis of heterogeneous data. <strong>We demonstrate
+the utility of a knowledge graph to integrate laboratory, field, and
+historical data about highly pathogenic avian influenza (HPAI) and
+generate new hypotheses upon which future disease mitigation will
+depend.</strong></p>
+<p>Traditional data systems are not interoperable across sources (Fig
+2). To make related heterogeneous datasets interoperable, we first
+define an ontology, represented as a graph of element types and
+relations among types (Fig 3). Source datasets can then be ingested into
+a knowledge graph with standardized elements and relations.</p>
+<p><img src="images/DP1_traditional.png" width="500px" style="float:left; padding:10px" /></p>
+<p><small> <strong>Figure 2. Traditional data systems are not
+interoperable across sources.</strong> The figure shows sample records
+from three source datasets. Each row shows the same species (<em>Passer
+domesticus</em>). Because the record id’s are not standardized and the
+structure of the datasets are not the same, the datasets cannot easily
+be joined. </small></p>
+<p><br clear="all" /></p>
+<p><img src="images/DP1_ontology.png" width="500px" style="float:left; padding:10px" /></p>
+<p><small> <strong>Figure 3. A zoonotic disease ontology aligns data
+across domains based on shared elements for integration in a knowledge
+graph.</strong> Ontologies are defined in terms of data types (nodes)
+and relations between data types (edges). The graph represents the
+zoonotic disease ontology we have developed for our knowledge graph.
+Blue nodes represents elements of that have already been ingested from
+source datasets; gray nodes represent elements from other datasets that
+have yet to be ingested. </small></p>
+<p><br clear="all" /></p>
+<p>The completed knowledge graph can then be queried</p>
 <!--
 <iframe src="DP1_summary.html" width="672" height="400px" data-external="1" id="DP1" scrolling="no" width="100%"></iframe>
 <script>iFrameResize({ log: false }, '#DP1')</script>
 -->
+</div>
+<div id="supplemental-information" class="section level2">
+<h2>Supplemental Information</h2>
+<div class="container-frames">
 <!--
-## Supplemental Information
-
-::: container-frames
-
 <p>Preprint:<br>
   <a href="https://github.com/CEIDatUGA/covid-university-reopening/raw/master/manuscript.pdf" target="_blank">
   Demonstration Project 1:  Advancing knowledge and reasoning in Artificial Intelligence to predict and understand zoonotic transmission and spillover</a> (pdf)
 </p>
-
+-->
+<p>
+<strong>Poster:</strong> Robertson, H., E. Graeden, A. Castellanos, D.
+Rosado, J.M. Drake, B. Han. “Knowledge Graphs for Scalable Data
+Integration: A Case Study of Highly Pathogenic Avian Influenza (HPAI).”
+<em>MIDAS Network Annual Meeting.</em> October 29-31, 2023.
+<a href="pdf/DP#1 - PIPP Phase I 2023 MIDAS Poster.pdf" target="_blank">(pdf)
+</a>
+</p>
+<!--
 <p>
   <a href="https://github.com/CEIDatUGA/covid-university-reopening" target="_blank">
     <img src="images/GitHub-Mark-64px.png" id="github-icon" alt="GitHub repository"/>
     GitHub repository (public)
   </a>
 </p>
-
-:::
 -->
+</div>
 </div>
 
 </iframe> <!-- iframe -->
@@ -348,9 +398,9 @@ fill in gaps in informational concerning HPAI.</p>
 			<div class="row">
 				<div class='col-sm-6 col-md-4'>
 					<p>
-					<img src="images/UGA_standardized.png">
-					<img src="images/Cary_standardized.png">
-					<img src="images/UM_standardized.png">
+					<img src="images/UGA_standardized.png" style="max-width:300px">
+					<img src="images/Cary_standardized.png" style="max-width:300px">
+					<img src="images/UM_standardized.png" style="max-width:300px">
 					</p>
 						
 				</div>

@@ -25,6 +25,39 @@ Zoonotic diseases are impacted by multiple interconnected systems involving anim
 
 This demonstration project will utilize existing knowledge about disease-specific systems and system relations to create a comprehensive framework of knowledge about Highly Pathegenic Avian Influenza (HPAI) across both human and non-human animals at a global scale. Additionally, this project expects to create and test an automated reasoning engine to fill in gaps in informational concerning HPAI.
 
+## HPAI Knowledge Graphs
+
+The growing occurrence of zoonotic disease outbreaks underscores the interconnectedness of animal and human networks. 
+
+Researchers have developed numerous mechanistic, statistical, and machine learning models to capture the multifaceted and dynamic nature of zoonotic disease outbreaks systems from multiple disciplinary perspectives. However, bridging data and models across disciplines presents a significant challenge, in part due to the lack of interoperability between datasets. 
+
+Knowledge graphs offer a powerful solution for reconciliation, integration, and synthesis of heterogeneous data. **We demonstrate the utility of a knowledge graph to integrate laboratory, field, and historical data about highly pathogenic avian influenza (HPAI) and generate new hypotheses upon which future disease mitigation will depend.**
+
+Traditional data systems are not interoperable across sources (Fig 2). To make related heterogeneous datasets interoperable, we first define an ontology, represented as a graph of element types and relations among types (Fig 3). Source datasets can then be ingested into a knowledge graph with standardized elements and relations. 
+
+```{r fig2, echo=FALSE, out.width='500px', out.extra='style="float:left; padding:10px"', fig.cap=''}
+knitr::include_graphics("images/DP1_traditional.png")
+```
+
+<small>
+**Figure 2. Traditional data systems are not interoperable across sources.** The figure shows sample records from three source datasets. Each row shows the same species (*Passer domesticus*). Because the record id's are not standardized and the structure of the datasets are not the same, the datasets cannot easily be joined.
+</small>
+
+<br clear="all" />
+
+```{r fig3, echo=FALSE, out.width='500px', out.extra='style="float:left; padding:10px"', fig.cap=''}
+knitr::include_graphics("images/DP1_ontology.png")
+```
+
+<small>
+**Figure 3. A zoonotic disease ontology aligns data across domains based on shared elements for integration in a knowledge graph.** Ontologies are defined in terms of data types (nodes) and relations between data types (edges). The graph represents the zoonotic disease ontology we have developed for our knowledge graph. Blue nodes represents elements of that have already been ingested from source datasets; gray nodes represent elements from other datasets that have yet to be ingested. 
+</small>
+
+<br clear="all" />
+
+The completed knowledge graph can then be queried
+
+
 <!--
 ```{r echo=FALSE, out.extra='id="DP1" scrolling="no" width="100%"'}
 insert_tag <- function(html,tag,before="</body>") {
@@ -37,23 +70,29 @@ knitr::include_url("DP1_summary.html")
 -->
 
 
-<!--
 ## Supplemental Information
 
 ::: container-frames
 
+<!--
 <p>Preprint:<br>
   <a href="https://github.com/CEIDatUGA/covid-university-reopening/raw/master/manuscript.pdf" target="_blank">
   Demonstration Project 1:  Advancing knowledge and reasoning in Artificial Intelligence to predict and understand zoonotic transmission and spillover</a> (pdf)
 </p>
+-->
 
+<p>**Poster:** Robertson, H., E. Graeden, A. Castellanos, D. Rosado, J.M. Drake, B. Han. "Knowledge Graphs for Scalable Data Integration: A Case Study of Highly Pathogenic Avian Influenza (HPAI)." *MIDAS Network Annual Meeting.* October 29-31, 2023. 
+<a href="pdf/DP#1 - PIPP Phase I 2023 MIDAS Poster.pdf" target="_blank">(pdf) </a>
+</p>
+
+<!--
 <p>
   <a href="https://github.com/CEIDatUGA/covid-university-reopening" target="_blank">
     <img src="images/GitHub-Mark-64px.png" id="github-icon" alt="GitHub repository"/>
     GitHub repository (public)
   </a>
 </p>
+-->
 
 :::
--->
 
