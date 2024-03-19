@@ -20,7 +20,11 @@ output: html_document
 
 <div style="width:40%; min-width:300px; float:left; padding:10px">
 ![](images/PIPP_DP1.png)
-<small>**Figure&nbsp;1. Conceptual overview of demonstration project.**</small>
+<p class="caption">
+**Figure&nbsp;1. Conceptual overview of demonstration project.**
+<p>
+
+<!-- <small>**Figure&nbsp;1. Conceptual overview of demonstration project.**</small> -->
 </div>
 
 Zoonotic diseases are impacted by multiple interconnected systems involving animals, humans, and the environment. The viral evolution and basis of transmission are often examined in isolation, without considering interactions between host behavior and ecology. This project aims to use artificial intelligence to enhance predictive intelligence by learning patterns from data to advance system reasoning (what will happen next and why?). 
@@ -41,16 +45,16 @@ Traditional data systems are not interoperable across sources (Fig 2). To make r
 
 <div style="width:50%; min-width:300px; float:left; padding:10px">
 ![](images/DP1_traditional.png)
-<small>
+<p class="caption">
 **Figure 2. Traditional data systems are not interoperable across sources.** The figure shows sample records from three source datasets. Each row shows the same species (*Passer domesticus*). Because the record id's are not standardized and the structure of the datasets are not the same, the datasets cannot easily be joined.
-</small>
+</p>
 </div>
 
 <div style="width:47.5%; min-width:300px; float:left; padding:10px">
 ![](images/DP1_ontology.png)
-<small>
+<p class="caption">
 **Figure 3. A zoonotic disease ontology aligns data across domains based on shared elements for integration in a knowledge graph.** Ontologies are defined in terms of data types (nodes) and relations between data types (edges). The graph represents the zoonotic disease ontology we have developed for our knowledge graph. Blue nodes represents elements of that have already been ingested from source datasets; gray nodes represent elements from other datasets that have yet to be ingested. 
-</small>
+</p>
 </div>
 
 <br clear="all" />

@@ -688,6 +688,12 @@ pre.r{
 figcaption{
   font-style: italic;
   font-size: xx-small;
+  color:blue;
+}
+
+.caption{
+  font-size: small;
+  color: gray ;
 }
 
 

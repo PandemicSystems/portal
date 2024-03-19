@@ -20,7 +20,7 @@ output: html_document
 
 <div style="width:50%; min-width:300px; float:left; padding:10px">
 ![](images/PIPP_DP2.png)
-<small>**Figure&nbsp;1. Conceptual overview of demonstration project.**</small>
+<p class="caption">**Figure&nbsp;1. Conceptual overview of demonstration project.**</p>
 </div>
 
 This project aims to use explainable artificial intelligence (XAI) to help understand artificial intelligence outputs. XAI has the capability to assess which features of a model are most impactful on the outcome: such as general features, model inputs, temporal events, specific data subsets, or a combination of these features. This can be a tool to understand which features of transmission dynamics most affect model predictions. 
@@ -46,7 +46,7 @@ The goal is to model the complex nonlinear dynamics of disease outbreaks. This m
 ![](images/DP2_Model.png)
 </div>
 
-<small>**Figure&nbsp;2. Compartmental model for multi-strain disease transmission with vaccination.** The model is a modified $SEIR$ type model with Susteptible $S$, Latent $E$, Infectious $I$, and Removed $R$ classes, as well as Vaccinated $V$, Hospitalized $H$ and Deceased $D$ classes. The model allows susceptible individuals to be infected with or vaccinated against one of multiple strains $k$. Vaccinated individuals may still become infected with other strains. </small>
+<p class="caption">**Figure&nbsp;2. Compartmental model for multi-strain disease transmission with vaccination.** The model is a modified $SEIR$ type model with Susteptible $S$, Latent $E$, Infectious $I$, and Removed $R$ classes, as well as Vaccinated $V$, Hospitalized $H$ and Deceased $D$ classes. The model allows susceptible individuals to be infected with or vaccinated against one of multiple strains $k$. Vaccinated individuals may still become infected with other strains.</p>
 
 <br clear="all" />
 
@@ -57,7 +57,7 @@ We trained a neural network algorithm on the synthetic data generated from the m
 <div style="width:50%; min-width:300px; float:left; padding:10px">
 ![](images/DP2_xai.png)
 <br><br>
-<small>**Figure&nbsp;3. Explainable AI for pandemic containment.** A white box model (compartmental transmission model) provides inputs to a neural network, which outputs outbreak indicators. Explainable AI (XAI) techniques are used to identify features with the greatest impact on outbreak indicators. Identified features could then be used as targets for intervention by decision makers.</small>
+<p class="caption">**Figure&nbsp;3. Explainable AI for pandemic containment.** A white box model (compartmental transmission model) provides inputs to a neural network, which outputs outbreak indicators. Explainable AI (XAI) techniques are used to identify features with the greatest impact on outbreak indicators. Identified features could then be used as targets for intervention by decision makers.</p>
 </div>
 
 The proposed **model inputs** include population-based features including susceptible, infected, vaccinated, exposed, hospitalized, and recovered populations (see above compartmental model), as well as virus-related features for each variant like transmission rates, hospitalization rates, death rates, and vaccine efficacies. 

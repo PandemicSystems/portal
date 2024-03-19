@@ -22,9 +22,9 @@ The COVID-19 pandemic highlighted how the decisions of individuals regarding vac
 
 <div style="width:70%; min-width:400px; float:left; padding:10px">
 ![](images/DP4_model.png)
-<small>
+<p class="caption">
 **Figure 1. Transmission model with policy and behavior.**
-</small>
+</p>
 </div>
 
 During outbreaks, various non-pharmaceutical interventions (NPIs) such as mask-wearing and social distancing may be effective in reducing the spread of infectious diseases, but not all members of a population may comply with public policies [^Ferguson][^Eikenberry]
@@ -56,7 +56,7 @@ fixed parameters of $\phi_c(P)$ and Latin hypercube sampling of epidemiological 
 
 <div style="width:50%; min-width:300px; float:left; padding:10px">
 ![](images/DP4_Policy_1.png)
-<small>
+<div class="caption">
 **Figure 2. Time evolution of disease dynamics for various policy strengths.** Policy strength has a significant impact on timing and duration of disease outbreaks. 
 
 Initial conditions are:  
@@ -67,18 +67,18 @@ Parameters of $\phi_c(P)$ are:
 $L=1$,$k=10$, and $p_0 =0.5$. 
 
 All other parameters are taken from the Latin hypercube sampling with $n = 500$.
-</small>
+</div>
 </div>
 
 <div style="width:50%; min-width:300px; float:left; padding:10px">
 ![](images/DP4_Policy_2.png)
-<small>
+<div class="caption">
 **Figure 3. Disease persistence (time to extinction) and peak prevalence as functions of policy strength $P$.** As modeled, policy strength above a threshold has a significant and non- linear impact on disease persistence (time to extinction) and peak prevalence.
 
 Solid lines are the mean values over 1000 simulations using Latin hypercube sampling of parameters. Bands represent the standard deviation across simulations.
 
 The results are consistent with the concept of "flattening the curve" that entered the popular lexicon during the COVID-19 pandemic (i.e., that interventions reduce peak prevalence at the cost of extending the outbreak in time.
-</small>
+</div>
 </div>
 
 <br clear="all" />
