@@ -38,15 +38,15 @@ This project also will utilize compartmental models to examine the impact of vac
 
 ### Disease Transmission Model
 
+We developed a multi-strain, multi-vaccine model of disease dynamics to study the complex nonlinear dynamics of disease outbreaks. This model of transmission accounts for multiple viral strains, multiple vaccines, vaccine preferences, and vaccine-related variables such as the introduction date, lead time, and efficacy.
+
+The goal is to model the complex nonlinear dynamics of disease outbreaks. This model is used as a baseline to simulate all possible scenarios during an outbreak and create a database to conduct analysis. 
+
 <div style="width:50%; min-width:300px; float:left; padding:40px">
 ![](images/DP2_Model.png)
 </div>
 
 <small>**Figure&nbsp;2. Compartmental model for multi-strain disease transmission with vaccination.** The model is a modified $SEIR$ type model with Susteptible $S$, Latent $E$, Infectious $I$, and Removed $R$ classes, as well as Vaccinated $V$, Hospitalized $H$ and Deceased $D$ classes. The model allows susceptible individuals to be infected with or vaccinated against one of multiple strains $k$. Vaccinated individuals may still become infected with other strains. </small>
-
-We developed a multi-strain, multi-vaccine model of disease dynamics to study the complex nonlinear dynamics of disease outbreaks. This model of transmission accounts for multiple viral strains, multiple vaccines, vaccine preferences, and vaccine-related variables such as the introduction date, lead time, and efficacy.
-
-The goal is to model the complex nonlinear dynamics of disease outbreaks. This model is used as a baseline to simulate all possible scenarios during an outbreak and create a database to conduct analysis. 
 
 <br clear="all" />
 
