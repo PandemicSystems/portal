@@ -303,12 +303,15 @@ Intelligence (XAI) for pandemic preparedness</h2>
 <!-- <p id="disclaimer"></p> -->
 <div id="abstract" class="section level2">
 <h2>Abstract</h2>
-<p><img src="images/PIPP_DP2.png" width="30%" style="float:left; padding:10px" /></p>
+<div style="width:50%; min-width:300px; float:left; padding:10px">
+<p><img src="images/PIPP_DP2.png" /> <small><strong>Figure 1. Conceptual
+overview of demonstration project.</strong></small></p>
+</div>
 <p>This project aims to use explainable artificial intelligence (XAI) to
 help understand artificial intelligence outputs. XAI has the capability
 to assess which features of a model are most impactful on the outcome:
 such as general features, model inputs, temporal events, specific data
-subsets or a combination of these features. This can be a tool to
+subsets, or a combination of these features. This can be a tool to
 understand which features of transmission dynamics most affect model
 predictions.</p>
 <p>This project also will utilize compartmental models to examine the
@@ -317,29 +320,100 @@ events such as vaccine development and virus mutations. Artificial
 intelligence algorithms can produce prediction results that may be
 difficult to understand and interpret and XAI detects relationships that
 can make these results more impactful.</p>
+<p><br clear="all" /></p>
+</div>
+<div id="objectives" class="section level2">
+<h2>Objectives</h2>
+<ul>
+<li>Identifying the most important features that affect the outcome of
+an outbreak and efficient ways to contain the outbreak.<br />
+</li>
+<li>Utilizing real-world data for fine-tuning the model parameters and
+examining the implications of incorporating this data into the model’s
+predictions and feature importance.</li>
+</ul>
+</div>
+<div id="approach" class="section level2">
+<h2>Approach</h2>
+<div id="disease-transmission-model" class="section level3">
+<h3>Disease Transmission Model</h3>
+<div style="width:50%; min-width:300px; float:left; padding:40px">
+<p><img src="images/DP2_Model.png" /></p>
+</div>
+<p><small><strong>Figure 2. Compartmental model for multi-strain disease
+transmission with vaccination.</strong> The model is a modified <span
+class="math inline"><em>S</em><em>E</em><em>I</em><em>R</em></span> type
+model with Susteptible <span class="math inline"><em>S</em></span>,
+Latent <span class="math inline"><em>E</em></span>, Infectious <span
+class="math inline"><em>I</em></span>, and Removed <span
+class="math inline"><em>R</em></span> classes, as well as Vaccinated
+<span class="math inline"><em>V</em></span>, Hospitalized <span
+class="math inline"><em>H</em></span> and Deceased <span
+class="math inline"><em>D</em></span> classes. The model allows
+susceptible individuals to be infected with or vaccinated against one of
+multiple strains <span class="math inline"><em>k</em></span>. Vaccinated
+individuals may still become infected with other strains. </small></p>
+<p>We developed a multi-strain, multi-vaccine model of disease dynamics
+to study the complex nonlinear dynamics of disease outbreaks. This model
+of transmission accounts for multiple viral strains, multiple vaccines,
+vaccine preferences, and vaccine-related variables such as the
+introduction date, lead time, and efficacy.</p>
+<p>The goal is to model the complex nonlinear dynamics of disease
+outbreaks. This model is used as a baseline to simulate all possible
+scenarios during an outbreak and create a database to conduct
+analysis.</p>
+<p><br clear="all" /></p>
+</div>
+<div id="model-analysis-with-explainable-ai" class="section level3">
+<h3>Model Analysis with Explainable AI</h3>
+<div style="width:50%; min-width:300px; float:left; padding:10px">
+<p><img src="images/DP2_xai.png" /> <br><br> <small><strong>Figure 3.
+Explainable AI for pandemic containment.</strong> A white box model
+(compartmental transmission model) provides inputs to a neural network,
+which outputs outbreak indicators. Explainable AI (XAI) techniques are
+used to identify features with the greatest impact on outbreak
+indicators. Identified features could then be used as targets for
+intervention by decision makers.</small></p>
+</div>
+<p>We trained a neural network algorithm on the synthetic data generated
+from the multi-strain-vaccine model. The proposed <strong>model
+inputs</strong> include population-based features including susceptible,
+infected, vaccinated, exposed, hospitalized, and recovered populations
+(see above compartmental model), as well as virus-related features for
+each variant like transmission rates, hospitalization rates, death
+rates, and vaccine efficacies. The <strong>model outputs</strong> of the
+network are the essential outbreak indicators within a defined period,
+crucial for our monitoring during a public health emergency.</p>
+<p>This network is then used to provide <strong>human
+interpretability</strong> for complex decision making using advanced
+explainable AI techniques. This approach detects the features that
+affect disease outcomes the most, with the goal of facilitating decision
+making aimed at pandemic containment.</p>
 <!---
 <iframe src="DP2_summary.html" width="672" height="400px" data-external="1" id="DP2" scrolling="no" width="100%"></iframe>
 <script>iFrameResize({ log: false }, '#DP2')</script>
 --->
-<!--
-## Supplemental Information
-
+</div>
+</div>
+<div id="supplemental-information" class="section level2">
+<h2>Supplemental Information</h2>
 <div class="container-frames">
-
-<p>Preprint:<br>
-  <a href="https://github.com/CEIDatUGA/covid-university-reopening/raw/master/manuscript.pdf" target="_blank">
-  Demonstration Project 2:  Explainable Artificial Intelligence (XAI) for pandemic preparedness</a> (pdf)
-</p>
-
 <p>
-  <a href="https://github.com/CEIDatUGA/covid-university-reopening" target="_blank">
+<strong>Poster:</strong> Kelly, S., A. Ghadami, J. M. Drake, B. I.
+Epureanu. “Unveiling Key Factors in Disease Transmission through
+Explainable AI.” <em>MIDAS Network Annual Meeting.</em> October 29-31,
+2023. <a href="pdf/MIDAS_2023_poster_Kelly.pdf" target="_blank">(pdf)
+</a>
+</p>
+<!--
+<p>
+  <a href="https://github.com/[repo]" target="_blank">
     <img src="images/GitHub-Mark-64px.png" id="github-icon" alt="GitHub repository"/>
     GitHub repository (public)
   </a>
 </p>
-
-</div>
 -->
+</div>
 </div>
 
 </iframe> <!-- iframe -->
@@ -348,9 +422,9 @@ can make these results more impactful.</p>
 			<div class="row">
 				<div class='col-sm-6 col-md-4'>
 					<p>
-					<img src="images/UGA_standardized.png" style="max-width:300px">
-					<img src="images/Cary_standardized.png" style="max-width:300px">
-					<img src="images/UM_standardized.png" style="max-width:300px">
+					<img src="images/UGA_standardized.png">
+					<img src="images/Cary_standardized.png">
+					<img src="images/UM_standardized.png">
 					</p>
 						
 				</div>
