@@ -254,6 +254,24 @@ Ghadami is currently working on applying explainable AI to analyze nonlinear dyn
 <img src="images/people/JohnKing.jpg" alt="John King" class="card-img-top img-circle"/>
 
 <div class="profile_info">
+## Sean Kelly
+
+Sean Kelly recently received his Ph.D. from the department of mechanical engineering at the University of Michigan working with Bogdan Epureanu. His research focuses on developing novel physics-informed data-driven reduced-order models for machinery, for predicting multi-harmonic forced response vibrations with friction nonlinearities, and estimating system parameters in operating conditions. 
+
+<a class="toggle-text-button">Read more</a>
+<div class="toggle-text" style="display: none;">
+His work uses physics-informed concepts in conjunction with machine learning methods such as neural networks, which aim to maintain known system dynamics while also leveraging novel data-driven paradigms that allow for increased prediction speed, accuracy, and applicability to easily include experimental data. 
+</div>
+<a href="#" class="read-less" style="display:none;">Read less</a>
+</div>
+</div>
+:::
+
+::: card-body
+<div class="profile">
+<img src="images/people/JohnKing.jpg" alt="John King" class="card-img-top img-circle"/>
+
+<div class="profile_info">
 ## John King (Project Manager)
 
 John King is Projects and Communications Manager with the Center for the Ecology of Infectious Diseases (CEID) and Global Infectious Disease Intelligence Consortium, Odum School of Ecology at the University of Georgia.  In these roles, John works with both internal and external customers to promote the CEID’s zoonotic research and infectious diseases modeling capabilities to help clients solve real-world challenges. 
