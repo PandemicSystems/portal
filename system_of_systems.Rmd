@@ -34,9 +34,11 @@ Synthesizing information across the diverse component disciplines presents signi
 
 A SoS is a system composed of constituent systems that are operationally independent (featuring self-contained dynamics, evolution and decision making), that nevertheless interact with each other via feedback mechanisms. For example, System A might be a compartmental model of disease transmission while System B is an economic model of supply chains, an interdependency studied in the context of COVID-19. 
 
-```{r fig1, echo=FALSE, out.width='50%', out.extra='style="float:left; padding:10px"', fig.cap='_**Figure 1.** Conceptual diagram of a minimal System of Systems (SoS) with two constituent systems. Each system in a SoS is agnostic about the structure of systems exogenous to it. However, flows within the system are affected by a set of interaction parameters that are a function of the states of the exogenous system. In this example, System 1 is a model of a vaccine supply chain, and System 2 is a compartmental disease transmission model. System 2 may be affected by states of System 1 (e.g. vaccine inventory) via parameters reducing the flow from the Susceptible state to the Infectious state, and from Susceptible to Removed. In turn, System 1 may be affected by states of System 2 (e.g. disease prevalence) via parameters affecting rate of flow along the manufacturing chain (increased demand)._'}
-knitr::include_graphics("images/SoS.png")
-```
+<div style="width:50%; min-width:300px; float:left; padding:10px">
+![](images/SoS.png)
+</div>
+
+<small>**Figure%nbsp;1. Conceptual diagram of a minimal System of Systems (SoS) with two constituent systems.** Each system in a SoS is agnostic about the structure of systems exogenous to it. However, flows within the system are affected by a set of interaction parameters that are a function of the states of the exogenous system. In this example, System 1 is a model of a vaccine supply chain, and System 2 is a compartmental disease transmission model. System 2 may be affected by states of System 1 (e.g. vaccine inventory) via parameters reducing the flow from the Susceptible state to the Infectious state, and from Susceptible to Removed. In turn, System 1 may be affected by states of System 2 (e.g. disease prevalence) via parameters affecting rate of flow along the manufacturing chain (increased demand).</small>
 
 <p style="clear:both"> <!-- to prevent this paragraph wrapping arround figure.-->
 Adopting a SoS approach for pandemic intelligence offers several unique advantages over traditional methods of studying component systems in isolation of each other: 
