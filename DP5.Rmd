@@ -34,7 +34,7 @@ The development of novel sequencing technologies has recently led to the rapid p
 <div style="width:50%; min-width:300px; float:left; padding:40px">
 ![](images/DP5_Subsampling.png)
 <br><br>
-<small>**Figure&nbsp;1. Subsampling strategy.**</small>
+<small>**Figure&nbsp;2. Subsampling strategy.**</small>
 </div>
 
 We are working to develop and systematically test new strategies for subsampling that will enable greater confidence in our estimates of epidemiologic parameters and help us better describe the history of an outbreak using sequence data. We have developed a novel subsampling tool, the *Phylogenetic Analysis Subsampling Tool (PAST)*, which allows us to generate a balanced and well-spread sample across many variables. To establish the veracity of our approach, we have built a Nextflow pipeline and simulation framework to test multiple subsampling strategies and analyze their impact. After concluding this investigation, we will be able to make definitive recommendations for subsampling strategy by using the phylodynamic research question.
