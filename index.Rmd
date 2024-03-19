@@ -26,9 +26,9 @@ output: html_document
 
 ## The Pandemic Systems Group
 
-```{r fig1, echo=FALSE, out.width='120px', out.extra='style="float:left; padding:10px"'}
-knitr::include_graphics("images/pandemicsystems.png")
-```
+<div style="width:120px; min-width:120px; float:left; padding:10px">
+![](images/pandemicsystems.png)
+</div>
 
 The **Pandemic Systems Group** is a multi-disciplinary, multi-institutional research group established to advance the understanding of pandemics from a human systems perspective.
 
