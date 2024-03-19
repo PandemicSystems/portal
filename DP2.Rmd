@@ -52,13 +52,16 @@ The goal is to model the complex nonlinear dynamics of disease outbreaks. This m
 
 ### Model Analysis with Explainable AI
 
+We trained a neural network algorithm on the synthetic data generated from the multi-strain-vaccine model. 
+
 <div style="width:50%; min-width:300px; float:left; padding:10px">
 ![](images/DP2_xai.png)
 <br><br>
 <small>**Figure&nbsp;3. Explainable AI for pandemic containment.** A white box model (compartmental transmission model) provides inputs to a neural network, which outputs outbreak indicators. Explainable AI (XAI) techniques are used to identify features with the greatest impact on outbreak indicators. Identified features could then be used as targets for intervention by decision makers.</small>
 </div>
 
-We trained a neural network algorithm on the synthetic data generated from the multi-strain-vaccine model. The proposed **model inputs** include population-based features including susceptible, infected, vaccinated, exposed, hospitalized, and recovered populations (see above compartmental model), as well as virus-related features for each variant like transmission rates, hospitalization rates, death rates, and vaccine efficacies. 
+The proposed **model inputs** include population-based features including susceptible, infected, vaccinated, exposed, hospitalized, and recovered populations (see above compartmental model), as well as virus-related features for each variant like transmission rates, hospitalization rates, death rates, and vaccine efficacies. 
+
 The **model outputs** of the network are the essential outbreak indicators within a defined period, crucial for our monitoring during a public health emergency. 
 
 This network is then used to provide **human interpretability** for complex decision making using advanced explainable AI techniques. This approach detects the features that affect disease outcomes the most, with the goal of facilitating decision making aimed at pandemic containment. 
