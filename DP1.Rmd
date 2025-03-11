@@ -89,9 +89,15 @@ knitr::include_url("DP1_summary.html")
 </p>
 -->
 
-<p>**Poster:** Robertson, H., E. Graeden, A. Castellanos, D. Rosado, J.M. Drake, B. Han. "Knowledge Graphs for Scalable Data Integration: A Case Study of Highly Pathogenic Avian Influenza (HPAI)." *MIDAS Network Annual Meeting.* October 29-31, 2023. 
+<p>Robertson, H., B. A. Han, A.A. Castellanos, D. Rosado, G. Stott, R. Zimmerman, J.M. Drake, E. Graeden. "Understanding ecological systems using knowledge graphs: an application to highly pathogenic avian influenza." *Bioinformatics Advances.* Volume 5, Issue 1, 2025. 
+<a href="https://doi.org/10.1093/bioadv/vbaf016" target="_blank">doi.org/10.1093/bioadv/vbaf016</a>
+</p>
+
+<p>**Poster:** Robertson, H., E. Graeden, A.A. Castellanos, D. Rosado, J.M. Drake, B.A. Han. "Knowledge Graphs for Scalable Data Integration: A Case Study of Highly Pathogenic Avian Influenza (HPAI)." *MIDAS Network Annual Meeting.* October 29-31, 2023. 
 <a href="pdf/MIDAS_2023_poster_Robertson.pdf" target="_blank">(pdf) </a>
 </p>
+
+
 
 <!--
 <p>

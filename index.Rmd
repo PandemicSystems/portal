@@ -91,6 +91,7 @@ process_update <- function(rmdfile) {
 <!--to get the text from the rmarkdown displayed in html-->
 ```{r, echo=FALSE,include=TRUE, results="asis"}
 
+process_update("updates/Robertson-Bioinformatics-Advances.md")
 process_update("updates/Kelly-MIDAS.md")
 process_update("updates/Robertson-MIDAS.md")
 process_update("updates/Anderson.md")
